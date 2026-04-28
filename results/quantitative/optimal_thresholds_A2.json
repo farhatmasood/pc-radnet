@@ -1,0 +1,74 @@
+{
+  "Herniation": {
+    "optimal_threshold": 0.5,
+    "best_f1": 0.3077,
+    "precision_at_best": 0.1818,
+    "recall_at_best": 1.0,
+    "n_positive": 14,
+    "default_f1": 0.3077
+  },
+  "Protrusion": {
+    "optimal_threshold": 0.1,
+    "best_f1": 0.4854,
+    "precision_at_best": 0.3205,
+    "recall_at_best": 1.0,
+    "n_positive": 25,
+    "default_f1": 0.4854
+  },
+  "Bulge": {
+    "optimal_threshold": 0.1,
+    "best_f1": 0.7717,
+    "precision_at_best": 0.6282,
+    "recall_at_best": 1.0,
+    "n_positive": 49,
+    "default_f1": 0.0
+  },
+  "ThecalComp": {
+    "optimal_threshold": 0.1,
+    "best_f1": 0.7813,
+    "precision_at_best": 0.641,
+    "recall_at_best": 1.0,
+    "n_positive": 50,
+    "default_f1": 0.7813
+  },
+  "NerveComp": {
+    "optimal_threshold": 0.1,
+    "best_f1": 0.7213,
+    "precision_at_best": 0.5641,
+    "recall_at_best": 1.0,
+    "n_positive": 44,
+    "default_f1": 0.0435
+  },
+  "Stenosis": {
+    "optimal_threshold": 0.1,
+    "best_f1": 0.0976,
+    "precision_at_best": 0.0513,
+    "recall_at_best": 1.0,
+    "n_positive": 4,
+    "default_f1": 0.0976
+  },
+  "Spondylolisthesis": {
+    "optimal_threshold": 0.5,
+    "best_f1": 0.0533,
+    "precision_at_best": 0.0274,
+    "recall_at_best": 1.0,
+    "n_positive": 2,
+    "default_f1": 0.0533
+  },
+  "Desiccated": {
+    "optimal_threshold": 0.1,
+    "best_f1": 0.3043,
+    "precision_at_best": 0.1795,
+    "recall_at_best": 1.0,
+    "n_positive": 14,
+    "default_f1": 0.3043
+  },
+  "LigFlavum": {
+    "optimal_threshold": 0.5,
+    "best_f1": 0.0556,
+    "precision_at_best": 0.0286,
+    "recall_at_best": 1.0,
+    "n_positive": 2,
+    "default_f1": 0.0556
+  }
+}

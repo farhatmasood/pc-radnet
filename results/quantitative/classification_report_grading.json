@@ -1,0 +1,45 @@
+{
+  "Grade 1": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2.0
+  },
+  "Grade 2": {
+    "precision": 0.672077922077922,
+    "recall": 0.8697478991596639,
+    "f1-score": 0.7582417582417582,
+    "support": 238.0
+  },
+  "Grade 3": {
+    "precision": 0.47368421052631576,
+    "recall": 0.4153846153846154,
+    "f1-score": 0.4426229508196721,
+    "support": 130.0
+  },
+  "Grade 4": {
+    "precision": 0.65,
+    "recall": 0.28888888888888886,
+    "f1-score": 0.4,
+    "support": 90.0
+  },
+  "Grade 5": {
+    "precision": 0.3333333333333333,
+    "recall": 0.25,
+    "f1-score": 0.2857142857142857,
+    "support": 8.0
+  },
+  "accuracy": 0.6175213675213675,
+  "macro avg": {
+    "precision": 0.4258190931875142,
+    "recall": 0.3648042806866337,
+    "f1-score": 0.3773157989551432,
+    "support": 468.0
+  },
+  "weighted avg": {
+    "precision": 0.6040601698496435,
+    "recall": 0.6175213675213675,
+    "f1-score": 0.5903594793884831,
+    "support": 468.0
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "evaluation_type": "patient_level_val_calibrated",
+  "best_single_strategy": "ens_p75_all",
+  "strategies_tested": [
+    "A2_max_ax",
+    "A2_p75_ax",
+    "ens_max_ax",
+    "ens_mean_ax",
+    "ens_p75_ax",
+    "ens_p90_ax",
+    "ens_max_all",
+    "ens_p75_all"
+  ],
+  "per_strategy_macro": {
+    "A2_max_ax": 0.5219383144548095,
+    "A2_p75_ax": 0.44190513416386334,
+    "ens_max_ax": 0.5232793002218527,
+    "ens_mean_ax": 0.5396081568495361,
+    "ens_p75_ax": 0.49813187820528765,
+    "ens_p90_ax": 0.5002739709483933,
+    "ens_max_all": 0.5568784248063436,
+    "ens_p75_all": 0.5658280928395757
+  },
+  "best_single_results": {
+    "Herniation": {
+      "f1": 0.4878048780487805,
+      "precision": 0.37037037037037035,
+      "recall": 0.7142857142857143,
+      "n_pos": 14,
+      "threshold": 0.18999999999999997
+    },
+    "Protrusion": {
+      "f1": 0.711864406779661,
+      "precision": 0.6176470588235294,
+      "recall": 0.84,
+      "n_pos": 25,
+      "threshold": 0.33999999999999997
+    },
+    "Bulge": {
+      "f1": 0.7716535433070866,
+      "precision": 0.6282051282051282,
+      "recall": 1.0,
+      "n_pos": 49,
+      "threshold": 0.5499999999999999
+    },
+    "ThecalComp": {
+      "f1": 0.8301886792452831,
+      "precision": 0.7857142857142857,
+      "recall": 0.88,
+      "n_pos": 50,
+      "threshold": 0.6299999999999999
+    },
+    "NerveComp": {
+      "f1": 0.6136363636363636,
+      "precision": 0.6136363636363636,
+      "recall": 0.6136363636363636,
+      "n_pos": 44,
+      "threshold": 0.5499999999999999
+    },
+    "Stenosis": {
+      "f1": 0.5,
+      "precision": 0.5,
+      "recall": 0.5,
+      "n_pos": 4,
+      "threshold": 0.14999999999999997
+    },
+    "Spondylolisthesis": {
+      "f1": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "n_pos": 2,
+      "threshold": 0.18999999999999997
+    },
+    "Desiccated": {
+      "f1": 0.5106382978723404,
+      "precision": 0.36363636363636365,
+      "recall": 0.8571428571428571,
+      "n_pos": 14,
+      "threshold": 0.16999999999999996
+    },
+    "LigFlavum": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "n_pos": 2,
+      "threshold": 0.19999999999999996
+    }
+  },
+  "macro_f1": 0.5658280928395757,
+  "baseline_per_image_macro": 0.3418888888888889,
+  "baseline_per_disorder": {
+    "Herniation": 0.287,
+    "Protrusion": 0.435,
+    "Bulge": 0.731,
+    "ThecalComp": 0.757,
+    "NerveComp": 0.583,
+    "Stenosis": 0.057,
+    "Spondylolisthesis": 0.118,
+    "Desiccated": 0.018,
+    "LigFlavum": 0.091
+  },
+  "mixed_strategy_macro": 0.46379999290252855
+}

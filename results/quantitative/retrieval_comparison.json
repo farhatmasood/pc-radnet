@@ -1,0 +1,22 @@
+[
+  {
+    "encoder": "all-MiniLM-L6-v2",
+    "dim": 384,
+    "encode_time_sec": 0.7,
+    "n_patients_evaluated": 77,
+    "mean_precision": 0.4394,
+    "mean_recall": 0.4465,
+    "mean_f1": 0.4246,
+    "mean_retrieval_score": 0.6415
+  },
+  {
+    "encoder": "MedCPT",
+    "dim": 768,
+    "encode_time_sec": 2.2,
+    "n_patients_evaluated": 77,
+    "mean_precision": 0.4665,
+    "mean_recall": 0.4712,
+    "mean_f1": 0.4407,
+    "mean_retrieval_score": 0.8758
+  }
+]

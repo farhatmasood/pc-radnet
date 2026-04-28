@@ -1,0 +1,11 @@
+{
+  "dice_IVD": 0.9700570907602962,
+  "iou_IVD": 0.9427942003195102,
+  "dice_PE": 0.9147828074856701,
+  "iou_PE": 0.8467331434416975,
+  "dice_SC": 0.9095159804719126,
+  "iou_SC": 0.8421675077297239,
+  "mean_fg_dice": 0.9314519595726264,
+  "model": "SC-Enhanced (coarse-to-fine + augmentation)",
+  "sc_weight": 10.0
+}

@@ -1,0 +1,64 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.whl
+
+# ── Virtual environments ──
+.venv/
+venv/
+env/
+
+# ── Model checkpoints ──
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+checkpoints/
+
+# ── Data (raw/processed) ──
+data/raw/
+data/processed/
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs and outputs ──
+*.log
+wandb/
+runs/
+outputs/
+mlruns/
+
+# ── LaTeX auxiliary ──
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+*.synctex.gz
+*.xdv
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── Misc ──
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
