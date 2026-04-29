@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 10.5 pixels; disc bulge, thecal sac compression, nerve root compression.
+- L4-L5: Pfirrmann grade 2; disc height 9.4 pixels; disc bulge, thecal sac compression.
+- L5-S1: Pfirrmann grade 3; disc height 8.7 pixels; disc bulge, thecal sac compression.
+
+IMPRESSION:
+- L4 / 5: - Pfuorman Grade 2; disc herniation, thecal sac and neural foraminal stenosis. - L5 / S1: - PFUrahn Grading System for Degenerative Spondylolisthesis: 0 = normal; 1- mild degenerative spondylolisthesis with < 5mm translation or no visible facet joint degeneration; 2- moderate degenerative spondylolisthesis > 5mm but without significant instability; 3- severe degenerative spondylolisthesis with significant instability. CONCLUSION: This article provides an overview of structural abnormalities in patients presenting to primary care physicians complaining of low back pain that can be detected on routine clinical practice MR imaging studies by radiologists who interpret these examinations routinely. The radiologist should use this information as part of his or her interpretation when evaluating such images. < / FREETEXT > < / ABSTRACT > ▃

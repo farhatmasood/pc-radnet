@@ -1,0 +1,25 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0124
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5 Tesla MRI scanner with a 3T spinal coil. The images were obtained using a sagittal and coronal plane sequence with a 0.5 mm slice thickness.
+
+**FINDINGS:**
+
+* L3-L4:
+  - The intervertebral disc space is slightly reduced, with a Pfirrmann grade of 2.
+  - The disc is mildly protruding and bulging, with a height of 8.59 mm.
+  - The thecal sac is compressed, indicating possible nerve root compression.
+* L4-L5:
+  - The intervertebral disc space is slightly reduced, with a Pfirrmann grade of 3.
+  - The disc is moderately protruding and bulging, with a height of 9.66 mm.
+  - The thecal sac is compressed, indicating possible nerve root compression.
+* L5-S1:
+  - The intervertebral disc space is slightly reduced, with a Pfirrmann grade of 3.
+  - The disc is moderately protruding and bulging, with a height of 10.84 mm.
+  - The thecal sac is compressed, indicating possible nerve root compression.
+  - There is evidence of nerve root compression at the L5-S1 level.
+
+**IMPRESSION:**
+The lumbar spine MRI examination reveals multiple disc protrusions and bulges at the L3-L4, L4-L5, and L5-S1 levels, with associated thecal sac compression and nerve root compression at the L5-S1 level. These findings are consistent

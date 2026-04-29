@@ -1,0 +1,8 @@
+TECHNIQUE:
+This is a lumbar spine MRI performed on a 1.5 Tesla scanner. The patient was positioned supine with the head in neutral position. The sequence used was T2-weighted, sagittal and axial, and T1-weighted, sagittal and axial. The field of view was 24 cm, the matrix was 256x256, and the slice thickness was 3 mm.
+
+FINDINGS:
+The lumbar spine shows mild degenerative changes at all levels. At L3-L4, the Pfirrmann grade is 2, indicating normal disc height. However, there is a disc protrusion and disc bulge with thecal sac compression. At L4-L5, the Pfirrmann grade is 3, indicating mild disc degeneration. There is a disc protrusion and disc bulge with thecal sac compression. At L5-S1, the Pfirrmann grade is 3, indicating mild disc degeneration. There is a disc protrusion, disc bulge, thecal sac compression, and nerve root compression.
+
+IMPRESSION:
+The lumbar spine MRI shows mild degenerative changes at all levels. There is a disc protrusion and disc bulge with thecal sac compression at L3-L4, L4-L5, and L5-S1. At L5-S1, there is also nerve root compression. These findings are consistent with mild degenerative disc disease.

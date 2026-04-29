@@ -1,0 +1,21 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0021
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5 Tesla MRI scanner with a 3T spinal coil. The images were obtained using a T2-weighted sequence with a 3mm slice thickness and no contrast enhancement.
+
+**FINDINGS:**
+
+* L3-L4 Intervertebral Disc: 
+  - The intervertebral disc exhibits a Pfirrmann grade 2, with a disc height of 8.72 mm.
+  - A disc protrusion and disc bulge are present, causing thecal sac compression.
+* L4-L5 Intervertebral Disc: 
+  - The intervertebral disc exhibits a Pfirrmann grade 3, with a disc height of 8.66 mm.
+  - A disc protrusion and disc bulge are present, causing thecal sac compression.
+* L5-S1 Intervertebral Disc: 
+  - The intervertebral disc exhibits a Pfirrmann grade 4, with a disc height of 5.67 mm.
+  - A disc protrusion and disc bulge are present, causing thecal sac compression.
+
+**IMPRESSION:**
+The lumbar spine MRI examination reveals multiple disc abnormalities, including disc protrusions and bulges at the L3-L4, L4-L5, and L5-S1 levels, resulting in thecal sac compression. These findings are consistent with the patient's reported symptoms. Further evaluation and consultation with a neurosurgeon or primary care physician is recommended to determine the best course of treatment.

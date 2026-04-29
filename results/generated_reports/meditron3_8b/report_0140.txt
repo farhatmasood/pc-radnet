@@ -1,0 +1,14 @@
+TECHNIQUE:
+This is a lumbar spine MRI performed on patient 0140. The study was done on a 1.5 Tesla scanner with a 3D T1-weighted sequence, a 3D T2-weighted sequence, and a 2D T2-weighted sequence. The patient was positioned supine with the head in neutral position. The study was performed without contrast.
+
+FINDINGS:
+The lumbar spine MRI shows the following findings:
+
+L3-L4: The Pfirrmann grade is 2, indicating normal disc signal. The disc height is 8.38 pixels, which is within normal limits. There is a disc protrusion and disc bulge at this level, causing thecal sac compression and nerve root compression.
+
+L4-L5: The Pfirrmann grade is 2, indicating normal disc signal. The disc height is 8.91 pixels, which is within normal limits. There is a disc protrusion and disc bulge at this level, causing thecal sac compression and nerve root compression.
+
+L5-S1: The Pfirrmann grade is 4, indicating degenerative disc disease. The disc height is 6.00 pixels, which is below normal limits. There is a disc protrusion and disc bulge at this level, causing thecal sac compression and nerve root compression.
+
+IMPRESSION:
+The lumbar spine MRI shows degenerative disc disease at L5-S1 with disc protrusion and disc bulge causing thecal sac compression and nerve root compression. There is also a disc protrusion and disc bulge at L3-L4 and L4-L5, causing thecal sac compression and nerve root compression. The patient should be

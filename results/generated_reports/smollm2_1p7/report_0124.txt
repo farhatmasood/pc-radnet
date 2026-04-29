@@ -1,0 +1,12 @@
+Lumbar Spine MRI Report
+
+TECHNIQUE:
+The MRI was performed using a 1.5 Tesla Magnet and a 12-channel head coil. The imaging sequence was a T1-weighted post-injection spoiled gradient echo (GRE) with a repetition time (TR) of 2000 ms and a slice thickness of 1.5 mm.
+
+FINDINGS:
+
+L3-L4:
+The disc space is mildly flattened, with a disc height of 8.59 pixels. The disc is partially bulging, and there is a mild disc protrusion. The posterior longitudinal ligament is thickened, and the posterior spinal facet joints are mildly fused. The nerve root is compressed, and there is mild stenosis of the L3-L4 disc space.
+
+L4-L5:
+The disc space is moderately flattened, with a disc height of 9.66 pixels. The disc is partially bulging, and there is a mild disc protrusion. The posterior longitudinal ligament is thickened,

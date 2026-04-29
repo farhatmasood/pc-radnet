@@ -1,0 +1,16 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of intervertebral discs and spinal canal anatomy.
+
+**Findings:**
+- **L3-L4 Intervertebral Discs:**
+  - Pfirrmann Grade: 2  
+  - Disc Height (Pixels): 11.06  
+  - Abnormalities: Disc Protrusion, Nerve Root Compression  
+  - Interpretation: The intervertebral disc at L3-L4 shows moderate protrusion with mild nerve root compression noted on the right side. This is consistent with a common finding associated with degenerative changes in this region.
+
+- **L4-L5 Intervertebral Discs:**
+  - Pfirrmann Grade: 2  
+  - Disc Height (Pixels): 10.91  
+  - Abnormalities: Disc Protrusion, Disc Bulge, Thecal Sac Compression  
+  - Interpretation: The

@@ -47,11 +47,9 @@ RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 IMAGENET_MEAN = np.array([0.485, 0.456, 0.406])
 IMAGENET_STD = np.array([0.229, 0.224, 0.225])
 
+_ext = CFG["paths"].get("external_datasets", {})
 DATASET_PATHS = {
-    "spider": Path(r"D:\2.2 Dataset_s\Datasets\SPIDER Paper-Dataset\Dataset-SPIDER"),
-    "rsna": Path(r"D:\2.2 Dataset_s\Datasets\rsna-2024-lumbar-spine-degenerative-classification"),
-    "spine_new": Path(r"D:\2.2 Dataset_s\Datasets\Spine DataSet (NEW)"),
-    "xray": Path(r"D:\2.2 Dataset_s\Datasets\scoliosis xray Single View - Verdiff Net Paper"),
+    k: Path(v) for k, v in _ext.items() if v
 }
 
 # SPIDER label mapping → our sagittal classes

@@ -1,0 +1,15 @@
+Lumbar Spine MRI Report
+
+TECHNIQUE:
+The MRI was performed using a 1.5 Tesla Magnet and a 12-channel head coil. The imaging sequence was a T1-weighted post-injection spoiled gradient-echo (GRE) with a repetition time (TR) of 2000 ms and a slice thickness of 1.5 mm.
+
+FINDINGS:
+
+L3-L4:
+The disc space is mildly flattened, with a disc height of 8.48 pixels. The posterior longitudinal ligament is thickened, and the posterior spinal artery is visible. There is no evidence of herniation or significant stenosis.
+
+L4-L5:
+The disc space is mildly flattened, with a disc height of 11.28 pixels. The posterior longitudinal ligament is thickened, and the posterior spinal artery is visible. There is no evidence of herniation or significant stenosis.
+
+L5-S1:
+The disc space is mildly flattened, with a disc height of 1

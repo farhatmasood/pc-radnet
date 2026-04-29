@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 10.2 pixels; disc protrusion, disc bulge, thecal sac compression.
+- L4-L5: Pfirrmann grade 2; disc height 10.4 pixels; disc bulge, thecal sac compression, nerve root compression.
+- L5-S1: Pfirrmann grade 3; disc height 8.5 pixels; disc bulge, thecal sac compression.
+
+IMPRESSION:
+The patient has mild degenerative changes of the lumbar spine with disc bulges and posterior element changes at levels L3-4, L4-5, and L5-6. There is no evidence of spinal stenosis or instability.

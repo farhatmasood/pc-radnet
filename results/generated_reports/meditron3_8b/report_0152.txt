@@ -1,0 +1,8 @@
+TECHNIQUE:
+This is a lumbar spine MRI performed on a 1.5 Tesla scanner. The patient was positioned supine with the spine in neutral alignment. The following sequences were obtained: T1-weighted sagittal, T2-weighted sagittal, T2-weighted axial, and T2-weighted sagittal with fat saturation. The field of view was 24 cm, and the slice thickness was 3 mm.
+
+FINDINGS:
+The lumbar spine demonstrates multilevel degenerative changes. At L3-L4, the Pfirrmann grade is 2, and the disc height is 10.72 pixels. There is a disc bulge with thecal sac compression. At L4-L5, the Pfirrmann grade is 3, and the disc height is 10.47 pixels. There is a disc bulge with thecal sac compression and nerve root compression. At L5-S1, the Pfirrmann grade is 4, and the disc height is 5.94 pixels. There is a disc bulge with thecal sac compression and nerve root compression.
+
+IMPRESSION:
+This lumbar spine MRI demonstrates multilevel degenerative changes with disc bulges, thecal sac compression, and nerve root compression at L3-L4, L4-L5, and L5-S1. The patient should be referred for further evaluation and management by a spine specialist.

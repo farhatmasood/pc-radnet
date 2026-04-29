@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 10.2 pixels; disc protrusion, disc bulge, thecal sac compression.
+- L4-L5: Pfirrmann grade 2; disc height 10.4 pixels; disc bulge, thecal sac compression, nerve root compression.
+- L5-S1: Pfirrmann grade 3; disc height 8.5 pixels; disc bulge, thecal sac compression.
+
+IMPRESSION:
+- L1 / L2: Pfirr-man Grade 0; disc height 2.1 5 pixel; no abnormality. - L2 / L3: Pfirmin-man Grade 1; disc height 3.3 4 pixel; no abnormalities. - L3 / L4: Pfirer-man Grades 0 and 1; disc heights 2.6 7 and 5.7 9 pixel respectively; no abnormalities.. - L4 / L5: Pfirers-managements: Pfirre-mains grades 0 and 1 with normal discs; disc heights 6.9 and 9.8 pixel respectively; disc bulges without any associated pathology. - L5 / S1: Pfiermen-mical gradings of 0 to 3 were seen in all cases with varying degrees of disc degeneration at this level. CONCLUSION: This article provides an overview of structural changes that can be observed on routine clinical magnetic resonance imaging scans for patients presenting with low back pain or sciatica. < / FREETEXT > < / ABSTRACT > ▃

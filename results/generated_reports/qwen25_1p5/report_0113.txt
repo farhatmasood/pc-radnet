@@ -1,0 +1,10 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues.
+
+**Findings:**
+- **L3-L4**: Disc bulge with moderate narrowing of the intervertebral space, accompanied by thecal sac compression and mild nerve root compression.
+- **L4-L5**: Disc protrusion with significant narrowing of the intervertebral space, combined with disc bulge, thecal sac compression, and severe nerve root compression.
+- **L5-S1**: Disc protrusion with substantial narrowing of the intervertebral space, along with disc bulge, thecal sac compression, and marked nerve root compression.
+
+**Impression:** The patient presents with multiple levels of spinal stenosis involving the L3-L4, L4-L5, and L5-S1 segments. These findings suggest progressive degenerative changes leading to increased pressure on the spinal cord and nerve roots, necessitating further evaluation and potential surgical intervention if symptoms persist.

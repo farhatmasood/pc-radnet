@@ -1,0 +1,15 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0167
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5T MRI scanner with a 32-channel coil. The images were obtained using a T2-weighted sequence with a 3mm slice thickness and no contrast enhancement.
+
+**FINDINGS:**
+
+* L3-L4 Intervertebral Disc: The disc is of normal height (8.84mm) and appears to be compressed, with a bulge extending into the spinal canal. The thecal sac is also compressed, and there is evidence of nerve root compression.
+* L4-L5 Intervertebral Disc: The disc is of normal height (11.44mm) and appears to be compressed, with evidence of nerve root compression.
+* L5-S1 Intervertebral Disc: The disc is of normal height (11.47mm) and appears to be compressed, with a bulge extending into the spinal canal. The thecal sac is also compressed, and there is evidence of nerve root compression.
+
+**IMPRESSION:**
+The lumbar spine MRI examination reveals multiple disc compressions and nerve root compressions at the L3-L4, L4-L5, and L5-S1 levels. These findings are consistent with degenerative disc disease and may be contributing to the patient's symptoms. Further evaluation and management should be considered to address the underlying cause of the patient's symptoms.

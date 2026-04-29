@@ -1,0 +1,8 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 9.6 pixels; disc bulge, thecal sac compression, nerve root compression.
+- L4-L5: Pfirrmann grade 2; disc height 11.8 pixels; disc bulge, nerve root compression.
+- L5-S1: Pfirrmann grade 2; disc height 9.9 pixels; disc bulge, thecal sac compression.
+
+IMPRESSION:

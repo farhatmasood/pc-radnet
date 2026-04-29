@@ -1,0 +1,8 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standardized axial T2-weighted imaging with diffusion-weighted sequences was performed using a 3T MRI scanner.
+
+**Findings:**
+- **L3-L4**: The intervertebral disc at L3-L4 shows moderate disc bulge with slight narrowing of the central annulus fibrosus, consistent with Pfirrmann Grade 2 abnormality. There is mild thecal sac compression noted due to this bulge, along with mild nerve root compression affecting the right lateral aspect of the L4 nerve root.
+- **L4-L5**: The intervertebral disc at L4-L5 exhibits significant disc bulge with marked narrowing of the central annulus fibrosus, corresponding to Pfirrmann Grade 2 abnormality. This bulge also causes severe thecal sac compression and moderate nerve root compression affecting both the left and right lateral aspects of the L5 nerve roots.
+- **L5-S1**: The intervertebral disc at L5-S1 presents with substantial disc bulge with pronounced

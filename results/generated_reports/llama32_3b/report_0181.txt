@@ -1,0 +1,15 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0181
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5 Tesla MRI scanner with a 3T spinal coil. The images were obtained using a T2-weighted sequence with a 3mm slice thickness and no contrast enhancement.
+
+**FINDINGS:**
+
+* L3-L4 intervertebral disc: The disc is of normal height (9.97 mm) and appears to be compressed by a mild disc bulge. The thecal sac is also compressed.
+* L4-L5 intervertebral disc: The disc is of reduced height (8.64 mm) and appears to be compressed by a moderate disc bulge. The thecal sac is also compressed.
+* L5-S1 intervertebral disc: The disc is of significantly reduced height (3.30 mm) and appears to be compressed by a severe disc bulge. The thecal sac is also compressed.
+
+**IMPRESSION:**
+The lumbar spine MRI examination reveals multiple disc bulges and thecal sac compression at the L3-L4, L4-L5, and L5-S1 levels. These findings are consistent with degenerative disc disease, which may be contributing to the patient's symptoms. Further evaluation and clinical correlation are recommended to determine the extent of the patient's symptoms and to plan appropriate management.

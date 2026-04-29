@@ -1,0 +1,6 @@
+TECHNIQUE: Lumbar spine MRI
+FINDINGS:
+L3-L4: There is a mildly displaced anterior protrusion of the L4 vertebral body, resulting in a Pfirrmann grade of 2. The disc height is 11.06 pixels. There is no nerve root compression.
+L4-L5: There is a mildly displaced anterior protrusion of the L5 vertebral body, resulting in a Pfirrmann grade of 2. The disc height is 10.91 pixels. There is no nerve root compression.
+L5-S1: There is a mildly displaced anterior protrusion of the L5 vertebral body, resulting in a Pfirrmann grade of 3. The disc height is 7.16 pixels. There is no nerve root compression.
+IMPRESSION: There are no abnormalities.

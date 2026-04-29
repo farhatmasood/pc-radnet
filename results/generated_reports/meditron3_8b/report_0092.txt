@@ -1,0 +1,11 @@
+TECHNIQUE:
+This is a lumbar spine MRI performed on a 0092 patient. The technique used was a T1-weighted sagittal and axial images, T2-weighted sagittal and axial images, and a T2-weighted fat-saturated sagittal and axial images.
+
+FINDINGS:
+The lumbar spine MRI shows the following findings:
+- L3-L4: Pfirrmann grade 2, disc height 9.47 pixels, disc protrusion, disc bulge, thecal sac compression, and nerve root compression.
+- L4-L5: Pfirrmann grade 2, disc height 10.12 pixels, disc protrusion, disc bulge, thecal sac compression, and nerve root compression.
+- L5-S1: Pfirrmann grade 4, disc height 7.11 pixels, disc protrusion, disc bulge, thecal sac compression.
+
+IMPRESSION:
+The lumbar spine MRI shows Pfirrmann grade 2 at L3-L4 and L4-L5, Pfirrmann grade 4 at L5-S1, disc protrusion, disc bulge, thecal sac compression, and nerve root compression at all levels. These findings are consistent with degenerative disc disease and nerve root compression.

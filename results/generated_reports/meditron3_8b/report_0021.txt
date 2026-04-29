@@ -1,0 +1,8 @@
+TECHNIQUE:
+This is a lumbar spine MRI performed on patient 0021. The study was done on a 1.5 Tesla scanner with a 3D T1-weighted sequence and a 2D T2-weighted sequence. The patient was positioned supine with the spine in neutral alignment.
+
+FINDINGS:
+The lumbar spine is well visualized. At the L3-L4 level, the Pfirrmann grade is 2, indicating normal disc signal. The disc height is 8.72 pixels, which is within normal limits. There is a disc protrusion and disc bulge at this level, causing mild thecal sac compression. At the L4-L5 level, the Pfirrmann grade is 3, indicating mild disc degeneration. The disc height is 8.66 pixels, which is within normal limits. There is a disc protrusion and disc bulge at this level, causing mild thecal sac compression. At the L5-S1 level, the Pfirrmann grade is 4, indicating moderate disc degeneration. The disc height is 5.67 pixels, which is below normal limits. There is a disc protrusion and disc bulge at this level, causing mild thecal sac compression.
+
+IMPRESSION:
+The lumbar spine MRI shows mild thecal sac compression at the L3-L4, L4-L5, and L5-S1 levels due to disc protrusion and disc bulge. The L5-S1 disc is moderately degenerated. The patient should be followed up with repeat imaging in 6-12 months to assess for progression of the degenerative changes.

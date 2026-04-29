@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 11.1 pixels; disc protrusion, nerve root compression.
+- L4-L5: Pfirrmann grade 2; disc height 10.9 pixels; disc protrusion, disc bulge, thecal sac compression.
+- L5-S1: Pfirrmann grade 3; disc height 7.2 pixels; disc protrusion, disc bulge, thecal sac compression.
+
+IMPRESSION:
+The patient has mild degenerative changes of the lumbar spine with multilevel disc protrusions and nerve root compressions. There is no evidence of spinal stenosis or epidural disease.

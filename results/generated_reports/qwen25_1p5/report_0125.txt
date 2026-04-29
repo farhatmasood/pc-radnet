@@ -1,0 +1,10 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of foraminal narrowing and spinal canal stenosis.
+
+**Findings:**
+- **L3-L4**: Disc herniation involving the anterior aspect of the intervertebral disc at L3-L4, accompanied by mild nerve root compression. The disc height is reduced to 8.69 pixels, indicating significant degeneration.
+- **L4-L5**: Disc herniation extending into the lateral recesses of the intervertebral discs at L4-L5, causing moderate nerve root compression. The disc height has decreased to 9.91 pixels, reflecting severe degenerative changes.
+- **L5-S1**: Disc protrusion observed at L5-S1, compressing the posterior elements of the neural structures. The disc height measures 12.16 pixels, suggesting substantial degenerative changes.
+
+**Impression:** Based on the identified abnormalities—disc herniations, disc bul

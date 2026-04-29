@@ -1,0 +1,9 @@
+Lumbar Spine MRI Report
+
+TECHNIQUE:
+The MRI was performed using a 1.5 Tesla Magnet and a 1.5 Tesla Magnet with a 3 Tesla Magnet. The imaging sequence used was a T1-weighted post-injection spoiled gradient echo (GRE) with a repetition time (TR) of 2000 msec and a flip angle of 71 degrees. The imaging protocol included a sagittal T1-weighted image, a coronal T1-weighted image, and a sagittal T2-weighted image.
+
+FINDINGS:
+
+L3-L4:
+The disc space between L3 and L4 is partially filled with a disc herniation. The disc height is 11.50 pixels, which is consistent with a grade 2 disc herniation. The disc is compressing the L3 nerve root, as indicated by the Pfirrmann grade of 2. The T2-weighted image shows a mild signal change in the L3 nerve root,

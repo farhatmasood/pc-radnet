@@ -1,0 +1,10 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues.
+
+**Findings:**
+- **L3-L4**: Disc protrusion and bulge noted at this level, with mild thecal sac compression observed.
+- **L4-L5**: Significant disc bulge and thecal sac compression identified, along with moderate nerve root compression.
+- **L5-S1**: Disc bulge and thecal sac compression detected, accompanied by slight nerve root compression.
+
+**Impression:** The patient presents with multiple levels of spinal degenerative changes including disc herniations and associated neurological symptoms due to nerve root compression. Further evaluation is recommended to assess the extent of the degeneration and determine appropriate treatment options.

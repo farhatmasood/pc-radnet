@@ -1,0 +1,14 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of intervertebral discs and spinal canal anatomy.
+
+**Findings:**
+- **L3-L4 Intervertebral Discs:**
+  - Grade 2 on the Pfirrmann scale indicating mild degenerative changes with slight protrusion of the posterior annulus fibrosus.
+  - Disc height measured at 11.50 pixels, consistent with normal variation.
+  - Presence of disc herniation and disc bulge noted, along with nerve root compression observed.
+
+- **L4-L5 Intervertebral Discs:**
+  - Grade 2 on the Pfirrmann scale reflecting moderate degeneration with significant protrusion of the posterior annulus fibrosus.
+  - Disc height measuring 13.03 pixels, indicative of increased space between vertebrae.
+  - Identified as having disc bulge, thecal sac compression, and nerve root compression

@@ -1,0 +1,8 @@
+TECHNIQUE:
+The patient underwent a lumbar spine MRI with the following parameters: 1.5 Tesla, T1-weighted, T2-weighted, and T2-weighted with fat saturation sequences. The patient was positioned supine with the head in neutral position. The study was performed from the top of the T12 to the bottom of the S1 vertebrae.
+
+FINDINGS:
+The lumbar spine MRI demonstrates Pfirrmann grade 2 discs at L3-L4, L4-L5, and L5-S1. At L3-L4, there is a disc herniation with nerve root compression. At L4-L5, there is a disc herniation with nerve root compression. At L5-S1, there is a disc herniation, disc bulge, thecal sac compression, and nerve root compression.
+
+IMPRESSION:
+The lumbar spine MRI demonstrates Pfirrmann grade 2 discs at L3-L4, L4-L5, and L5-S1. There is a disc herniation with nerve root compression at L3-L4, L4-L5, and L5-S1. The patient should be referred for further evaluation and management of these findings.

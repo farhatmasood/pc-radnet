@@ -1,0 +1,10 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standardized axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues.
+
+**Findings:**
+- **L3-L4**: Disc herniation with mild nerve root compression noted at the intervertebral space between L3 and L4. The disc height is measured at 9.62 pixels, indicating moderate protrusion.
+- **L4-L5**: Significant disc herniation involving the intervertebral space between L4 and L5, accompanied by severe nerve root compression. The disc height measures 9.69 pixels, suggesting substantial protrusion.
+- **L5-S1**: Obvious disc herniation extending into the lateral recess of the S1 vertebrae, along with a significant disc bulge. Additionally, there is evidence of thecal sac compression and nerve root compression at this level.
+
+**Impression:** Based on the identified abnormalities—disc herniation, nerve root compression, disc bulge, and thecal sac compression—the patient presents with multifocal spinal stenosis affecting multiple

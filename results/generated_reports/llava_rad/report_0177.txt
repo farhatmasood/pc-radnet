@@ -1,0 +1,12 @@
+TECHNIQUE:
+Lumbar spine MRI was performed using a 3mm thick slices.
+
+FINDINGS:
+In the lower lumbar spine, there are three areas of increased opacity.
+In the lower lumbar spine, there is a 2.8 x 1.5 cm opacity which is likely a disc herniation.
+In the lower lumbar spine, there is a 4.2 x 3.2 cm opacity which is likely a disc bulge.
+In the lower lumbar spine, there is a 3.2 x 2.2 cm opacity which is likely a disc bulge with associated thecal sac compression.
+In the lower lumbar spine, there is a 2.7 x 1.8 cm opacity which is likely a disc bulge with associated nerve root compression.
+
+IMPRESSION:
+The lower lumbar spine MRI demonstrates three areas of increased opacity. The first opacity is likely a disc herniation, the second is likely a disc bulge, and the third is likely a disc bulge with associated nerve root compression.

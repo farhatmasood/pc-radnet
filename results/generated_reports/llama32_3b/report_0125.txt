@@ -1,0 +1,27 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0125
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5T MRI scanner with a 32-channel coil. The images were obtained using a T2-weighted sequence with a 3mm slice thickness and no contrast enhancement.
+
+**FINDINGS:**
+
+* L3-L4 Intervertebral Disc: 
+  - The intervertebral disc exhibits a Pfirrmann grade 2, indicating a mild disc bulge.
+  - The disc height is 8.69 mm, which is within normal limits.
+  - There is a disc herniation and thecal sac compression at the L3-L4 level.
+  - Nerve root compression is also present at this level.
+
+* L4-L5 Intervertebral Disc: 
+  - The intervertebral disc exhibits a Pfirrmann grade 2, indicating a mild disc bulge.
+  - The disc height is 9.91 mm, which is within normal limits.
+  - There is a disc herniation and nerve root compression at the L4-L5 level.
+
+* L5-S1 Intervertebral Disc: 
+  - The intervertebral disc exhibits a Pfirrmann grade 2, indicating a mild disc bulge.
+  - The disc height is 12.16 mm, which is within normal limits.
+  - There is a disc protrusion, disc bulge, thecal sac compression, and nerve root compression at the L5-S1 level.
+
+**IMPRESSION:**
+The lumbar spine MRI examination reveals multiple disc abnormalities, including disc herniation, disc bulge, thecal sac compression,

@@ -35,6 +35,13 @@ paths:
     train: "data/train.txt"
     val: "data/val.txt"
     test: "data/test.txt"
+  # Paths to external validation datasets — set to "" to skip that dataset
+  external_datasets:
+    spider: ""
+    rsna: ""
+    spine_new: ""
+    xray: ""
+    spineweb: ""
 
 classes:
   # Masks are per-plane indexed (not global 7-class):

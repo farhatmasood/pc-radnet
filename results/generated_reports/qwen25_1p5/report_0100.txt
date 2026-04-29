@@ -1,0 +1,11 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of foraminal narrowing.
+
+**Findings:**
+- **L3-L4**: Disc bulge with moderate thecal sac compression noted at the L3-L4 level.
+- **L4-L5**: Disc bulge with mild thecal sac compression observed at the L4-L5 level.
+- **L5-S1**: Disc bulge with significant thecal sac compression identified at the L5-S1 level.
+
+**Impression:**
+The patient presents with multiple levels of disc bulge along the lumbar spine, accompanied by moderate to severe thecal sac compression. These findings suggest potential neurological compromise due to spinal stenosis. Further evaluation is warranted to assess the extent of nerve root involvement and determine appropriate management strategies. The presence of disc bulges may necessitate consideration of conservative treatment options such as physical therapy, pain management, or possibly surgical intervention if symptoms persist despite non-operative measures.

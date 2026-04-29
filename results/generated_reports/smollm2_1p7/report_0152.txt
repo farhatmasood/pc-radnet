@@ -1,0 +1,12 @@
+Lumbar Spine MRI Report
+
+TECHNIQUE:
+The MRI was performed using a 1.5 Tesla Magnet and a 1.5 Tesla Magnet with a 3 Tesla Magnet. The imaging sequence used was a T1-weighted post-injection spoiled gradient echo (GRE) with a repetition time (TR) of 2000 msec and a flip angle of 71 degrees. The imaging protocol included a sagittal and a coronal plane acquisition.
+
+FINDINGS:
+
+L3-L4:
+The disc space between L3 and L4 is mildly flattened, with a disc height of 10.72 pixels. The disc is partially compressing the L3 nerve root. The posterior longitudinal ligament is thickened, and the posterior spinalis muscle is hypertrophied. The posterior spinalis muscle is compressing the L3 nerve root.
+
+L4-L5:
+The disc space between L4 and L5 is moderately flattened, with a disc height of 10.47

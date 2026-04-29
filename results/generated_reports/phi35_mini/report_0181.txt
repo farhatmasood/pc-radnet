@@ -1,0 +1,19 @@
+**MRI Report: Lumbar Spine**
+
+**Patient ID:** 0181
+
+**Date of Study:** [Insert Date]
+
+**Technical Aspects:**
+The lumbar spine MRI was performed using a 1.5 Tesla MRI scanner. Axial and sagittal T1-weighted images were acquired with and without contrast enhancement. The images were reviewed in both planes to assess the intervertebral discs and surrounding structures.
+
+**Findings:**
+
+- **L3-L4:**
+  - Pfirrmann grade: 2
+  - Disc height: 9.97 pixels
+  - There is evidence of a disc bulge with mild central dehydration. The thecal sac appears compressed adjacent to the L3-L4 disc.
+
+- **L4-L5:**
+  - Pfirrmann grade: 3
+  - Disc height

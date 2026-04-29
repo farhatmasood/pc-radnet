@@ -1,0 +1,10 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues.
+
+**Findings:**
+- **L3-L4**: Disc bulge with moderate narrowing of the intervertebral space, Pfirrmann Grade 2.
+- **L4-L5**: Significant disc bulge with marked narrowing of the intervertebral space, Pfirrmann Grade 3.
+- **L5-S1**: Severe disc bulge with substantial narrowing of the intervertebral space, Pfirrmann Grade 4.
+
+**Impression:** The patient presents with multiple levels of disc bulge associated with thecal sac compression, indicating potential spinal stenosis. Further evaluation is warranted to assess the extent of nerve root impingement and determine appropriate management strategies.

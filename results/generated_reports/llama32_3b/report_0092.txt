@@ -1,0 +1,21 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0092
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5 Tesla MRI scanner with a 3T spinal coil. The images were obtained using a T2-weighted sequence with a 3mm slice thickness and no contrast enhancement.
+
+**FINDINGS:**
+
+* L3-L4:
+  - The intervertebral disc space is slightly reduced, with a Pfirrmann grade of 2.
+  - The disc is mildly protruding and bulging, compressing the thecal sac and nerve root.
+* L4-L5:
+  - The intervertebral disc space is slightly reduced, with a Pfirrmann grade of 2.
+  - The disc is mildly protruding and bulging, compressing the thecal sac and nerve root.
+* L5-S1:
+  - The intervertebral disc space is significantly reduced, with a Pfirrmann grade of 4.
+  - The disc is severely protruding and bulging, causing significant compression of the thecal sac and nerve root.
+
+**IMPRESSION:**
+The lumbar spine MRI reveals multiple disc abnormalities, including disc protrusions and bulges at the L3-L4, L4-L5, and L5-S1 levels. These findings are consistent with degenerative disc disease, which may be contributing to nerve root compression and thecal sac compression. Further evaluation and management should be considered to address these abnormalities and alleviate symptoms.

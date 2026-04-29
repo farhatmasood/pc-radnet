@@ -1,0 +1,6 @@
+TECHNIQUE: Lumbar spine MRI
+FINDINGS:
+L3-L4: There is a Pfirrmann grade 2 disc herniation with adjacent compression of the nerve root. There is no significant loss of disc height.
+L4-L5: There is a Pfirrmann grade 2 disc herniation with adjacent compression of the nerve root. There is no significant loss of disc height.
+L5-S1: There is a Pfirrmann grade 2 disc herniation with adjacent disc bulge and compression of the thecal sac. There is no significant loss of disc height.
+IMPRESSION: There are multiple levels of lumbar spine involving L3-L4, L4-L5, and L5-S1. At all three levels, there are Pfirrmann grade 2 disc herniations with adjacent compression of the nerve root, disc bulge, and compression of the thecal sac. There is no significant loss of disc height.

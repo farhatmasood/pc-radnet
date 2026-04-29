@@ -1,0 +1,17 @@
+**MRI Report: Lumbar Spine**
+
+**Patient ID:** 0150
+
+**Date of Study:** [Insert Date]
+
+**Technical Aspects:**
+The lumbar spine MRI was performed using a 1.5 Tesla MRI scanner. Axial and sagittal T1-weighted images were acquired with and without contrast enhancement. The images were reviewed in both planes to assess the intervertebral discs and surrounding structures.
+
+**Findings:**
+
+- **L3-L4:**
+  - Pfirrmann grade: 2
+  - Disc height: 11.06 pixels
+  - Abnormalities: There is evidence of disc protrusion with mild central bulging. The disc height is reduced compared to the adjacent levels. There is mild nerve root compression noted on the T2-weighted images.
+
+- **L4-L5:**

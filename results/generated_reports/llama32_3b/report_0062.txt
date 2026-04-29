@@ -1,0 +1,15 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0062
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5T MRI scanner with a 32-channel coil. The images were obtained using a sagittal and coronal plane sequence with a 0.5mm slice thickness.
+
+**FINDINGS:**
+
+* L3-L4 Intervertebral Disc: The intervertebral disc at the L3-L4 level is mildly degenerated, with a Pfirrmann grade of 2. The disc height is 11.78mm, which is within normal limits. However, there is a disc bulge and thecal sac compression, indicating mild disc bulge and nerve root compression.
+* L4-L5 Intervertebral Disc: The intervertebral disc at the L4-L5 level is mildly degenerated, with a Pfirrmann grade of 2. The disc height is 10.69mm, which is within normal limits. There is a disc bulge and nerve root compression at this level.
+* L5-S1 Intervertebral Disc: The intervertebral disc at the L5-S1 level is moderately degenerated, with a Pfirrmann grade of 3. The disc height is 8.56mm, which is below normal limits. There is a disc bulge at this level.
+
+**IMPRESSION:**
+The lumbar spine MRI examination reveals mild to moderate degenerative changes at multiple levels, with disc bulges and thecal sac compression at L3-L4, L4-L5, and L5-S1. These findings are consistent with the patient's reported symptoms. Further evaluation and consultation

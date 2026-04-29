@@ -1,0 +1,6 @@
+TECHNIQUE: Lumbar spine MRI
+FINDINGS:
+L3-L4: There is a Pfirrmann grade 3 disc with a height of 11.03 pixels. There is thecal sac compression. There is also a disc bulge.
+L4-L5: There is a Pfirrmann grade 2 disc with a height of 9.78 pixels. There is disc protrusion, disc bulge, and thecal sac compression.
+L5-S1: There is a Pfirrmann grade 3 disc with a height of 8.09 pixels. There is disc protrusion, disc bulge, thecal sac compression, and nerve root compression.
+IMPRESSION: There are multiple abnormalities at the L3-L4 and L4-L5 levels. At the L5-S1 level, there is only one abnormality.

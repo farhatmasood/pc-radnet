@@ -1,0 +1,8 @@
+TECHNIQUE:
+This is a lumbar spine MRI performed on patient 0044. The study was performed on a 1.5 Tesla scanner with the following parameters: T1-weighted sagittal and axial images, T2-weighted sagittal and axial images, and T2-weighted fat-saturated sagittal and axial images.
+
+FINDINGS:
+The lumbar spine MRI demonstrates Pfirrmann grade 2 disc degeneration at L3-L4, L4-L5, and L5-S1. At L3-L4, there is a disc bulge with thecal sac compression and nerve root compression. At L4-L5, there is a disc bulge with thecal sac compression. At L5-S1, there is a disc bulge with thecal sac compression.
+
+IMPRESSION:
+The lumbar spine MRI demonstrates Pfirrmann grade 2 disc degeneration at L3-L4, L4-L5, and L5-S1. At L3-L4, there is a disc bulge with thecal sac compression and nerve root compression. At L4-L5, there is a disc bulge with thecal sac compression. At L5-S1, there is a disc bulge with thecal sac compression. These findings are consistent with degenerative disc disease.

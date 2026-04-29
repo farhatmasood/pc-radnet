@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 9.5 pixels; disc protrusion, disc bulge, thecal sac compression, nerve root compression.
+- L4-L5: Pfirrmann grade 2; disc height 10.1 pixels; disc protrusion, disc bulge, thecal sac compression, nerve root compression.
+- L5-S1: Pfirrmann grade 4; disc height 7.1 pixels; disc protrusion, disc bulge, thecal sac compression.
+
+IMPRESSION:
+- L1 / L2: Pfirr-man Grade 3; disc height 8.65 pixels; spondylolisthesis < 0%. - L2 / L3: Pfirmin-man Grade 2; disc Height 8. 6 5px; olisthesis > 0%. – L3 / L4: Pfuir-man Grades 3 and 4; disc heights 9. 2.9 and 1 0 pixel respectively; disc protrusions, bulges, spinal stenosis, foraminal narrowing, lateral recess effacement, facet joint hypertrophy, spondylolysis, degenerative scoliosis ▃ ▃ ▃ CONCLUSION ▃ This article provides an overview of structural abnormalities in patients with low back pain that can be detected on routine clinical MR imaging studies by radiologists who interpret these examinations for diagnostic purposes or to guide treatment decisions. The authors hope this information will help improve communication between clinicians and radiologists regarding abnormal findings seen at conventional magnetic resonance images obtained from patients presenting with chronic lower extremity symptoms. < / FREETEXT > < / ABSTRACT > ▃

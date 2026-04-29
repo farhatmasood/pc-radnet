@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 11.3 pixels; disc bulge, thecal sac compression.
+- L4-L5: Pfirrmann grade 2; disc height 11.2 pixels; disc bulge, thecal sac compression.
+- L5-S1: Pfirrmann grade 2; disc height 8.3 pixels; disc bulge, thecal sac compression.
+
+IMPRESSION:
+- L1 / L2: Pfirr 1; disc height 3 6 5 7 pixels; spondylolisthesis, facet joint hypertrophy and foraminal stenosis were present at this level. - L2 / L3: Pfirri 1; disc space narrowing with no other abnormalities noted. - L3 / L4: Pfiar 1; disc size of normal range, but decreased signal intensity in T2 weighted images. - L4 / L5: Pfiari 1; disc shape abnormal, increased endplate irregularity, narrowed intervertebral foramen, degenerative changes including osteophytes, sclerosis or cysts, posterior longitudinal ligament thickening, Schmorl's nodes, Modic type I change, anterior migration of vertebral body, lateral recess effacement, facet arthrosis, spondylolysis, spondylolisthesis, synovial cyst formation, ligamentum flavum hypertrophy, epidural fat protrusion, nerve root impingement, spinal cord edema, dural ectasia. - L5 / S1: Pfiried 1; disc area of normal range; disc bulging, facet joint osteoarthritis, spondylolisthesis, facet effusion, perineural fibrosis, arachnoid diverticula, subdural hematoma, cauda equina syndrome. CONCLUSION: This article provides an overview for radiologists to use when interpreting lumbar spine MR imaging studies. < / FREETEXT > < / ABSTRACT > ▃

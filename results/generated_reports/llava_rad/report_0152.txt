@@ -1,0 +1,6 @@
+TECHNIQUE: Lumbar spine MRI
+FINDINGS:
+L3-L4: There is a mild disc bulge. There is no thecal sac compression. There is no nerve root compression.
+L4-L5: There is a moderate disc bulge. There is no thecal sac compression. There is no nerve root compression.
+L5-S1: There is a severe disc bulge. There is no thecal sac compression. There is no nerve root compression.
+IMPRESSION: The lumbar spine MRI demonstrates mild disc bulge at L3-L4 and moderate disc bulge at L4-L5. There is no thecal sac compression or nerve root compression.

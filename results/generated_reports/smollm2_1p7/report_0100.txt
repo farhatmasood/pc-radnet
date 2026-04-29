@@ -1,0 +1,12 @@
+Lumbar Spine MRI Report
+
+TECHNIQUE:
+The MRI was performed using a 1.5 Tesla Magnet and a 12-channel head coil. The imaging sequence was a T1-weighted post-injection spoiled gradient-echo (GRE) with a repetition time (TR) of 2000 ms and a slice thickness of 1.5 mm.
+
+FINDINGS:
+
+L3-L4:
+The T1-weighted post-injection spoiled GRE image shows a grade 2 disc bulge with a disc height of 11.28 pixels. The posterior and lateral spinal canal is compressed by the bulging disc. The posterior spinal cord is compressed, and the spinal cord is hyperechoic. The posterior spinal nerve roots are compressed, and the nerve roots are hyperechoic.
+
+L4-L5:
+The T1-weighted post-injection spoiled GRE image shows a grade 2 disc bulge with a disc height of 11.19 pixels. The

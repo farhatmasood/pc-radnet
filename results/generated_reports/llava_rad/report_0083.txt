@@ -1,0 +1,6 @@
+TECHNIQUE: Lumbar spine MRI
+FINDINGS:
+L3-L4: There is a mildly displaced anterior protrusion of a lower thoracic vertebral body, resulting in Pfirrmann grade 2. The disc height measures 10.16 pixels. There is no effusion or soft tissue abnormality.
+L4-L5: There is a mildly displaced anterior protrusion of a lower thoracic vertebral body, resulting in Pfirrmann grade 2. The disc height measures 10.41 pixels. There is no effusion or soft tissue abnormality.
+L5-S1: There is a mildly displaced anterior protrusion of a lower lumbar vertebral body, resulting in Pfirrmann grade 3. The disc height measures 8.48 pixels. There is no effusion or soft tissue abnormality.
+IMPRESSION: The lumbosacral spine demonstrates mild degenerative changes. There is no evidence of acute abnormality.

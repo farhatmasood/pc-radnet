@@ -1,0 +1,15 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0100
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5T MRI scanner with a 32-channel coil. The sequence used was T2-weighted turbo spin-echo with a 3mm slice thickness and no contrast enhancement.
+
+**FINDINGS:**
+
+* The L3-L4, L4-L5, and L5-S1 intervertebral discs show mild to moderate disc bulging, with a maximum height of 11.28mm at L3-L4, 11.19mm at L4-L5, and 8.34mm at L5-S1.
+* The thecal sacs are compressed at all three levels, with no evidence of herniation or extrusion.
+* The spinal cord and nerve roots appear normal in all three segments.
+
+**IMPRESSION:**
+The lumbar spine MRI is consistent with mild to moderate disc degeneration and thecal sac compression at the L3-L4, L4-L5, and L5-S1 levels. These findings are consistent with the patient's reported symptoms and are likely contributing to the patient's discomfort. Further evaluation and management should be considered to address the patient's symptoms and prevent further progression of the degenerative changes.

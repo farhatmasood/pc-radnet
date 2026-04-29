@@ -1,0 +1,6 @@
+TECHNIQUE: Lumbar spine MRI
+FINDINGS:
+L3-L4: There is a mildly displaced anterior protrusion of the L4 vertebral body, with associated compression of the thecal sac. The disc height is 8.72 pixels. There is no pleural effusion or pneumothorax.
+L4-L5: There is a displaced anterior protrusion of the L5 vertebral body, with associated compression of the thecal sac. The disc height is 8.66 pixels. There is no pleural effusion or pneumothorax.
+L5-S1: There is a displaced anterior protrusion of the L4 vertebral body, with associated compression of the thecal sac. The disc height is 5.67 pixels. There is no pleural effusion or pneumothorax.
+IMPRESSION: There are mildly displaced anterior protrusions of the L4 and L5 vertebral bodies, with associated compression of the thecal sac. There is no pleural effusion or pneumothorax.

@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 10.7 pixels; disc bulge, thecal sac compression.
+- L4-L5: Pfirrmann grade 3; disc height 10.5 pixels; disc bulge, thecal sac compression, nerve root compression.
+- L5-S1: Pfirrmann grade 4; disc height 5.9 pixels; disc bulge, thecal sac compression, nerve root compression.
+
+IMPRESSION:
+- L1 / L2: Pfirr 1; disc height 2.4 5 pixel; no abnormality. - L2 / L3: Pfirri 0; disc height 3.2 6 pixel; no abnormalities. - L3 / L4: Pfiar 1; disc space narrowing 6.1 8 pixel; no abnormality.- L4 / L5: Pfiari 0; disc space narrowing.6 9 pixel; no abnormal findings. - L5 / S1: Pfiarron 1; disc width 8.3 6 pixel; disc space widening 1 1..8 pixel; no significant abnormalities.- L5- S1: Pfi 1; disc span 5mm; disc space widening--1 0mm; no significant abnormalities. CONCLUSION: This article provides an overview of structural and dynamic spinal parameters that can be measured on routine clinical MR imaging studies in patients with low back pain to aid clinicians when making decisions about treatment options for their individual patients.Key Points • Structural and dynamic spinal measures may help identify potential causes of LBP. • The use of these standardised measurement techniques will improve communication between radiologists and clinicians regarding patient management. < / FREETEXT > < / ABSTRACT > ▃

@@ -1,0 +1,12 @@
+Lumbar Spine MRI Report
+
+TECHNIQUE:
+The MRI was performed using a 1.5 Tesla Magnet and a 1.5 Tesla Magnet with a 3 Tesla Magnet. The imaging sequence used was a T1-weighted post-injection spoiled gradient echo (GRE) with a repetition time (TR) of 2000 msec and a flip angle of 71 degrees. The imaging protocol included a sagittal T1-weighted image, a coronal T1-weighted image, and a sagittal T2-weighted image.
+
+FINDINGS:
+
+L3-L4:
+The disc space between L3 and L4 is mildly compressed. The disc is bulging, with a disc height of 9.44 pixels. The disc is also compressing the thecal sac.
+
+L4-L5:
+The disc space between L4 and L5 is moderately compressed. The disc is protruded, with a disc height of 7.03 pixels. The disc

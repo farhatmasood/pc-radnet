@@ -1,0 +1,8 @@
+TECHNIQUE:
+Lumbar spine MRI
+
+FINDINGS:
+The lumbar spine MRI demonstrates Pfirrmann grades 2 for the L4-L5 and L5-S1 discs. Disc heights are 10.12 pixels for the L4-L5 disc and 7.11 pixels for the L5-S1 disc. The discs are characterized by disorders including disc protrusion, disc bulge, thecal sac compression, and nerve root compression.
+
+IMPRESSION:
+The findings are consistent with the patient's history of multiple episodes of radiculopathy.

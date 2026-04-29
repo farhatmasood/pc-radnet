@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 3; disc height 11.0 pixels; disc bulge, thecal sac compression.
+- L4-L5: Pfirrmann grade 2; disc height 9.8 pixels; disc protrusion, disc bulge, thecal sac compression.
+- L5-S1: Pfirrmann grade 3; disc height 8.1 pixels; disc protrusion, disc bulge, thecal sac compression, nerve root compression.
+
+IMPRESSION:
+- L1 / L2: Pfirr 1 + 2; disc space < 2mm; facet joint hypertrophy; spondylolisthesis > 5%. - L2 / L3: Pfirri 1 + 2, disc space < 3mm; facet arthrosis; listhesis > 4 0 °. - L3 / L4: Pfiir 1 + 2 and facet arthrosis; facet hypertrophy; listhesis < 4mm. - L4 / L5: Pfiire 1 + 2 with facet arthrosis; no other findings. - L5 / S1: Pfiar 1 + 2 without any additional finding. CONCLUSION: The presented method allows for standardized measurement of degenerative changes in the lumbar spine on MR images by applying standard protocols to all patients at our institution. This enables comparison between different patient groups as well as longitudinal studies within one center or across centers. < / FREETEXT > < / ABSTRACT > ▃

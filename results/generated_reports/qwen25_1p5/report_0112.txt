@@ -1,0 +1,8 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of foraminal narrowing and neural foramen space.
+
+**Findings:**
+- **L3-L4**: Disc bulge with moderate stenosis at the lateral recesses, mild degenerative changes including osteophyte formation on the superior margin of L3 vertebrae, and slight asymmetry noted between the bilateral pedicles.
+- **L4-L5**: Disc protrusion with significant stenosis at the anterior aspect of the neural canal, marked by the presence of an extradural mass compressing the left-sided nerve root, accompanied by mild degenerative changes involving the intervertebral discs and ligaments.
+- **L5-S1**: Disc protrusion with severe stenosis at the posterior aspect of the neural canal, characterized by the presence of multiple herniated discs compressing the right-sided nerve root, along with evidence of spondylolisthesis at L5 over S1

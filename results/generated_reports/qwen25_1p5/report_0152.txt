@@ -1,0 +1,10 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of foraminal narrowing and neural foramen space.
+
+**Findings:**
+- **L3-L4**: Disc bulge with moderate thecal sac compression noted at the L3-L4 level, Pfirrmann grade 2.
+- **L4-L5**: Significant disc bulge with severe thecal sac compression and mild nerve root compression at the L4-L5 level, Pfirrmann grade 3.
+- **L5-S1**: Severe disc bulge with marked thecal sac compression and significant nerve root compression at the L5-S1 level, Pfirrmann grade 4.
+
+**Impression:** The patient presents with multiple levels of disc bulge and associated neurological symptoms due to thecal sac compression and nerve root involvement. Further evaluation is recommended to assess the extent of spinal canal stenosis and consider surgical intervention if conservative management fails.

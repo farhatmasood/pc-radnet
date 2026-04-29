@@ -1,0 +1,8 @@
+TECHNIQUE:
+Lumbar spine MRI was performed using a 3.0 Tesla MRI scanner. The MRI scanner provided a clear and unobstructed view of the imaged area.
+
+FINDINGS:
+The L3-L4 intervertebral disc demonstrates a Pfirrmann grade of 2 with a height of 9.97 pixels. The L4-L5 intervertebral disc demonstrates a Pfirrmann grade of 3 with a height of 8.64 pixels. The L5-S1 intervertebral disc demonstrates a Pfirrmann grade of 4 with a height of 3.30 pixels. There is no evidence of a herniated disc. There is no evidence of a compression fracture.
+
+IMPRESSION:
+The L3-L4 and L4-L5 intervertebral discs demonstrate abnormal height loss consistent with disc degenerative changes. The L5-S1 intervertebral disc is normal in height. There is no evidence of a herniated disc or compression fracture.

@@ -1,0 +1,6 @@
+TECHNIQUE: Lumbar spine MRI
+FINDINGS:
+L3-L4: There is a mild disc bulge. There is no thecal sac compression. There is no disc protrusion.
+L4-L5: There is a moderate disc protrusion. There is no thecal sac compression. There is no disc bulge.
+L5-S1: There is a moderate disc protrusion. There is no thecal sac compression. There is no disc bulge.
+IMPRESSION: There are no abnormalities.

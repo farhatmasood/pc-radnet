@@ -1,0 +1,14 @@
+TECHNIQUE:
+The patient underwent a lumbar spine MRI with the following parameters: 1.5 Tesla, T1-weighted, T2-weighted, and T2-weighted with fat saturation sequences. The patient was positioned supine with the head in neutral position. The study was performed from the top of the skull to the bottom of the sacrum.
+
+FINDINGS:
+The lumbar spine MRI demonstrates the following findings:
+
+L3-L4: Pfirrmann grade 4, disc bulge, and thecal sac compression. The disc height is 8.48 pixels.
+
+L4-L5: Pfirrmann grade 3, disc bulge, and thecal sac compression. The disc height is 11.28 pixels.
+
+L5-S1: Pfirrmann grade 2, disc bulge, and thecal sac compression. The disc height is 11.94 pixels.
+
+IMPRESSION:
+The lumbar spine MRI demonstrates Pfirrmann grade 4, disc bulge, and thecal sac compression at L3-L4, Pfirrmann grade 3, disc bulge, and thecal sac compression at L4-L5, and Pfirrmann grade 2, disc bulge, and thecal sac compression at L5-S1. The disc heights are 8.48 pixels at L3-L4, 11.28 pixels at L4-L5, and 11.94 pixels at L5-S1. These findings are consistent with degenerative disc disease.

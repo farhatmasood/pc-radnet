@@ -1,0 +1,10 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of foraminal narrowing and neural foramen space.
+
+**Findings:**
+- **L3-L4**: Disc protrusion and bulge noted at this level, accompanied by thecal sac compression. The Pfirrmann grade is 2, indicating mild degeneration.
+- **L4-L5**: Significant disc protrusion and bulge observed here, along with thecal sac compression. The Pfirrmann grade is 3, reflecting moderate degenerative changes.
+- **L5-S1**: A severe disc protrusion and bulge are evident, along with thecal sac compression and nerve root compression. The Pfirrmann grade is 3, showing marked degenerative changes.
+
+**Impression:** Based on the identified abnormalities—disc protrusions, bulges, thecal sac compressions, and nerve root compression—the patient's lumbar spine exhibits significant degenerative changes consistent with advanced

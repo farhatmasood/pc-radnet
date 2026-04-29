@@ -1,0 +1,11 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of foraminal narrowing and neural foramen space.
+
+**Findings:**
+- **L3-L4**: Disc bulge noted at L3-L4 level, accompanied by thecal sac compression and nerve root compression. The disc height is measured at 10.47 pixels.
+- **L4-L5**: Disc bulge identified at L4-L5 level, also presenting with thecal sac compression and nerve root compression. The disc height measurement is 9.41 pixels.
+- **L5-S1**: Significant disc bulge observed at L5-S1 level, along with thecal sac compression and nerve root compression. The disc height is recorded as 8.69 pixels.
+
+**Impression:**
+The patient's lumbar spine MRI demonstrates multiple levels of disc bulge, associated with thecal sac compression and nerve root compression. These findings suggest potential neurological symptoms related

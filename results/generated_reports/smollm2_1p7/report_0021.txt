@@ -1,0 +1,12 @@
+Lumbar Spine MRI Report
+
+TECHNIQUE:
+The MRI was performed using a 1.5 Tesla Magnet and a 12-channel head coil. The imaging sequence was a T1-weighted post-injection spoiled gradient echo (GRE) with a repetition time (TR) of 2000 ms and a slice thickness of 1.5 mm.
+
+FINDINGS:
+
+L3-L4:
+The disc space between L3 and L4 is mildly compressed, with a disc height of 8.72 pixels. The disc is mildly bulging, and there is a slight disc protrusion. The posterior longitudinal ligament is thickened, and the posterior spinalis muscle is enlarged. The L3-L4 disc space is a grade 2 disc herniation.
+
+L4-L5:
+The disc space between L4 and L5 is mildly compressed, with a disc height of 8.66 pixels. The disc is mildly bulging, and there is a slight disc protrusion.

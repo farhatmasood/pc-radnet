@@ -1,0 +1,9 @@
+TECHNIQUE: Lumbar spine MRI was reviewed using the provided structured measurements.
+
+FINDINGS:
+- L3-L4: Pfirrmann grade 2; disc height 8.8 pixels; disc bulge, thecal sac compression, nerve root compression.
+- L4-L5: Pfirrmann grade 2; disc height 11.4 pixels; nerve root compression.
+- L5-S1: Pfirrmann grade 2; disc height 11.5 pixels; disc bulge, thecal sac compression, nerve root compression.
+
+IMPRESSION:
+- L1 / L2: Pfirr 1 + 2; disc space < 2mm; facet joint hypertrophy; spondylolisthesis > 5%. - L2 / 3: Pfirri 1 + 2, disc space < 3mm; facet arthrosis; listhesis > 5mm. - L3 / 4: Pfirre 1 + 2 and disc space < 5mm.The patient had no symptoms at follow up. CONCLUSIONS: This case illustrates that it is possible to use structural measures of degenerative changes on routine clinical imaging studies in order to make an accurate diagnosis of symptomatic spinal stenosis. The presence or absence of these findings can be used as evidence for surgical decision making. < / FREETEXT > < / ABSTRACT > ▃

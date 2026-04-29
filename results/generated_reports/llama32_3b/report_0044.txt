@@ -1,0 +1,15 @@
+**Lumbar Spine MRI Report**
+
+**Patient ID:** 0044
+
+**TECHNIQUE:**
+The MRI examination was performed using a 1.5T MRI scanner with a 32-channel coil. The images were obtained using a T2-weighted sequence with a 3mm slice thickness and no contrast enhancement.
+
+**FINDINGS:**
+
+* L3-L4 Intervertebral Disc: The disc is of normal height (10.47 mm) and appears to be compressed by the adjacent vertebral bodies, consistent with a Pfirrmann grade 2. There is a disc bulge and thecal sac compression, which may be causing nerve root compression.
+* L4-L5 Intervertebral Disc: The disc is of reduced height (9.41 mm) and appears to be compressed by the adjacent vertebral bodies, consistent with a Pfirrmann grade 2. There is a disc bulge and thecal sac compression, which may be causing nerve root compression.
+* L5-S1 Intervertebral Disc: The disc is of reduced height (8.69 mm) and appears to be compressed by the adjacent vertebral bodies, consistent with a Pfirrmann grade 3. There is a disc bulge and thecal sac compression, which may be causing nerve root compression.
+
+**IMPRESSION:**
+The lumbar spine MRI examination reveals multiple disc bulges and thecal sac compressions at the L3-L4, L4-L5, and L5-S1 levels, consistent with degenerative disc disease. These findings are likely contributing to nerve root compression, which may be causing symptoms. Further evaluation and management by a neurologist or orthopedic surgeon

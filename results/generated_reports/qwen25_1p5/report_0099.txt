@@ -1,0 +1,11 @@
+**Lumbar Spine MRI Report**
+
+**Technique:** Standard axial T2-weighted sequences with fat suppression for detailed visualization of soft tissues; sagittal T2-weighted images for assessment of foraminal narrowing.
+
+**Findings:**
+- **L3-L4**: Disc bulge with moderate stenosis at the lateral recesses, consistent with Pfirrmann Grade IV.
+- **L4-L5**: Disc bulge with mild stenosis at the lateral recesses, consistent with Pfirrmann Grade III.
+- **L5-S1**: Disc bulge with significant stenosis at the lateral recesses, consistent with Pfirrmann Grade II.
+
+**Impression:**
+The patient presents with multiple levels of lumbar spinal stenosis due to disc bulges. The severity varies across different segments, ranging from moderate to severe. There is evidence of thecal sac compression at all affected levels, necessitating careful consideration during surgical planning. Further evaluation may be required to assess potential neurological deficits and determine appropriate management strategies.

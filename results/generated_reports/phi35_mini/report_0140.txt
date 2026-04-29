@@ -1,0 +1,18 @@
+**MRI Report: Lumbar Spine**
+
+**Patient ID:** 0140
+
+**Date of Study:** [Insert Date]
+
+**Technical Aspects:**
+The lumbar spine MRI was performed using a 1.5 Tesla MRI scanner with T2-weighted sequences. Axial and sagittal T2-weighted images were acquired with 3D fast spin-echo sequences. The images were reviewed in both coronal and axial planes.
+
+**Findings:**
+
+- **L3-L4:**
+  - Pfirrmann grade: 2
+  - Disc height: 8.38 pixels
+  - Abnormalities: There is evidence of disc protrusion and disc bulge at the L3-L4 level. The thecal sac appears compressed, and there is nerve root compression noted.
+
+- **L4-L5:**
+  - Pfirrm

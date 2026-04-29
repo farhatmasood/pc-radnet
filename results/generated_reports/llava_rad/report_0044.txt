@@ -1,0 +1,8 @@
+TECHNIQUE:
+Lumbar spine MRI was performed using a 3mm thick slices.
+
+FINDINGS:
+There is a mild disc bulge at L3-L4. At L4-L5, there is a mild disc bulge and a small thecal sac compression. At L5-S1, there is a moderate disc bulge and a small thecal sac compression.
+
+IMPRESSION:
+The lumbar spine MRI shows mild disc bulge at L3-L4, mild disc bulge and small thecal sac compression at L4-L5, and moderate disc bulge and small thecal sac compression at L5-S1. These findings are supported by the provided input disorders list.
