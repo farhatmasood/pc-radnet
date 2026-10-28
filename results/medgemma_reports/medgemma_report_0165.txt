@@ -1,0 +1,30 @@
+## Lumbar Spine MRI
+
+**TECHNIQUE:**
+
+MRI of the lumbar spine was performed with [Specify Sequence, e.g., T1-weighted with and without gadolinium contrast, T2-weighted with fat saturation]. Sagittal, axial, and coronal images were obtained.
+
+**FINDINGS:**
+
+**L3-L4:**
+
+*   **Disc:** The L3-L4 intervertebral disc shows a Pfirrmann Grade 2/5 lesion. The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images. The disc height is 10.1 pixels.
+*   **Disc Herniation:** There is evidence of a disc herniation at the L3-L4 level.
+*   **Nerve Root Compression:** The disc herniation is causing compression of the nerve root at the L3-L4 level.
+
+**L4-L5:**
+
+*   **Disc:** The L4-L5 intervertebral disc shows a Pfirrmann Grade 2/5 lesion. The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images. The disc height is 10.9 pixels.
+*   **Disc Herniation:** There is evidence of a disc herniation at the L4-L5 level.
+*   **Nerve Root Compression:** The disc herniation is causing compression of the nerve root at the L4-L5 level.
+
+**L5-S1:**
+
+*   **Disc:** The L5-S1 intervertebral disc shows a Pfirrmann Grade 2/5 lesion. The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images. The disc height is 11.0 pixels.
+*   **Disc Bulge:** There is evidence of a disc bulge at the L5-S1 level.
+*   **Thecal Sac Compression:** The disc bulge is causing compression of the thecal sac at the L5-S1 level.
+*   **Nerve Root Compression:** The disc bulge is causing compression of the nerve root at the L5-S1 level.
+
+**IMPRESSION:**
+
+There are degenerative changes at the L3-L4, L4-L5, and L5-S1 levels, including disc herniations, disc bulges, and thecal sac compression. These findings are causing nerve

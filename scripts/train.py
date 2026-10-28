@@ -1,11 +1,11 @@
-﻿"""
-train_peft.py — PCRadNet: Prompt-Calibrated Multi-Task Spine Segmentation
+"""
+train.py - PCRadNet: Prompt-Calibrated Multi-Task Spine Segmentation
 Sections 4-5, 8-10 of the project plan.
 
 Usage:
-    python scripts/train_peft.py --validate-model
-    python scripts/train_peft.py --phase=1
-    python scripts/train_peft.py --phase=2 --ablation=A2
+    python scripts/train.py --validate-model
+    python scripts/train.py --phase=1
+    python scripts/train.py --phase=2 --ablation=A2
 """
 import os, sys, json, argparse, time, hashlib, gc, datetime, copy, shutil
 import random
@@ -24,6 +24,7 @@ import yaml
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 from PIL import Image
+from repo_config import load_config, resolve_image
 
 # ── Seed everything ──────────────────────────────────────────────────────
 SEED = 42
@@ -36,14 +37,13 @@ torch.backends.cudnn.benchmark = False
 
 # ── Config ───────────────────────────────────────────────────────────────
 SCRIPT_DIR = Path(__file__).resolve().parent
-with open(SCRIPT_DIR / "config.yaml") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 torch.cuda.set_per_process_memory_fraction(CFG["hardware"]["gpu_fraction"])
 
 # ═════════════════════════════════════════════════════════════════════════
-# SECTION A — DATASET
+# SECTION A - DATASET
 # ═════════════════════════════════════════════════════════════════════════
 AXIAL_CLASSES = CFG["classes"]["axial"]
 SAG_CLASSES   = CFG["classes"]["sagittal"]
@@ -108,7 +108,7 @@ class SpineDataset(Dataset):
 
         # Load file list
         with open(split_file) as f:
-            self.image_paths = [l.strip() for l in f if l.strip()]
+            self.image_paths = [resolve_image(l) for l in f if l.strip()]
 
         # Load metadata
         self.pfirrmann = {}
@@ -298,7 +298,7 @@ def collate_fn(batch):
 
 
 # ═════════════════════════════════════════════════════════════════════════
-# SECTION B — MODEL: PCRadNet
+# SECTION B - MODEL: PCRadNet
 # ═════════════════════════════════════════════════════════════════════════
 
 class SpineDomainAdapter(nn.Module):
@@ -519,7 +519,7 @@ class PCRadNet(nn.Module):
     PCRadNet: Prompt-Calibrated PEFT for Multi-Task Spine Segmentation.
 
     Novel contributions:
-    [C1] Prompt Calibrator — text anatomy prompt → spatial attention modulation
+    [C1] Prompt Calibrator - text anatomy prompt → spatial attention modulation
     [C2] Multi-task: segmentation + grading + height + disorder in one forward pass
     [C3] Modality-agnostic via SpineDomainAdapter (swap per modality)
     [C5] Ordinal Pfirrmann consistency loss
@@ -531,7 +531,7 @@ class PCRadNet(nn.Module):
         self.use_calibrator = use_calibrator
         self.lora_rank = lora_rank
 
-        # ── Module 1: Vision Encoder (DINOv2 — FROZEN + LoRA + Adapter) ──
+        # ── Module 1: Vision Encoder (DINOv2 - FROZEN + LoRA + Adapter) ──
         import timm
         self.encoder = timm.create_model(
             "vit_base_patch14_dinov2.lvd142m",
@@ -629,7 +629,7 @@ class PCRadNet(nn.Module):
 
 
 # ═════════════════════════════════════════════════════════════════════════
-# SECTION C — LOSSES
+# SECTION C - LOSSES
 # ═════════════════════════════════════════════════════════════════════════
 
 class DiceLoss(nn.Module):
@@ -799,7 +799,7 @@ class MultiTaskLoss(nn.Module):
 
 
 # ═════════════════════════════════════════════════════════════════════════
-# SECTION D — METRICS
+# SECTION D - METRICS
 # ═════════════════════════════════════════════════════════════════════════
 
 def compute_dice(pred, target, smooth=1e-5):
@@ -875,11 +875,11 @@ def evaluate(model, dataloader, loss_fn, device):
 
 
 # ═════════════════════════════════════════════════════════════════════════
-# SECTION E — TRAINING LOOP
+# SECTION E - TRAINING LOOP
 # ═════════════════════════════════════════════════════════════════════════
 
 def train_phase(model, train_loader, val_loader, cfg, phase=1, ablation="A2"):
-    """Train PC-RadNet for a given phase."""
+    """Train PCRadNet for a given phase."""
     device = DEVICE
     model = model.to(device)
 
@@ -888,7 +888,7 @@ def train_phase(model, train_loader, val_loader, cfg, phase=1, ablation="A2"):
     grad_accum = cfg["training"]["grad_accum"]
     grad_clip = cfg["training"]["grad_clip"]
 
-    # Optimizer — only trainable params
+    # Optimizer - only trainable params
     trainable_params = [p for p in model.parameters() if p.requires_grad]
     optimizer = torch.optim.AdamW(trainable_params, lr=lr, weight_decay=cfg["training"]["weight_decay"])
 
@@ -1079,7 +1079,7 @@ def train_phase(model, train_loader, val_loader, cfg, phase=1, ablation="A2"):
 
 
 # ═════════════════════════════════════════════════════════════════════════
-# SECTION F — FAILURE ANALYSIS (Section 9)
+# SECTION F - FAILURE ANALYSIS (Section 9)
 # ═════════════════════════════════════════════════════════════════════════
 
 @torch.no_grad()
@@ -1129,7 +1129,7 @@ def failure_analysis(model, val_loader, loss_fn, device):
 
 
 # ═════════════════════════════════════════════════════════════════════════
-# SECTION G — MAIN
+# SECTION G - MAIN
 # ═════════════════════════════════════════════════════════════════════════
 
 def validate_model_only():
@@ -1137,7 +1137,7 @@ def validate_model_only():
     model = PCRadNet(CFG, use_calibrator=True, lora_rank=CFG["model"]["lora_rank"])
     counts = model.count_parameters()
     print(f"\n{'='*60}")
-    print(f"PC-RadNet Model Summary")
+    print(f"PCRadNet Model Summary")
     print(f"{'='*60}")
     print(f"Trainable params : {counts['trainable']:>12,}")
     print(f"Frozen params    : {counts['frozen']:>12,}")
@@ -1171,7 +1171,7 @@ def validate_model_only():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="PC-RadNet Training")
+    parser = argparse.ArgumentParser(description="PCRadNet Training")
     parser.add_argument("--validate-model", action="store_true")
     parser.add_argument("--phase", type=int, default=1, choices=[1, 2])
     parser.add_argument("--ablation", type=str, default="A2",
@@ -1183,7 +1183,7 @@ def main():
         return
 
     # ── Build dataloaders ────────────────────────────────────────────
-    split_dir = Path(CFG["paths"]["scripts"]) / "data"
+    split_dir = Path(CFG["paths"]["splits_dir"])
     train_ds = SpineDataset(split_dir / "train.txt", CFG, transforms=get_train_transforms())
     val_ds = SpineDataset(split_dir / "val.txt", CFG, transforms=get_val_transforms())
 
@@ -1206,6 +1206,8 @@ def main():
     # ── Configure ablation ───────────────────────────────────────────
     use_calibrator = args.ablation in ["A2", "A3"]
     lora_rank = CFG["model"]["lora_rank"] if args.ablation != "A0" else 0
+    if args.ablation == "A3":  # A3 = A2 with boundary-loss weight 1.0
+        CFG["loss"]["boundary_lambda"] = 1.0
 
     print(f"\nAblation: {args.ablation}")
     print(f"  Use calibrator: {use_calibrator}")

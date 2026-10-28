@@ -1,5 +1,5 @@
-﻿"""
-improve_sc_segmentation.py — Task 2: Improve axial spinal canal segmentation.
+"""
+improve_sc_segmentation.py - Task 2: Improve axial spinal canal segmentation.
 Implements coarse-to-fine strategy and small-structure augmentation to 
 improve SC Dice from the current 0.491 (A2 baseline).
 
@@ -30,6 +30,7 @@ import yaml
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 from PIL import Image
+from repo_config import load_config, resolve_image
 
 SEED = 42
 random.seed(SEED)
@@ -39,8 +40,7 @@ torch.cuda.manual_seed_all(SEED)
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
-with open(SCRIPT_DIR / "config.yaml") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -56,7 +56,7 @@ class SCFocusedDataset(Dataset):
 
     def __init__(self, split_file, transforms=None, sc_zoom_prob=0.5):
         with open(split_file) as f:
-            all_paths = [l.strip() for l in f if l.strip()]
+            all_paths = [resolve_image(l) for l in f if l.strip()]
         # Only axial images have SC
         self.image_paths = [p for p in all_paths if os.path.basename(p).startswith("axial_")]
         self.mask_dir = Path(CFG["paths"]["masks"])
@@ -309,7 +309,7 @@ def main():
     parser.add_argument("--sc-weight", type=float, default=10.0)
     args = parser.parse_args()
 
-    splits = Path(CFG["paths"]["scripts"]) / "data"
+    splits = Path(CFG["paths"]["splits_dir"])
     results_dir = Path(CFG["paths"]["results"])
     results_dir.mkdir(parents=True, exist_ok=True)
 
@@ -358,7 +358,7 @@ def main():
         ablations = json.load(open(ablation_file))
         a2 = next((a for a in ablations if a["ablation"] == "A2"), None)
         if a2:
-            print(f"\nComparison with PC-RadNet A2:")
+            print(f"\nComparison with PCRadNet A2:")
             print(f"  {'Metric':<15} {'A2':>10} {'SC-Enhanced':>12} {'Δ':>8}")
             print(f"  {'-'*45}")
             for cname in ["IVD", "PE", "SC"]:

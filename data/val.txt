@@ -1,616 +1,616 @@
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0003_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0003_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0003_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0003_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0003_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0003_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0003_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0003_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0016_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0016_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0016_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0016_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0016_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0016_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0016_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0016_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0017_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0017_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0017_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0017_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0017_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0017_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0017_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0017_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0023_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0023_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0023_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0023_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0023_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0023_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0023_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0023_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0032_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0032_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0032_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0032_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0032_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0032_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0032_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0032_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0038_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0038_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0038_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0038_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0038_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0038_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0038_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0038_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0046_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0046_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0046_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0046_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0046_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0046_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0046_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0046_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0069_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0069_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0069_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0069_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0069_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0069_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0069_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0069_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0073_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0073_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0073_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0073_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0073_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0073_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0073_S15.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0073_S16.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0074_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0074_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0074_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0074_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0074_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0074_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0074_S7.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0074_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0086_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0086_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0086_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0086_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0086_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0086_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0086_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0086_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0089_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0089_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0089_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0089_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0089_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0089_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0089_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0089_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0097_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0097_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0097_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0097_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0097_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0097_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0097_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0097_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0108_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0108_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0108_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0108_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0108_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0108_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0108_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0108_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0114_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0114_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0114_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0114_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0114_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0114_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0114_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0114_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0115_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0115_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0115_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0115_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0115_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0115_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0115_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0115_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0122_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0122_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0122_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0122_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0122_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0122_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0122_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0122_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0126_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0126_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0126_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0126_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0126_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0126_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0126_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0126_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0133_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0133_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0133_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0133_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0133_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0133_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0133_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0133_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0136_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0136_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0136_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0136_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0136_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0136_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0136_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0136_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0137_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0137_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0137_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0137_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0137_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0137_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0137_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0137_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0143_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0143_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0143_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0143_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0143_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0143_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0143_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0143_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0144_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0144_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0144_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0144_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0144_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0144_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0144_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0144_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0145_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0145_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0145_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0145_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0145_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0145_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0145_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0145_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0148_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0148_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0148_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0148_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0148_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0148_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0148_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0148_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0149_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0149_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0149_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0149_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0149_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0149_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0149_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0149_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0156_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0156_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0156_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0156_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0156_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0156_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0156_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0156_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0161_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0161_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0161_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0161_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0161_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0161_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0161_S15.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0161_S16.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0163_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0163_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0163_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0163_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0163_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0163_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0163_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0163_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0171_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0171_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0171_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0171_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0171_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0171_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0171_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0171_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0173_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0173_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0173_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0173_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0173_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0173_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0173_S7.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0173_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0202_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0202_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0202_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0202_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0202_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0202_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0202_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0202_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0209_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0209_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0209_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0209_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0209_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0209_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0209_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0209_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0223_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0223_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0223_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0223_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0223_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0223_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0223_S7.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0223_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0224_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0224_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0224_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0224_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0224_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0224_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0224_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0224_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0227_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0227_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0227_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0227_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0227_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0227_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0227_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0227_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0233_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0233_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0233_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0233_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0233_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0233_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0233_S23.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0233_S23.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0235_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0235_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0235_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0235_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0235_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0235_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0235_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0235_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0240_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0240_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0240_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0240_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0240_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0240_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0240_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0240_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0248_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0248_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0248_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0248_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0248_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0248_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0248_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0248_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0271_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0271_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0271_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0271_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0271_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0271_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0271_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0271_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0293_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0293_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0293_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0293_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0293_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0293_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0293_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0293_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0299_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0299_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0299_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0299_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0299_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0299_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0299_S7.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0299_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0301_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0301_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0301_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0301_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0301_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0301_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0301_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0301_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0304_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0304_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0304_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0304_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0304_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0304_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0304_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0304_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0310_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0310_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0310_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0310_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0310_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0310_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0310_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0310_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0319_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0319_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0319_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0319_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0319_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0319_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0319_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0319_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0332_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0332_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0332_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0332_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0332_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0332_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0332_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0332_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0341_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0341_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0341_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0341_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0341_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0341_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0341_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0341_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0342_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0342_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0342_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0342_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0342_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0342_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0342_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0342_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0350_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0350_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0350_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0350_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0350_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0350_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0350_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0350_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0351_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0351_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0351_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0351_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0351_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0351_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0351_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0351_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0352_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0352_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0352_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0352_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0352_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0352_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0352_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0352_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0355_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0355_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0355_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0355_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0355_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0355_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0355_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0355_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0357_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0357_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0357_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0357_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0357_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0357_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0357_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0357_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0373_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0373_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0373_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0373_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0373_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0373_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0373_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0373_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0386_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0386_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0386_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0386_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0386_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0386_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0386_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0386_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0407_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0407_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0407_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0407_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0407_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0407_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0407_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0407_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0421_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0421_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0421_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0421_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0421_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0421_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0421_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0421_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0424_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0424_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0424_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0424_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0424_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0424_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0424_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0424_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0432_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0432_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0432_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0432_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0432_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0432_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0432_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0432_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0445_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0445_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0445_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0445_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0445_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0445_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0445_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0445_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0471_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0471_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0471_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0471_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0471_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0471_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0471_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0471_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0473_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0473_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0473_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0473_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0473_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0473_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0473_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0473_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0488_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0488_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0488_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0488_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0488_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0488_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0488_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0488_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0502_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0502_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0502_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0502_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0502_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0502_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0502_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0502_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0510_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0510_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0510_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0510_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0510_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0510_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0510_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0510_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0514_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0514_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0514_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0514_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0514_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0514_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0514_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0514_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0525_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0525_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0525_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0525_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0525_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0525_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0525_S7.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0525_S7.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0534_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0534_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0534_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0534_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0534_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0534_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0534_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0534_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0538_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0538_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0538_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0538_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0538_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0538_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0538_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0538_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0542_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0542_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0542_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0542_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0542_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0542_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0542_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0542_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0546_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0546_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0546_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0546_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0546_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0546_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0546_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0546_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0567_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0567_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0567_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0567_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0567_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0567_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0567_S7.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0567_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0571_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0571_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0571_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0571_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0571_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0571_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0571_S9.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0571_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0573_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0573_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0573_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0573_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0573_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0573_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0573_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0573_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0575_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0575_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T1_0575_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0575_D3.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0575_D4.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\axial_T2_0575_D5.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T1_0575_S8.png
-D:\2.2 Dataset_s\LSMA-PQR\images_png\sag_T2_0575_S8.png
+axial_T1_0003_D3.png
+axial_T1_0003_D4.png
+axial_T1_0003_D5.png
+axial_T2_0003_D3.png
+axial_T2_0003_D4.png
+axial_T2_0003_D5.png
+sag_T1_0003_S8.png
+sag_T2_0003_S8.png
+axial_T1_0016_D3.png
+axial_T1_0016_D4.png
+axial_T1_0016_D5.png
+axial_T2_0016_D3.png
+axial_T2_0016_D4.png
+axial_T2_0016_D5.png
+sag_T1_0016_S8.png
+sag_T2_0016_S8.png
+axial_T1_0017_D3.png
+axial_T1_0017_D4.png
+axial_T1_0017_D5.png
+axial_T2_0017_D3.png
+axial_T2_0017_D4.png
+axial_T2_0017_D5.png
+sag_T1_0017_S8.png
+sag_T2_0017_S8.png
+axial_T1_0023_D3.png
+axial_T1_0023_D4.png
+axial_T1_0023_D5.png
+axial_T2_0023_D3.png
+axial_T2_0023_D4.png
+axial_T2_0023_D5.png
+sag_T1_0023_S8.png
+sag_T2_0023_S8.png
+axial_T1_0032_D3.png
+axial_T1_0032_D4.png
+axial_T1_0032_D5.png
+axial_T2_0032_D3.png
+axial_T2_0032_D4.png
+axial_T2_0032_D5.png
+sag_T1_0032_S8.png
+sag_T2_0032_S8.png
+axial_T1_0038_D3.png
+axial_T1_0038_D4.png
+axial_T1_0038_D5.png
+axial_T2_0038_D3.png
+axial_T2_0038_D4.png
+axial_T2_0038_D5.png
+sag_T1_0038_S8.png
+sag_T2_0038_S8.png
+axial_T1_0046_D3.png
+axial_T1_0046_D4.png
+axial_T1_0046_D5.png
+axial_T2_0046_D3.png
+axial_T2_0046_D4.png
+axial_T2_0046_D5.png
+sag_T1_0046_S8.png
+sag_T2_0046_S8.png
+axial_T1_0069_D3.png
+axial_T1_0069_D4.png
+axial_T1_0069_D5.png
+axial_T2_0069_D3.png
+axial_T2_0069_D4.png
+axial_T2_0069_D5.png
+sag_T1_0069_S8.png
+sag_T2_0069_S8.png
+axial_T1_0073_D3.png
+axial_T1_0073_D4.png
+axial_T1_0073_D5.png
+axial_T2_0073_D3.png
+axial_T2_0073_D4.png
+axial_T2_0073_D5.png
+sag_T1_0073_S15.png
+sag_T2_0073_S16.png
+axial_T1_0074_D3.png
+axial_T1_0074_D4.png
+axial_T1_0074_D5.png
+axial_T2_0074_D3.png
+axial_T2_0074_D4.png
+axial_T2_0074_D5.png
+sag_T1_0074_S7.png
+sag_T2_0074_S8.png
+axial_T1_0086_D3.png
+axial_T1_0086_D4.png
+axial_T1_0086_D5.png
+axial_T2_0086_D3.png
+axial_T2_0086_D4.png
+axial_T2_0086_D5.png
+sag_T1_0086_S8.png
+sag_T2_0086_S8.png
+axial_T1_0089_D3.png
+axial_T1_0089_D4.png
+axial_T1_0089_D5.png
+axial_T2_0089_D3.png
+axial_T2_0089_D4.png
+axial_T2_0089_D5.png
+sag_T1_0089_S8.png
+sag_T2_0089_S8.png
+axial_T1_0097_D3.png
+axial_T1_0097_D4.png
+axial_T1_0097_D5.png
+axial_T2_0097_D3.png
+axial_T2_0097_D4.png
+axial_T2_0097_D5.png
+sag_T1_0097_S8.png
+sag_T2_0097_S8.png
+axial_T1_0108_D3.png
+axial_T1_0108_D4.png
+axial_T1_0108_D5.png
+axial_T2_0108_D3.png
+axial_T2_0108_D4.png
+axial_T2_0108_D5.png
+sag_T1_0108_S8.png
+sag_T2_0108_S8.png
+axial_T1_0114_D3.png
+axial_T1_0114_D4.png
+axial_T1_0114_D5.png
+axial_T2_0114_D3.png
+axial_T2_0114_D4.png
+axial_T2_0114_D5.png
+sag_T1_0114_S8.png
+sag_T2_0114_S8.png
+axial_T1_0115_D3.png
+axial_T1_0115_D4.png
+axial_T1_0115_D5.png
+axial_T2_0115_D3.png
+axial_T2_0115_D4.png
+axial_T2_0115_D5.png
+sag_T1_0115_S8.png
+sag_T2_0115_S8.png
+axial_T1_0122_D3.png
+axial_T1_0122_D4.png
+axial_T1_0122_D5.png
+axial_T2_0122_D3.png
+axial_T2_0122_D4.png
+axial_T2_0122_D5.png
+sag_T1_0122_S8.png
+sag_T2_0122_S8.png
+axial_T1_0126_D3.png
+axial_T1_0126_D4.png
+axial_T1_0126_D5.png
+axial_T2_0126_D3.png
+axial_T2_0126_D4.png
+axial_T2_0126_D5.png
+sag_T1_0126_S8.png
+sag_T2_0126_S8.png
+axial_T1_0133_D3.png
+axial_T1_0133_D4.png
+axial_T1_0133_D5.png
+axial_T2_0133_D3.png
+axial_T2_0133_D4.png
+axial_T2_0133_D5.png
+sag_T1_0133_S8.png
+sag_T2_0133_S8.png
+axial_T1_0136_D3.png
+axial_T1_0136_D4.png
+axial_T1_0136_D5.png
+axial_T2_0136_D3.png
+axial_T2_0136_D4.png
+axial_T2_0136_D5.png
+sag_T1_0136_S8.png
+sag_T2_0136_S8.png
+axial_T1_0137_D3.png
+axial_T1_0137_D4.png
+axial_T1_0137_D5.png
+axial_T2_0137_D3.png
+axial_T2_0137_D4.png
+axial_T2_0137_D5.png
+sag_T1_0137_S8.png
+sag_T2_0137_S8.png
+axial_T1_0143_D3.png
+axial_T1_0143_D4.png
+axial_T1_0143_D5.png
+axial_T2_0143_D3.png
+axial_T2_0143_D4.png
+axial_T2_0143_D5.png
+sag_T1_0143_S8.png
+sag_T2_0143_S8.png
+axial_T1_0144_D3.png
+axial_T1_0144_D4.png
+axial_T1_0144_D5.png
+axial_T2_0144_D3.png
+axial_T2_0144_D4.png
+axial_T2_0144_D5.png
+sag_T1_0144_S8.png
+sag_T2_0144_S8.png
+axial_T1_0145_D3.png
+axial_T1_0145_D4.png
+axial_T1_0145_D5.png
+axial_T2_0145_D3.png
+axial_T2_0145_D4.png
+axial_T2_0145_D5.png
+sag_T1_0145_S8.png
+sag_T2_0145_S8.png
+axial_T1_0148_D3.png
+axial_T1_0148_D4.png
+axial_T1_0148_D5.png
+axial_T2_0148_D3.png
+axial_T2_0148_D4.png
+axial_T2_0148_D5.png
+sag_T1_0148_S8.png
+sag_T2_0148_S8.png
+axial_T1_0149_D3.png
+axial_T1_0149_D4.png
+axial_T1_0149_D5.png
+axial_T2_0149_D3.png
+axial_T2_0149_D4.png
+axial_T2_0149_D5.png
+sag_T1_0149_S8.png
+sag_T2_0149_S8.png
+axial_T1_0156_D3.png
+axial_T1_0156_D4.png
+axial_T1_0156_D5.png
+axial_T2_0156_D3.png
+axial_T2_0156_D4.png
+axial_T2_0156_D5.png
+sag_T1_0156_S8.png
+sag_T2_0156_S8.png
+axial_T1_0161_D3.png
+axial_T1_0161_D4.png
+axial_T1_0161_D5.png
+axial_T2_0161_D3.png
+axial_T2_0161_D4.png
+axial_T2_0161_D5.png
+sag_T1_0161_S15.png
+sag_T2_0161_S16.png
+axial_T1_0163_D3.png
+axial_T1_0163_D4.png
+axial_T1_0163_D5.png
+axial_T2_0163_D3.png
+axial_T2_0163_D4.png
+axial_T2_0163_D5.png
+sag_T1_0163_S8.png
+sag_T2_0163_S8.png
+axial_T1_0171_D3.png
+axial_T1_0171_D4.png
+axial_T1_0171_D5.png
+axial_T2_0171_D3.png
+axial_T2_0171_D4.png
+axial_T2_0171_D5.png
+sag_T1_0171_S8.png
+sag_T2_0171_S8.png
+axial_T1_0173_D3.png
+axial_T1_0173_D4.png
+axial_T1_0173_D5.png
+axial_T2_0173_D3.png
+axial_T2_0173_D4.png
+axial_T2_0173_D5.png
+sag_T1_0173_S7.png
+sag_T2_0173_S8.png
+axial_T1_0202_D3.png
+axial_T1_0202_D4.png
+axial_T1_0202_D5.png
+axial_T2_0202_D3.png
+axial_T2_0202_D4.png
+axial_T2_0202_D5.png
+sag_T1_0202_S8.png
+sag_T2_0202_S8.png
+axial_T1_0209_D3.png
+axial_T1_0209_D4.png
+axial_T1_0209_D5.png
+axial_T2_0209_D3.png
+axial_T2_0209_D4.png
+axial_T2_0209_D5.png
+sag_T1_0209_S8.png
+sag_T2_0209_S8.png
+axial_T1_0223_D3.png
+axial_T1_0223_D4.png
+axial_T1_0223_D5.png
+axial_T2_0223_D3.png
+axial_T2_0223_D4.png
+axial_T2_0223_D5.png
+sag_T1_0223_S7.png
+sag_T2_0223_S8.png
+axial_T1_0224_D3.png
+axial_T1_0224_D4.png
+axial_T1_0224_D5.png
+axial_T2_0224_D3.png
+axial_T2_0224_D4.png
+axial_T2_0224_D5.png
+sag_T1_0224_S8.png
+sag_T2_0224_S8.png
+axial_T1_0227_D3.png
+axial_T1_0227_D4.png
+axial_T1_0227_D5.png
+axial_T2_0227_D3.png
+axial_T2_0227_D4.png
+axial_T2_0227_D5.png
+sag_T1_0227_S8.png
+sag_T2_0227_S8.png
+axial_T1_0233_D3.png
+axial_T1_0233_D4.png
+axial_T1_0233_D5.png
+axial_T2_0233_D3.png
+axial_T2_0233_D4.png
+axial_T2_0233_D5.png
+sag_T1_0233_S23.png
+sag_T2_0233_S23.png
+axial_T1_0235_D3.png
+axial_T1_0235_D4.png
+axial_T1_0235_D5.png
+axial_T2_0235_D3.png
+axial_T2_0235_D4.png
+axial_T2_0235_D5.png
+sag_T1_0235_S8.png
+sag_T2_0235_S8.png
+axial_T1_0240_D3.png
+axial_T1_0240_D4.png
+axial_T1_0240_D5.png
+axial_T2_0240_D3.png
+axial_T2_0240_D4.png
+axial_T2_0240_D5.png
+sag_T1_0240_S8.png
+sag_T2_0240_S8.png
+axial_T1_0248_D3.png
+axial_T1_0248_D4.png
+axial_T1_0248_D5.png
+axial_T2_0248_D3.png
+axial_T2_0248_D4.png
+axial_T2_0248_D5.png
+sag_T1_0248_S8.png
+sag_T2_0248_S8.png
+axial_T1_0271_D3.png
+axial_T1_0271_D4.png
+axial_T1_0271_D5.png
+axial_T2_0271_D3.png
+axial_T2_0271_D4.png
+axial_T2_0271_D5.png
+sag_T1_0271_S8.png
+sag_T2_0271_S8.png
+axial_T1_0293_D3.png
+axial_T1_0293_D4.png
+axial_T1_0293_D5.png
+axial_T2_0293_D3.png
+axial_T2_0293_D4.png
+axial_T2_0293_D5.png
+sag_T1_0293_S8.png
+sag_T2_0293_S8.png
+axial_T1_0299_D3.png
+axial_T1_0299_D4.png
+axial_T1_0299_D5.png
+axial_T2_0299_D3.png
+axial_T2_0299_D4.png
+axial_T2_0299_D5.png
+sag_T1_0299_S7.png
+sag_T2_0299_S8.png
+axial_T1_0301_D3.png
+axial_T1_0301_D4.png
+axial_T1_0301_D5.png
+axial_T2_0301_D3.png
+axial_T2_0301_D4.png
+axial_T2_0301_D5.png
+sag_T1_0301_S8.png
+sag_T2_0301_S8.png
+axial_T1_0304_D3.png
+axial_T1_0304_D4.png
+axial_T1_0304_D5.png
+axial_T2_0304_D3.png
+axial_T2_0304_D4.png
+axial_T2_0304_D5.png
+sag_T1_0304_S8.png
+sag_T2_0304_S8.png
+axial_T1_0310_D3.png
+axial_T1_0310_D4.png
+axial_T1_0310_D5.png
+axial_T2_0310_D3.png
+axial_T2_0310_D4.png
+axial_T2_0310_D5.png
+sag_T1_0310_S8.png
+sag_T2_0310_S8.png
+axial_T1_0319_D3.png
+axial_T1_0319_D4.png
+axial_T1_0319_D5.png
+axial_T2_0319_D3.png
+axial_T2_0319_D4.png
+axial_T2_0319_D5.png
+sag_T1_0319_S8.png
+sag_T2_0319_S8.png
+axial_T1_0332_D3.png
+axial_T1_0332_D4.png
+axial_T1_0332_D5.png
+axial_T2_0332_D3.png
+axial_T2_0332_D4.png
+axial_T2_0332_D5.png
+sag_T1_0332_S8.png
+sag_T2_0332_S8.png
+axial_T1_0341_D3.png
+axial_T1_0341_D4.png
+axial_T1_0341_D5.png
+axial_T2_0341_D3.png
+axial_T2_0341_D4.png
+axial_T2_0341_D5.png
+sag_T1_0341_S8.png
+sag_T2_0341_S8.png
+axial_T1_0342_D3.png
+axial_T1_0342_D4.png
+axial_T1_0342_D5.png
+axial_T2_0342_D3.png
+axial_T2_0342_D4.png
+axial_T2_0342_D5.png
+sag_T1_0342_S8.png
+sag_T2_0342_S8.png
+axial_T1_0350_D3.png
+axial_T1_0350_D4.png
+axial_T1_0350_D5.png
+axial_T2_0350_D3.png
+axial_T2_0350_D4.png
+axial_T2_0350_D5.png
+sag_T1_0350_S8.png
+sag_T2_0350_S8.png
+axial_T1_0351_D3.png
+axial_T1_0351_D4.png
+axial_T1_0351_D5.png
+axial_T2_0351_D3.png
+axial_T2_0351_D4.png
+axial_T2_0351_D5.png
+sag_T1_0351_S8.png
+sag_T2_0351_S8.png
+axial_T1_0352_D3.png
+axial_T1_0352_D4.png
+axial_T1_0352_D5.png
+axial_T2_0352_D3.png
+axial_T2_0352_D4.png
+axial_T2_0352_D5.png
+sag_T1_0352_S8.png
+sag_T2_0352_S8.png
+axial_T1_0355_D3.png
+axial_T1_0355_D4.png
+axial_T1_0355_D5.png
+axial_T2_0355_D3.png
+axial_T2_0355_D4.png
+axial_T2_0355_D5.png
+sag_T1_0355_S8.png
+sag_T2_0355_S8.png
+axial_T1_0357_D3.png
+axial_T1_0357_D4.png
+axial_T1_0357_D5.png
+axial_T2_0357_D3.png
+axial_T2_0357_D4.png
+axial_T2_0357_D5.png
+sag_T1_0357_S8.png
+sag_T2_0357_S8.png
+axial_T1_0373_D3.png
+axial_T1_0373_D4.png
+axial_T1_0373_D5.png
+axial_T2_0373_D3.png
+axial_T2_0373_D4.png
+axial_T2_0373_D5.png
+sag_T1_0373_S8.png
+sag_T2_0373_S8.png
+axial_T1_0386_D3.png
+axial_T1_0386_D4.png
+axial_T1_0386_D5.png
+axial_T2_0386_D3.png
+axial_T2_0386_D4.png
+axial_T2_0386_D5.png
+sag_T1_0386_S8.png
+sag_T2_0386_S8.png
+axial_T1_0407_D3.png
+axial_T1_0407_D4.png
+axial_T1_0407_D5.png
+axial_T2_0407_D3.png
+axial_T2_0407_D4.png
+axial_T2_0407_D5.png
+sag_T1_0407_S8.png
+sag_T2_0407_S8.png
+axial_T1_0421_D3.png
+axial_T1_0421_D4.png
+axial_T1_0421_D5.png
+axial_T2_0421_D3.png
+axial_T2_0421_D4.png
+axial_T2_0421_D5.png
+sag_T1_0421_S8.png
+sag_T2_0421_S8.png
+axial_T1_0424_D3.png
+axial_T1_0424_D4.png
+axial_T1_0424_D5.png
+axial_T2_0424_D3.png
+axial_T2_0424_D4.png
+axial_T2_0424_D5.png
+sag_T1_0424_S8.png
+sag_T2_0424_S8.png
+axial_T1_0432_D3.png
+axial_T1_0432_D4.png
+axial_T1_0432_D5.png
+axial_T2_0432_D3.png
+axial_T2_0432_D4.png
+axial_T2_0432_D5.png
+sag_T1_0432_S8.png
+sag_T2_0432_S8.png
+axial_T1_0445_D3.png
+axial_T1_0445_D4.png
+axial_T1_0445_D5.png
+axial_T2_0445_D3.png
+axial_T2_0445_D4.png
+axial_T2_0445_D5.png
+sag_T1_0445_S8.png
+sag_T2_0445_S8.png
+axial_T1_0471_D3.png
+axial_T1_0471_D4.png
+axial_T1_0471_D5.png
+axial_T2_0471_D3.png
+axial_T2_0471_D4.png
+axial_T2_0471_D5.png
+sag_T1_0471_S8.png
+sag_T2_0471_S8.png
+axial_T1_0473_D3.png
+axial_T1_0473_D4.png
+axial_T1_0473_D5.png
+axial_T2_0473_D3.png
+axial_T2_0473_D4.png
+axial_T2_0473_D5.png
+sag_T1_0473_S8.png
+sag_T2_0473_S8.png
+axial_T1_0488_D3.png
+axial_T1_0488_D4.png
+axial_T1_0488_D5.png
+axial_T2_0488_D3.png
+axial_T2_0488_D4.png
+axial_T2_0488_D5.png
+sag_T1_0488_S8.png
+sag_T2_0488_S8.png
+axial_T1_0502_D3.png
+axial_T1_0502_D4.png
+axial_T1_0502_D5.png
+axial_T2_0502_D3.png
+axial_T2_0502_D4.png
+axial_T2_0502_D5.png
+sag_T1_0502_S8.png
+sag_T2_0502_S8.png
+axial_T1_0510_D3.png
+axial_T1_0510_D4.png
+axial_T1_0510_D5.png
+axial_T2_0510_D3.png
+axial_T2_0510_D4.png
+axial_T2_0510_D5.png
+sag_T1_0510_S8.png
+sag_T2_0510_S8.png
+axial_T1_0514_D3.png
+axial_T1_0514_D4.png
+axial_T1_0514_D5.png
+axial_T2_0514_D3.png
+axial_T2_0514_D4.png
+axial_T2_0514_D5.png
+sag_T1_0514_S8.png
+sag_T2_0514_S8.png
+axial_T1_0525_D3.png
+axial_T1_0525_D4.png
+axial_T1_0525_D5.png
+axial_T2_0525_D3.png
+axial_T2_0525_D4.png
+axial_T2_0525_D5.png
+sag_T1_0525_S7.png
+sag_T2_0525_S7.png
+axial_T1_0534_D3.png
+axial_T1_0534_D4.png
+axial_T1_0534_D5.png
+axial_T2_0534_D3.png
+axial_T2_0534_D4.png
+axial_T2_0534_D5.png
+sag_T1_0534_S8.png
+sag_T2_0534_S8.png
+axial_T1_0538_D3.png
+axial_T1_0538_D4.png
+axial_T1_0538_D5.png
+axial_T2_0538_D3.png
+axial_T2_0538_D4.png
+axial_T2_0538_D5.png
+sag_T1_0538_S8.png
+sag_T2_0538_S8.png
+axial_T1_0542_D3.png
+axial_T1_0542_D4.png
+axial_T1_0542_D5.png
+axial_T2_0542_D3.png
+axial_T2_0542_D4.png
+axial_T2_0542_D5.png
+sag_T1_0542_S8.png
+sag_T2_0542_S8.png
+axial_T1_0546_D3.png
+axial_T1_0546_D4.png
+axial_T1_0546_D5.png
+axial_T2_0546_D3.png
+axial_T2_0546_D4.png
+axial_T2_0546_D5.png
+sag_T1_0546_S8.png
+sag_T2_0546_S8.png
+axial_T1_0567_D3.png
+axial_T1_0567_D4.png
+axial_T1_0567_D5.png
+axial_T2_0567_D3.png
+axial_T2_0567_D4.png
+axial_T2_0567_D5.png
+sag_T1_0567_S7.png
+sag_T2_0567_S8.png
+axial_T1_0571_D3.png
+axial_T1_0571_D4.png
+axial_T1_0571_D5.png
+axial_T2_0571_D3.png
+axial_T2_0571_D4.png
+axial_T2_0571_D5.png
+sag_T1_0571_S9.png
+sag_T2_0571_S8.png
+axial_T1_0573_D3.png
+axial_T1_0573_D4.png
+axial_T1_0573_D5.png
+axial_T2_0573_D3.png
+axial_T2_0573_D4.png
+axial_T2_0573_D5.png
+sag_T1_0573_S8.png
+sag_T2_0573_S8.png
+axial_T1_0575_D3.png
+axial_T1_0575_D4.png
+axial_T1_0575_D5.png
+axial_T2_0575_D3.png
+axial_T2_0575_D4.png
+axial_T2_0575_D5.png
+sag_T1_0575_S8.png
+sag_T2_0575_S8.png

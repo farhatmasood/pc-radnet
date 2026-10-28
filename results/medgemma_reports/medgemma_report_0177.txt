@@ -1,0 +1,28 @@
+## Lumbar Spine MRI
+
+**1. TECHNIQUE:**
+
+MRI of the lumbar spine was performed with [Specify Sequence, e.g., T1-weighted with and without contrast, T2-weighted with and without contrast, etc.].  The study was obtained with [Specify Protocol, e.g., sagittal, axial, coronal, etc.] imaging.
+
+**2. FINDINGS:**
+
+**L3-L4:**
+
+*   **Disc:**  The L3-L4 intervertebral disc shows a Pfirrmann Grade 2/5 lesion.  The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images.  The disc height is 12.4 pixels.
+*   **Disc Herniation/Bulge:**  There is evidence of disc herniation and/or disc bulge at the L3-L4 level.
+*   **Thecal Sac:**  Thecal sac compression is present at the L3-L4 level.
+*   **Nerve Root:**  Nerve root compression is present at the L3-L4 level.
+
+**L4-L5:**
+
+*   **Disc:** The L4-L5 intervertebral disc shows a Pfirrmann Grade 2/5 lesion. The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images. The disc height is 14.1 pixels.
+*   **Disc Herniation/Bulge:**  There is evidence of disc herniation and/or disc bulge at the L4-L5 level.
+*   **Thecal Sac:**  Thecal sac compression is present at the L4-L5 level.
+*   **Nerve Root:**  Nerve root compression is present at the L4-L5 level.
+
+**L5-S1:**
+
+*   **Disc:** The L5-S1 intervertebral disc shows a Pfirrmann Grade 2/5 lesion. The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images. The disc height is 11.9 pixels.
+*   **Disc Herniation/Bulge:**  There is evidence of disc herniation and/or disc bulge at the L5-S1 level.
+*   **Thecal Sac:**  Thecal sac compression is present at the L5-S1 level.
+*   

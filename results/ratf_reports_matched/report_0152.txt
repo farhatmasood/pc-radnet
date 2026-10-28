@@ -1,0 +1,48 @@
+LUMBAR SPINE MRI REPORT
+Patient ID: 0152
+
+TECHNIQUE:
+  MRI of the lumbar spine was performed in axial and sagittal planes
+  using T1 and T2 weighted sequences.
+
+FINDINGS:
+
+  L3-L4 Level:
+    Pfirrmann Grade: 3/5 — Moderate degeneration
+    Clinical: Moderate degeneration; consider follow-up
+    Disc Height: 8.8 px (moderately reduced)
+    Findings: disc bulge, thecal sac compression, spondylolisthesis, desiccated disc
+    Segmentation confidence: limited (Dice = 0.182)
+
+  L4-L5 Level:
+    Pfirrmann Grade: 3/5 — Moderate degeneration
+    Clinical: Moderate degeneration; consider follow-up
+    Disc Height: 8.8 px (moderately reduced)
+    Findings: disc bulge, thecal sac compression, spinal canal stenosis, spondylolisthesis, desiccated disc
+    Segmentation confidence: limited (Dice = 0.524)
+
+  L5-S1 Level:
+    Pfirrmann Grade: 4/5 — Advanced degeneration
+    Clinical: Significant degeneration; clinical review recommended
+    Disc Height: 5.8 px (severely reduced)
+    Findings: disc bulge, thecal sac compression, spinal canal stenosis, spondylolisthesis, desiccated disc
+    Segmentation confidence: limited (Dice = 0.041)
+
+IMPRESSION:
+  1. Moderate disc degeneration at L3-L4
+  2. Disc bulge at L3-L4
+  3. Thecal sac compression at L3-L4
+  4. Spondylolisthesis at L3-L4
+  5. Desiccated disc at L3-L4
+  6. Moderate disc degeneration at L4-L5
+  7. Disc bulge at L4-L5
+  8. Thecal sac compression at L4-L5
+  9. Spinal canal stenosis at L4-L5
+  10. Spondylolisthesis at L4-L5
+  11. Desiccated disc at L4-L5
+  12. Advanced disc degeneration at L5-S1
+  13. Disc bulge at L5-S1
+  14. Thecal sac compression at L5-S1
+  15. Spinal canal stenosis at L5-S1
+  16. Spondylolisthesis at L5-S1
+  17. Desiccated disc at L5-S1

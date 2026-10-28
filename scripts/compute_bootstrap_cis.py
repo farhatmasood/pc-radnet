@@ -1,5 +1,5 @@
-﻿"""Compute 95% bootstrap CIs for all ablation variants and SAM baseline.
-Run AFTER evaluate_PCRadNet.py --all-ablations --split test regenerates per-image CSVs.
+"""Compute 95% bootstrap CIs for all ablation variants and SAM baseline.
+Run AFTER evaluate.py --all-ablations --split test regenerates per-image CSVs.
 """
 import numpy as np
 import pandas as pd
@@ -8,7 +8,7 @@ import json
 
 np.random.seed(42)
 N_BOOT = 10_000
-RESULTS_DIR = pathlib.Path(r"D:\0.5 Draft Manuscript\P5_LangSAM\results")
+RESULTS_DIR = pathlib.Path(__file__).resolve().parents[1] / "results"
 
 variants = {
     "A0": RESULTS_DIR / "test_A0_per_image.csv",

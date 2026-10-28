@@ -1,0 +1,29 @@
+## Lumbar Spine MRI
+
+**1. TECHNIQUE:**
+
+MRI of the lumbar spine was performed with [Specify Sequence, e.g., T1-weighted with and without contrast, T2-weighted, STIR, etc.].  The study was obtained with [Specify Protocol, e.g., sagittal, axial, coronal, etc.] imaging.
+
+**2. FINDINGS:**
+
+**L3-L4:**
+
+*   **Disc:**  The L3-L4 intervertebral disc demonstrates a Pfirrmann Grade IV signal intensity, characterized by inhomogeneous, dark gray to black signal, and a slight decrease in disc height.
+*   **Disc Height:**  The disc height is measured at 9.6 pixels.
+*   **Findings:**  There is evidence of a disc bulge and thecal sac compression.
+
+**L4-L5:**
+
+*   **Disc:** The L4-L5 intervertebral disc demonstrates a Pfirrmann Grade IV signal intensity, characterized by inhomogeneous, dark gray to black signal, and a slight decrease in disc height.
+*   **Disc Height:** The disc height is measured at 10.0 pixels.
+*   **Findings:**  There is evidence of a disc protrusion, disc bulge, and thecal sac compression.
+
+**L5-S1:**
+
+*   **Disc:** The L5-S1 intervertebral disc demonstrates a Pfirrmann Grade IV signal intensity, characterized by inhomogeneous, dark gray to black signal, and a slight decrease in disc height.
+*   **Disc Height:** The disc height is measured at 7.1 pixels.
+*   **Findings:**  There is evidence of a disc protrusion, disc bulge, thecal sac compression, and nerve root compression.
+
+**3. IMPRESSION:**
+
+The lumbar spine MRI demonstrates significant degenerative changes at multiple levels, including L3-L4, L4-L5, and L5-S1.  These changes are characterized by Pfirrmann Grade IV signal intensity in the intervertebral discs, indicating advanced disc degeneration.  There is evidence of disc bulge, disc protrusion, thecal sac compression, and nerve root compression at multiple levels.  The degree of compression may be contributing to the patient's symptoms.  Clinical correlation is recommended.

@@ -1,0 +1,27 @@
+{
+ "check_RATF-v3 (stored 0.870)": {
+  "n": 20,
+  "BERTScore_mean": 0.8712515443563461,
+  "BERTScore_sd": 0.027921939035936406
+ },
+ "check_RATF (stored 0.788)": {
+  "n": 20,
+  "BERTScore_mean": 0.7890752583742142,
+  "BERTScore_sd": 0.011058018884440243
+ },
+ "RATF-T": {
+  "n": 20,
+  "BERTScore_mean": 0.8266965746879578,
+  "BERTScore_sd": 0.0169976819232576
+ },
+ "RATF-R": {
+  "n": 20,
+  "BERTScore_mean": 0.8450167745351791,
+  "BERTScore_sd": 0.023702135787793167
+ },
+ "RATF-RC": {
+  "n": 20,
+  "BERTScore_mean": 0.8356338769197464,
+  "BERTScore_sd": 0.02204624791552434
+ }
+}

@@ -1,0 +1,37 @@
+LUMBAR SPINE MRI REPORT
+Patient ID: 0100
+
+TECHNIQUE:
+  MRI of the lumbar spine was performed in axial and sagittal planes
+  using T1 and T2 weighted sequences.
+
+FINDINGS:
+
+  L3-L4 Level:
+    Pfirrmann Grade: 2/5 — Near-normal
+    Clinical: Minimal degeneration; conservative management
+    Disc Height: 10.6 px (mildly reduced)
+    Findings: disc bulge, thecal sac compression
+    Segmentation confidence: limited (Dice = 0.207)
+
+  L4-L5 Level:
+    Pfirrmann Grade: 2/5 — Near-normal
+    Clinical: Minimal degeneration; conservative management
+    Disc Height: 10.3 px (mildly reduced)
+    Findings: disc bulge, thecal sac compression
+    Segmentation confidence: limited (Dice = 0.681)
+
+  L5-S1 Level:
+    Pfirrmann Grade: 2/5 — Near-normal
+    Clinical: Minimal degeneration; conservative management
+    Disc Height: 8.0 px (moderately reduced)
+    Findings: disc bulge, thecal sac compression
+    Segmentation confidence: limited (Dice = 0.512)
+
+IMPRESSION:
+  1. Disc bulge at L3-L4
+  2. Thecal sac compression at L3-L4
+  3. Disc bulge at L4-L5
+  4. Thecal sac compression at L4-L5
+  5. Disc bulge at L5-S1
+  6. Thecal sac compression at L5-S1

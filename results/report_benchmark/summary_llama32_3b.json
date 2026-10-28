@@ -1,0 +1,11 @@
+{
+  "model": "Llama-3.2-3B-Instruct",
+  "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "n": 20,
+  "precision_mean": 0.6483333333333333,
+  "recall_mean": 0.8066666666666666,
+  "f1_mean": 0.6728968253968254,
+  "words_mean": 203.0,
+  "mean_time_s": 29.20879582166672
+}

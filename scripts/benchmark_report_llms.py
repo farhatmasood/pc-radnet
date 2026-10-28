@@ -1,11 +1,11 @@
-﻿"""
+"""
 benchmark_report_llms.py
 
 Expanded report-generation benchmark for Table 7.
 
 What this script does:
 1) Uses the same matched 20 patients already used for MedGemma comparison.
-2) Builds structured-input prompts from PC-RadNet predictions.
+2) Builds structured-input prompts from PCRadNet predictions.
 3) Generates reports model-wise for a list of HF LLMs.
 4) Computes disorder factual consistency metrics (precision/recall/F1) with the
    same synonym-aware keyword matching strategy used in prior scripts.
@@ -20,8 +20,8 @@ Outputs (under results/report_benchmark):
 - table_report_expanded.tex
 
 Usage examples:
-  C:/Users/RFM/anaconda3/envs/LSMAPQR/python.exe scripts/benchmark_report_llms.py
-  C:/Users/RFM/anaconda3/envs/LSMAPQR/python.exe scripts/benchmark_report_llms.py --models phi35_mini qwen25_1p5
+  "${PYTHON:-python}" scripts/benchmark_report_llms.py
+  "${PYTHON:-python}" scripts/benchmark_report_llms.py --models phi35_mini qwen25_1p5
 """
 
 from __future__ import annotations
@@ -40,11 +40,11 @@ import pandas as pd
 import torch
 import yaml
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from repo_config import load_config
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-with open(SCRIPT_DIR / "config.yaml", "r", encoding="utf-8") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 RESULTS_DIR = Path(CFG["paths"]["results"])
 DATASET_ROOT = Path(CFG["paths"]["dataset_root"])

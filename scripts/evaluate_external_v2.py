@@ -1,5 +1,5 @@
-﻿"""
-evaluate_external_v2.py — Corrected cross-dataset evaluation of PC-RadNet
+"""
+evaluate_external_v2.py - Corrected cross-dataset evaluation of PCRadNet
 
 Key fixes over v1:
   1. Aspect-ratio-preserving resize (pad to square, then resize to 384×384)
@@ -36,7 +36,7 @@ from matplotlib.colors import ListedColormap
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from train import PC-RadNet, PROMPT_BANK, SEED, DEVICE, CFG
+from train import PCRadNet, PROMPT_BANK, SEED, DEVICE, CFG
 
 import random
 random.seed(SEED)
@@ -55,10 +55,7 @@ VIZ_DIR.mkdir(parents=True, exist_ok=True)
 IMAGENET_MEAN = np.array([0.485, 0.456, 0.406])
 IMAGENET_STD  = np.array([0.229, 0.224, 0.225])
 
-_ext = CFG["paths"].get("external_datasets", {})
-DATASET_PATHS = {
-    k: Path(v) for k, v in _ext.items() if v
-}
+DATASET_PATHS = {k: Path(v) for k, v in CFG["paths"]["external_datasets"].items() if v}
 
 SAG_NAMES = {0: "BG", 1: "VB", 2: "IVD_sag", 3: "Sacrum", 4: "SC_sag"}
 AXIAL_NAMES = {0: "BG", 1: "IVD", 2: "PE", 3: "SC"}
@@ -572,7 +569,7 @@ def evaluate_spider(model, max_patients=None, save_viz=True, n_viz=20, mid_sagit
 # ═══════════════════════════════════════════════════════════════
 
 def evaluate_rsna(model, max_studies=100, save_viz=True, n_viz=10):
-    """Evaluate on RSNA 2024 — stenosis detection & grading."""
+    """Evaluate on RSNA 2024 - stenosis detection & grading."""
     import pydicom
 
     rsna_dir = DATASET_PATHS["rsna"]
@@ -738,7 +735,7 @@ def evaluate_rsna(model, max_studies=100, save_viz=True, n_viz=10):
 # ═══════════════════════════════════════════════════════════════
 
 def evaluate_spine_new(model, max_cases=50, save_viz=True, n_viz=10):
-    """Evaluate VB segmentation on Spine DataSet (NEW) — sagittal MRI."""
+    """Evaluate VB segmentation on Spine DataSet (NEW) - sagittal MRI."""
     import nibabel as nib
 
     ds_dir = DATASET_PATHS["spine_new"]
@@ -901,7 +898,7 @@ def evaluate_spineweb(model, save_viz=True, n_viz=20):
         except Exception:
             desc = ""
         if "COR" in desc:
-            continue  # Skip coronal — not matched by sagittal head
+            continue  # Skip coronal - not matched by sagittal head
         cases.append((dcm_file, mask_file, desc))
 
     print(f"\n{'='*60}")
@@ -1008,7 +1005,7 @@ def evaluate_spineweb(model, save_viz=True, n_viz=20):
             if len(valid_p) > 0:
                 metrics[f"prompted_dice_{cname}"] = float(valid_p.mean())
 
-    # Mean VB Dice (primary metric — only class with GT labels)
+    # Mean VB Dice (primary metric - only class with GT labels)
     if "dice_VB" in metrics:
         metrics["mean_fg_dice"] = metrics["dice_VB"]
 

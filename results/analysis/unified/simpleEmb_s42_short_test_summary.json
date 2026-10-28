@@ -1,0 +1,11 @@
+{
+  "name": "simpleEmb_s42_short",
+  "split": "test",
+  "n_images": 624,
+  "orig_prompted_dice": 0.4902922854078217,
+  "orig_prompted_iou": 0.3556092034138065,
+  "allclass_prompted_dice": 0.47318592470443577,
+  "allclass_mc_dice": 0.6644014325452581,
+  "forward_ms_median": 28.78954997868277,
+  "trainable_params_eval": 2196041
+}

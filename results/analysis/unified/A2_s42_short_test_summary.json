@@ -1,0 +1,11 @@
+{
+  "name": "A2_s42_short",
+  "split": "test",
+  "n_images": 624,
+  "orig_prompted_dice": 0.562973940445749,
+  "orig_prompted_iou": 0.42688824869028164,
+  "allclass_prompted_dice": 0.5454924695405453,
+  "allclass_mc_dice": 0.6859158543393619,
+  "forward_ms_median": 55.20420000539161,
+  "trainable_params_eval": 2733641
+}

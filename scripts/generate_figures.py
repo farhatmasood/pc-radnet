@@ -1,10 +1,10 @@
-﻿"""
-generate_revised_figures.py — Regenerate all manuscript figures with improved
+"""
+generate_figures.py - Regenerate all manuscript figures with improved
 academic aesthetics. Saves to figures_v2/ directory (does NOT overwrite originals).
 
 Usage:
-    conda activate LSMAPQR
-    python scripts/generate_revised_figures.py
+    conda activate pc_radnet
+    python scripts/generate_figures.py
 """
 import os, sys, json, warnings
 import numpy as np
@@ -443,7 +443,7 @@ def fig_baseline_comparison():
     methods = [
         "SAM Auto\n(no prompt)",
         "MedSAM2\n(oracle box)", "SAM ViT-B\n(oracle box)",
-        "PC-RadNet\n(text, ours)"
+        "PCRadNet\n(text, ours)"
     ]
     dice_vals = [0.433, 0.755, 0.810, 0.861]
     colors = ["#BDC3CB", "#7EACD0", "#7EACD0", PALETTE["accent2"]]
@@ -480,10 +480,10 @@ def fig_baseline_comparison():
 def fig_efficiency_comparison():
     """Scatter plot of Dice vs inference time."""
     methods = ["SAM Auto", "MedSAM2\n(oracle)", "SAM ViT-B\n(oracle)",
-               "PC-RadNet\n(ours)"]
+               "PCRadNet\n(ours)"]
     dice_vals = [0.433, 0.755, 0.810, 0.861]
     # Inference times: SAM Auto ~3.5s, MedSAM2 ~0.011s,
-    # SAM ~variable, PC-RadNet 0.039s
+    # SAM ~variable, PCRadNet 0.039s
     inf_times = [3.49, 0.011, 0.15, 0.039]
     params = [93.7, 38.9, 93.7, 2.73]  # trainable params in M
 

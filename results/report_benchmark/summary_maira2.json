@@ -1,0 +1,11 @@
+{
+  "model": "MAIRA-2",
+  "model_id": "microsoft/maira-2",
+  "base_model": "lmsys/vicuna-7b-v1.5",
+  "n": 20,
+  "precision_mean": 0.425,
+  "recall_mean": 0.1575,
+  "f1_mean": 0.21999999999999997,
+  "words_mean": 79.55,
+  "mean_time_s": 17.25152220726013
+}

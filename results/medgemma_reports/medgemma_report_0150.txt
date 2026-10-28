@@ -1,0 +1,31 @@
+## Lumbar Spine MRI
+
+**1. TECHNIQUE:**
+
+MRI of the lumbar spine was performed with [Specify Sequence, e.g., T1-weighted with sagittal and axial reformats]. Sagittal and axial images were obtained.
+
+**2. FINDINGS:**
+
+**L3-L4:**
+
+*   **Disc:** The L3-L4 intervertebral disc shows a Pfirrmann Grade II lesion. The lesion is inhomogeneous with horizontal bands and bright white signal. The disc height is 10.6 pixels.
+*   **Disc Protrusion/Bulge:** There is evidence of disc protrusion and bulge at the L3-L4 level.
+*   **Thecal Sac:** Thecal sac compression is present at the L3-L4 level.
+*   **Nerve Root:** Nerve root compression is present at the L3-L4 level.
+
+**L4-L5:**
+
+*   **Disc:** The L4-L5 intervertebral disc shows a Pfirrmann Grade II lesion. The lesion is inhomogeneous with horizontal bands and bright white signal. The disc height is 8.8 pixels.
+*   **Disc Protrusion/Bulge:** There is evidence of disc protrusion and bulge at the L4-L5 level.
+*   **Thecal Sac:** Thecal sac compression is present at the L4-L5 level.
+
+**L5-S1:**
+
+*   **Disc:** The L5-S1 intervertebral disc shows a Pfirrmann Grade II lesion. The lesion is inhomogeneous with horizontal bands and bright white signal. The disc height is 8.2 pixels.
+*   **Disc Bulge:** There is evidence of disc bulge at the L5-S1 level.
+*   **Thecal Sac:** Thecal sac compression is present at the L5-S1 level.
+*   **Nerve Root:** Nerve root compression is present at the L5-S1 level.
+
+**3. IMPRESSION:**
+
+The lumbar spine MRI demonstrates evidence of degenerative disc disease at L3-L4, L4-L5, and L5-S1. Each level shows a Pfirrmann Grade II lesion with associated disc protrusion/bulge, thecal sac compression, and nerve root compression. The findings are consistent with the automated measurements provided.

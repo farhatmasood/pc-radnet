@@ -1,0 +1,26 @@
+## Lumbar Spine MRI
+
+**1. TECHNIQUE:**
+
+MRI of the lumbar spine was performed with [Specify Sequence, e.g., T1-weighted with sagittal and axial reformats]. Sagittal and axial images were obtained.
+
+**2. FINDINGS:**
+
+**L3-L4:**
+
+*   **Disc:** Pfirrmann Grade III (inhomogeneous, intermediate gray signal, normal to slightly decreased disc height). Disc height measured 8.9 pixels.
+*   **Findings:** Disc protrusion, disc bulge, and thecal sac compression are present.
+
+**L4-L5:**
+
+*   **Disc:** Pfirrmann Grade IV (inhomogeneous, dark gray to black signal, slightly decreased disc height). Disc height measured 9.0 pixels.
+*   **Findings:** Disc protrusion, disc bulge, thecal sac compression, and nerve root compression are present.
+
+**L5-S1:**
+
+*   **Disc:** Pfirrmann Grade IV (inhomogeneous, dark gray to black signal, slightly decreased disc height). Disc height measured 5.6 pixels.
+*   **Findings:** Disc bulge and thecal sac compression are present.
+
+**3. IMPRESSION:**
+
+There is evidence of degenerative disc disease at L3-L4, L4-L5, and L5-S1. The L4-L5 and L5-S1 discs demonstrate Pfirrmann Grade IV signal changes, indicating significant disc degeneration. These findings are associated with disc protrusion, disc bulge, thecal sac compression, and nerve root compression at L4-L5 and L5-S1. The L3-L4 disc shows less severe degenerative changes.

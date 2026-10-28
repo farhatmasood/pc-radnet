@@ -1,5 +1,5 @@
 """
-report_generator.py — Module 4: Findings-Grounded Report Generation (FGRG)
+generate_report.py - Module 4: Findings-Grounded Report Generation (FGRG)
 Section 6 (FAISS) + Section 10 (report generation).
 
 Two modes:
@@ -7,8 +7,8 @@ Two modes:
   (B) LLM-augmented (optional): Phi-3-mini LoRA or FAISS RAG
 
 Usage:
-    python scripts/report_generator.py --mode template --predictions results/test_per_image.csv
-    python scripts/report_generator.py --mode rag --build-index
+    python scripts/generate_report.py --mode template --predictions results/test_per_image.csv
+    python scripts/generate_report.py --mode rag --build-index
 """
 import os, sys, json, argparse
 import numpy as np
@@ -17,10 +17,10 @@ from pathlib import Path
 from collections import defaultdict
 
 import yaml
+from repo_config import load_config
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-with open(SCRIPT_DIR / "config.yaml") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -191,7 +191,7 @@ def reports_from_predictions(predictions_csv, output_dir):
         if "pred_height" in row and row.get("gt_height", -1) != -1:
             ld["height"] = float(row["pred_height"])
 
-        # Disorders — take max probability across images for same patient
+        # Disorders - take max probability across images for same patient
         for i, dname in enumerate([
             "Herniation", "Protrusion", "Bulge", "ThecalComp",
             "NerveComp", "Stenosis", "Spondylolisthesis",
@@ -226,7 +226,7 @@ def reports_from_predictions(predictions_csv, output_dir):
 
 
 # ═══════════════════════════════════════════════════════════════════
-# FAISS RAG INDEX (Mode B — Section 6)
+# FAISS RAG INDEX (Mode B - Section 6)
 # ═══════════════════════════════════════════════════════════════════
 
 def build_faiss_index():

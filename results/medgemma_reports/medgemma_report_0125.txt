@@ -1,0 +1,29 @@
+## Lumbar Spine MRI
+
+**1. TECHNIQUE:**
+
+MRI of the lumbar spine was performed with [Specify Sequence, e.g., T1-weighted with and without contrast, T2-weighted with and without contrast, etc.].  The study was obtained with [Specify Protocol, e.g., sagittal, axial, coronal, etc.] imaging.
+
+**2. FINDINGS:**
+
+**L3-L4:**
+
+*   **Disc:**  The L3-L4 intervertebral disc shows a Pfirrmann Grade 2/5 lesion.  The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images.  The disc height is 9.8 pixels.
+*   **Disc Herniation:**  There is evidence of a disc herniation at the L3-L4 level.
+*   **Nerve Root Compression:**  The disc herniation is causing compression of the [Specify Nerve Root, e.g., L4] nerve root.
+
+**L4-L5:**
+
+*   **Disc:** The L4-L5 intervertebral disc shows a Pfirrmann Grade 2/5 lesion. The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images. The disc height is 10.7 pixels.
+*   **Disc Herniation:** There is evidence of a disc herniation at the L4-L5 level.
+*   **Nerve Root Compression:** The disc herniation is causing compression of the [Specify Nerve Root, e.g., L5] nerve root.
+
+**L5-S1:**
+
+*   **Disc:** The L5-S1 intervertebral disc shows a Pfirrmann Grade 2/5 lesion. The lesion is inhomogeneous with or without horizontal bands and demonstrates bright white signal intensity on T1-weighted images. The disc height is 11.4 pixels.
+*   **Disc Bulge:** There is evidence of a disc bulge at the L5-S1 level.
+*   **Nerve Root Compression:** The disc bulge is causing compression of the [Specify Nerve Root, e.g., S1] nerve root.
+
+**3. IMPRESSION:**
+
+The lumbar spine MRI demonstrates a Pfirrmann Grade 2/5 lesion at L3-L4, L4-L5, and L5-S1.  These lesions are associated with

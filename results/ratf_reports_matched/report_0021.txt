@@ -1,0 +1,43 @@
+LUMBAR SPINE MRI REPORT
+Patient ID: 0021
+
+TECHNIQUE:
+  MRI of the lumbar spine was performed in axial and sagittal planes
+  using T1 and T2 weighted sequences.
+
+FINDINGS:
+
+  L3-L4 Level:
+    Pfirrmann Grade: 3/5 — Moderate degeneration
+    Clinical: Moderate degeneration; consider follow-up
+    Disc Height: 8.5 px (moderately reduced)
+    Findings: disc protrusion, disc bulge, thecal sac compression
+    Segmentation confidence: limited (Dice = 0.390)
+
+  L4-L5 Level:
+    Pfirrmann Grade: 3/5 — Moderate degeneration
+    Clinical: Moderate degeneration; consider follow-up
+    Disc Height: 8.8 px (moderately reduced)
+    Findings: disc protrusion, disc bulge, thecal sac compression
+    Segmentation confidence: limited (Dice = 0.238)
+
+  L5-S1 Level:
+    Pfirrmann Grade: 4/5 — Advanced degeneration
+    Clinical: Significant degeneration; clinical review recommended
+    Disc Height: 5.5 px (severely reduced)
+    Findings: disc protrusion, disc bulge, thecal sac compression
+    Segmentation confidence: limited (Dice = 0.230)
+
+IMPRESSION:
+  1. Moderate disc degeneration at L3-L4
+  2. Disc protrusion at L3-L4
+  3. Disc bulge at L3-L4
+  4. Thecal sac compression at L3-L4
+  5. Moderate disc degeneration at L4-L5
+  6. Disc protrusion at L4-L5
+  7. Disc bulge at L4-L5
+  8. Thecal sac compression at L4-L5
+  9. Advanced disc degeneration at L5-S1
+  10. Disc protrusion at L5-S1
+  11. Disc bulge at L5-S1
+  12. Thecal sac compression at L5-S1

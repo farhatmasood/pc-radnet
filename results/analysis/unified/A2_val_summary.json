@@ -1,0 +1,11 @@
+{
+  "name": "A2",
+  "split": "val",
+  "n_images": 616,
+  "orig_prompted_dice": 0.8584620521778797,
+  "orig_prompted_iou": 0.7666954559866678,
+  "allclass_prompted_dice": 0.8576482321013819,
+  "allclass_mc_dice": 0.8437381215936892,
+  "forward_ms_median": 38.557799998670816,
+  "trainable_params_eval": 2733641
+}

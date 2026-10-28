@@ -1,0 +1,11 @@
+{
+  "name": "noSDA_s42",
+  "split": "val",
+  "n_images": 616,
+  "orig_prompted_dice": 0.8674083451752539,
+  "orig_prompted_iou": 0.7794024816702132,
+  "allclass_prompted_dice": 0.867213906130412,
+  "allclass_mc_dice": 0.8431549481861479,
+  "forward_ms_median": 40.10899999411777,
+  "trainable_params_eval": 2682152
+}

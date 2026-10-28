@@ -1,5 +1,5 @@
 """
-evaluate_nlg_comprehensive.py — Comprehensive NLG evaluation of ALL report generators.
+evaluate_nlg.py - Comprehensive NLG evaluation of ALL report generators.
 
 Addresses the low BLEU/ROUGE scores in tab:nlg_eval by:
 1. Building proper prose-style reference reports from structured_reports.csv
@@ -8,7 +8,7 @@ Addresses the low BLEU/ROUGE scores in tab:nlg_eval by:
    BioGPT-Large, SmolLM2, Qwen2.5 with unified BLEU/ROUGE/Factual metrics
 
 Usage:
-    python scripts/evaluate_nlg_comprehensive.py
+    python scripts/evaluate_nlg.py
 """
 import os, sys, json, re
 import numpy as np
@@ -17,10 +17,10 @@ from pathlib import Path
 from collections import defaultdict
 
 import yaml
+from repo_config import load_config
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-with open(SCRIPT_DIR / "config.yaml") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 RESULTS_DIR = Path(CFG["paths"]["results"])
 DATASET_ROOT = Path(CFG["paths"]["dataset_root"])
@@ -131,7 +131,7 @@ def build_reference_reports_v2(patient_ids):
 
 
 # ═══════════════════════════════════════════════════════════════
-# STEP 2: RATF-v2 — Clinical prose report generator
+# STEP 2: RATF-v2 - Clinical prose report generator
 # ═══════════════════════════════════════════════════════════════
 
 LEVEL_MAP = {"D3": "L3-L4", "D4": "L4-L5", "D5": "L5-S1"}
@@ -175,7 +175,7 @@ def generate_prose_report(patient_data):
                   "sequences in both axial and sagittal planes.")
     lines.append("")
 
-    # FINDINGS — per level in clinical prose
+    # FINDINGS - per level in clinical prose
     lines.append("FINDINGS:")
 
     level_texts = []
@@ -267,7 +267,7 @@ def generate_prose_report_v3(patient_data):
     - Compact format without TECHNIQUE/IMPRESSION sections
     - Natural clinical verb forms (compressing, encroaching) matching reference style
     - Reference-matched phrasing ('noted at {level} level')
-    - Only mentions predicted findings — maintains factual accuracy
+    - Only mentions predicted findings - maintains factual accuracy
     """
     level_texts = []
 
@@ -335,7 +335,7 @@ def generate_prose_report_v3(patient_data):
         for o in other:
             parts.append(f"{o} at {level_name}")
 
-        # Grade info — only for significant degeneration (grade >= 3)
+        # Grade info - only for significant degeneration (grade >= 3)
         if grade == 3:
             ht_class = classify_height_v2(ht)
             ht_info = ""

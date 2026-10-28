@@ -1,0 +1,10 @@
+{
+ "dataset": "Spine_DataSet_NEW",
+ "n_volumes": 50,
+ "n_slices": 633,
+ "dice_VB": 0.36645310123802877,
+ "dice_VB_std": 0.18867511066514275,
+ "iou_VB": 0.24000456779616378,
+ "prompted_dice_VB": 0.3745306673362972,
+ "setting": "oracle_crop"
+}

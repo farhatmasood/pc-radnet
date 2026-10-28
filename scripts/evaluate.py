@@ -1,10 +1,10 @@
-﻿"""
-evaluate_PCRadNet.py — Full test-set evaluation for PC-RadNet
+"""
+evaluate.py - Full test-set evaluation for PCRadNet
 Sections 10-11: per-class metrics, confusion matrices, statistical tests, LaTeX tables.
 
 Usage:
-    python scripts/evaluate_PCRadNet.py --checkpoint best_by_mdice_A2.pt
-    python scripts/evaluate_PCRadNet.py --checkpoint best_by_mdice_A2.pt --split test
+    python scripts/evaluate.py --checkpoint best_by_mdice_A2.pt
+    python scripts/evaluate.py --checkpoint best_by_mdice_A2.pt --split test
 """
 import os, sys, json, argparse, gc, datetime
 import numpy as np
@@ -397,7 +397,7 @@ def main():
     figures_dir.mkdir(parents=True, exist_ok=True)
 
     # Build dataloader
-    split_file = Path(CFG["paths"]["scripts"]) / "data" / f"{args.split}.txt"
+    split_file = Path(CFG["paths"]["splits_dir"]) / f"{args.split}.txt"
     ds = SpineDataset(split_file, CFG, transforms=get_val_transforms())
     loader = DataLoader(
         ds, batch_size=args.batch_size, shuffle=False,

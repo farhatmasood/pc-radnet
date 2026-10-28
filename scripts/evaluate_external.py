@@ -1,7 +1,7 @@
-﻿"""
-evaluate_external.py — Cross-dataset & cross-modality evaluation of PC-RadNet
+"""
+evaluate_external.py - Cross-dataset & cross-modality evaluation of PCRadNet
 
-Evaluates the trained PC-RadNet model on external datasets:
+Evaluates the trained PCRadNet model on external datasets:
   1. SPIDER (MRI, sagittal): Segmentation (VB, IVD, SC) + Pfirrmann grading + disorder
   2. RSNA 2024 (MRI, axial+sagittal): Stenosis detection
   3. Spine DataSet NEW (MRI): VB segmentation
@@ -30,7 +30,7 @@ import yaml
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from train import PC-RadNet, PROMPT_BANK, SEED, DEVICE, CFG
+from train import PCRadNet, PROMPT_BANK, SEED, DEVICE, CFG
 
 import random
 random.seed(SEED)
@@ -47,10 +47,7 @@ RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 IMAGENET_MEAN = np.array([0.485, 0.456, 0.406])
 IMAGENET_STD = np.array([0.229, 0.224, 0.225])
 
-_ext = CFG["paths"].get("external_datasets", {})
-DATASET_PATHS = {
-    k: Path(v) for k, v in _ext.items() if v
-}
+DATASET_PATHS = {k: Path(v) for k, v in CFG["paths"]["external_datasets"].items() if v}
 
 # SPIDER label mapping → our sagittal classes
 # Our sagittal: {0: BG, 1: VB, 2: IVD_sag, 3: Sacrum, 4: SC_sag}
@@ -399,7 +396,7 @@ def evaluate_spider(model, max_patients=None):
 # ═══════════════════════════════════════════════════════════════
 
 def evaluate_rsna(model, max_studies=50):
-    """Evaluate on RSNA 2024 Lumbar Spine MRI — stenosis detection."""
+    """Evaluate on RSNA 2024 Lumbar Spine MRI - stenosis detection."""
     import pydicom
 
     rsna_dir = DATASET_PATHS["rsna"]
@@ -576,7 +573,7 @@ def evaluate_rsna(model, max_studies=50):
 
 
 # ═══════════════════════════════════════════════════════════════
-# 3. SPINE DATASET NEW — VB SEGMENTATION
+# 3. SPINE DATASET NEW - VB SEGMENTATION
 # ═══════════════════════════════════════════════════════════════
 
 def evaluate_spine_new(model, max_cases=50):
@@ -609,7 +606,7 @@ def evaluate_spine_new(model, max_cases=50):
         img_vol = nib.load(str(img_dir / img_fname)).get_fdata()
         mask_vol = nib.load(str(mask_path)).get_fdata().astype(int)
 
-        # Shape: (X, Y, Z) — Z slices
+        # Shape: (X, Y, Z) - Z slices
         n_slices = img_vol.shape[2]
 
         for s in range(n_slices):

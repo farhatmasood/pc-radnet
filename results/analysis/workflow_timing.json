@@ -1,0 +1,24 @@
+{
+ "timing": {
+  "n_patients": 10,
+  "single_image_one_structure_ms": 26.307350024580956,
+  "exam_naive_s": 0.7762310999969486,
+  "exam_shared_encoder_s": 0.31625614999211393,
+  "forward_passes_naive": 26,
+  "encoder_passes_shared": 8
+ },
+ "baseline_timing": {
+  "unet": {
+   "ms_per_image": 6.90580002265051,
+   "params_total": 32498373
+  },
+  "swinunetr": {
+   "ms_per_image": 24.586800020188093,
+   "params_total": 6302975
+  },
+  "sam_ft": {
+   "ms_per_image": 174.55360002350062,
+   "params_total": 90326789
+  }
+ }
+}

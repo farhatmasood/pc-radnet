@@ -1,0 +1,1354 @@
+{
+ "A0orig": {
+  "grading": {
+   "n_images": 468,
+   "n_patients": 78,
+   "image_level": {
+    "exact": 0.5277777777777778,
+    "within1": 0.9209401709401709,
+    "mae": 0.5534188034188035,
+    "kappa": 0.2076425704041921,
+    "kappa_lin": 0.25146357730405355,
+    "kappa_quad": 0.3110070421304628
+   },
+   "image_level_ci": {
+    "exact": [
+     0.46794871794871795,
+     0.5897435897435898
+    ],
+    "within1": [
+     0.8867521367521367,
+     0.9529914529914529
+    ],
+    "mae": [
+     0.4721688034188034,
+     0.634668803418803
+    ],
+    "kappa_lin": [
+     0.17408647472590694,
+     0.32572379345842895
+    ],
+    "kappa_quad": [
+     0.21881541012714084,
+     0.39844820826629007
+    ]
+   },
+   "disc_level_T2": {
+    "exact": 0.5427350427350427,
+    "within1": 0.9316239316239316,
+    "mae": 0.5299145299145299,
+    "kappa": 0.23794740686632576,
+    "kappa_lin": 0.2813196611680785,
+    "kappa_quad": 0.33635847986386835
+   },
+   "disc_level_T2_ci": {
+    "exact": [
+     0.47435897435897434,
+     0.6025641025641025
+    ],
+    "within1": [
+     0.9017094017094017,
+     0.9573717948717944
+    ],
+    "mae": [
+     0.45726495726495725,
+     0.6111111111111112
+    ],
+    "kappa_lin": [
+     0.20086194747714325,
+     0.35524940617577194
+    ],
+    "kappa_quad": [
+     0.2368929296282081,
+     0.4227218596331663
+    ]
+   },
+   "constant": {
+    "always_2": {
+     "exact": 0.5085470085470085,
+     "within1": 0.7905982905982906,
+     "mae": 0.717948717948718,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    },
+    "always_3": {
+     "exact": 0.2777777777777778,
+     "within1": 0.9786324786324786,
+     "mae": 0.7435897435897436,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    }
+   },
+   "t1_t2_same_grade": 0.7649572649572649,
+   "confusion": [
+    [
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     174,
+     64,
+     0,
+     0
+    ],
+    [
+     0,
+     55,
+     70,
+     5,
+     0
+    ],
+    [
+     0,
+     28,
+     59,
+     3,
+     0
+    ],
+    [
+     0,
+     1,
+     7,
+     0,
+     0
+    ]
+   ]
+  },
+  "height": {
+   "n": 234,
+   "model": {
+    "mae": 1.6961090615671923,
+    "bias": -0.04677198789058586,
+    "loa_lo": -4.250779351583423,
+    "loa_hi": 4.1572353758022516,
+    "r": 0.45925848973908295,
+    "ccc": 0.2172726831750041,
+    "icc_a1": 0.2180018970208068
+   },
+   "model_ci": {
+    "mae": [
+     1.5089677434191746,
+     1.8832950279498708
+    ],
+    "r": [
+     0.33171163279470034,
+     0.5662895004236267
+    ],
+    "ccc": [
+     0.15250002261093912,
+     0.2736632573405921
+    ],
+    "icc_a1": [
+     0.1530543540683508,
+     0.27451535386096987
+    ]
+   },
+   "constant_train_mean": {
+    "value": 9.510356498522578,
+    "mae": 1.872078179229442
+   },
+   "all_axial": {
+    "mae": 1.7072286962443948,
+    "bias": 0.02334019159659361,
+    "loa_lo": -4.191370002929363,
+    "loa_hi": 4.23805038612255,
+    "r": 0.4484766310568313,
+    "ccc": 0.2110799163219248,
+    "icc_a1": 0.21143634020056512
+   },
+   "n_all_axial": 468
+  },
+  "disorders": {
+   "table": [
+    {
+     "disorder": "Herniation",
+     "img_support": 112,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.15,
+     "img_F1_thr": 0.354,
+     "delta_thr": 0.354,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.18,
+     "pat_P": 0.3333,
+     "pat_R": 0.6429,
+     "pat_F1": 0.439,
+     "pat_AUC": 0.6741,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "Protrusion",
+     "img_support": 200,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.24,
+     "img_F1_thr": 0.5226,
+     "delta_thr": 0.5226,
+     "pat_support": 25,
+     "pat_n": 78,
+     "thr_pat_val": 0.28,
+     "pat_P": 0.3676,
+     "pat_R": 1.0,
+     "pat_F1": 0.5376,
+     "pat_AUC": 0.8245,
+     "always_pos_F1": 0.4854
+    },
+    {
+     "disorder": "Bulge",
+     "img_support": 392,
+     "img_P": 0.6335,
+     "img_R": 0.926,
+     "img_F1": 0.7523,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.7717,
+     "delta_thr": 0.0193,
+     "pat_support": 49,
+     "pat_n": 78,
+     "thr_pat_val": 0.05,
+     "pat_P": 0.6282,
+     "pat_R": 1.0,
+     "pat_F1": 0.7717,
+     "pat_AUC": 0.651,
+     "always_pos_F1": 0.7717
+    },
+    {
+     "disorder": "ThecalComp",
+     "img_support": 400,
+     "img_P": 0.6598,
+     "img_R": 0.8775,
+     "img_F1": 0.7532,
+     "thr_img_val": 0.42,
+     "img_F1_thr": 0.7731,
+     "delta_thr": 0.0199,
+     "pat_support": 50,
+     "pat_n": 78,
+     "thr_pat_val": 0.49,
+     "pat_P": 0.6364,
+     "pat_R": 0.98,
+     "pat_F1": 0.7717,
+     "pat_AUC": 0.7211,
+     "always_pos_F1": 0.7813
+    },
+    {
+     "disorder": "NerveComp",
+     "img_support": 352,
+     "img_P": 0.5756,
+     "img_R": 0.5085,
+     "img_F1": 0.54,
+     "thr_img_val": 0.45,
+     "img_F1_thr": 0.6667,
+     "delta_thr": 0.1267,
+     "pat_support": 44,
+     "pat_n": 78,
+     "thr_pat_val": 0.54,
+     "pat_P": 0.5588,
+     "pat_R": 0.4318,
+     "pat_F1": 0.4872,
+     "pat_AUC": 0.5003,
+     "always_pos_F1": 0.7213
+    },
+    {
+     "disorder": "Stenosis",
+     "img_support": 32,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.3429,
+     "delta_thr": 0.3429,
+     "pat_support": 4,
+     "pat_n": 78,
+     "thr_pat_val": 0.05,
+     "pat_P": 0.1875,
+     "pat_R": 0.75,
+     "pat_F1": 0.3,
+     "pat_AUC": 0.8936,
+     "always_pos_F1": 0.0976
+    },
+    {
+     "disorder": "Spondylolisthesis",
+     "img_support": 16,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.07,
+     "img_F1_thr": 0.1304,
+     "delta_thr": 0.1304,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.07,
+     "pat_P": 0.0714,
+     "pat_R": 0.5,
+     "pat_F1": 0.125,
+     "pat_AUC": 0.8092,
+     "always_pos_F1": 0.05
+    },
+    {
+     "disorder": "Desiccated",
+     "img_support": 112,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.16,
+     "img_F1_thr": 0.3455,
+     "delta_thr": 0.3455,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.18,
+     "pat_P": 0.3333,
+     "pat_R": 0.1429,
+     "pat_F1": 0.2,
+     "pat_AUC": 0.7176,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "LigFlavum",
+     "img_support": 16,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.1268,
+     "delta_thr": 0.1268,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.06,
+     "pat_P": 0.0625,
+     "pat_R": 0.5,
+     "pat_F1": 0.1111,
+     "pat_AUC": 0.7763,
+     "always_pos_F1": 0.05
+    }
+   ],
+   "macro_img_F1": 0.22728003604725217,
+   "macro_img_F1_thr": 0.44816374822919225,
+   "macro_delta": 0.22088371218194017,
+   "macro_pat_F1": 0.41591738708342496,
+   "macro_always_pos_F1": 0.3962120599671639,
+   "macro_pat_AUC": 0.7297480509491963
+  }
+ },
+ "A1orig": {
+  "grading": {
+   "n_images": 468,
+   "n_patients": 78,
+   "image_level": {
+    "exact": 0.6517094017094017,
+    "within1": 0.9572649572649573,
+    "mae": 0.39316239316239315,
+    "kappa": 0.42462777752636094,
+    "kappa_lin": 0.5143147208121828,
+    "kappa_quad": 0.6113183354703344
+   },
+   "image_level_ci": {
+    "exact": [
+     0.5897435897435898,
+     0.7115384615384616
+    ],
+    "within1": [
+     0.9316239316239316,
+     0.9786324786324786
+    ],
+    "mae": [
+     0.32051282051282054,
+     0.4658119658119658
+    ],
+    "kappa_lin": [
+     0.42488706121734654,
+     0.596114027026697
+    ],
+    "kappa_quad": [
+     0.5081074793811744,
+     0.6981484664470202
+    ]
+   },
+   "disc_level_T2": {
+    "exact": 0.6923076923076923,
+    "within1": 0.9658119658119658,
+    "mae": 0.3418803418803419,
+    "kappa": 0.4909046957152353,
+    "kappa_lin": 0.5750669632723475,
+    "kappa_quad": 0.6674955595026644
+   },
+   "disc_level_T2_ci": {
+    "exact": [
+     0.6282051282051282,
+     0.7522435897435892
+    ],
+    "within1": [
+     0.9401709401709402,
+     0.9871794871794872
+    ],
+    "mae": [
+     0.2733974358974359,
+     0.41452991452991456
+    ],
+    "kappa_lin": [
+     0.48610332086869257,
+     0.6546229855540392
+    ],
+    "kappa_quad": [
+     0.5767616581267258,
+     0.7429507054417952
+    ]
+   },
+   "constant": {
+    "always_2": {
+     "exact": 0.5085470085470085,
+     "within1": 0.7905982905982906,
+     "mae": 0.717948717948718,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    },
+    "always_3": {
+     "exact": 0.2777777777777778,
+     "within1": 0.9786324786324786,
+     "mae": 0.7435897435897436,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    }
+   },
+   "t1_t2_same_grade": 0.7863247863247863,
+   "confusion": [
+    [
+     0,
+     2,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     199,
+     36,
+     2,
+     1
+    ],
+    [
+     0,
+     46,
+     76,
+     8,
+     0
+    ],
+    [
+     0,
+     15,
+     39,
+     30,
+     6
+    ],
+    [
+     0,
+     0,
+     2,
+     6,
+     0
+    ]
+   ]
+  },
+  "height": {
+   "n": 234,
+   "model": {
+    "mae": 1.5786846916899722,
+    "bias": -0.40220735113844913,
+    "loa_lo": -4.451583246111371,
+    "loa_hi": 3.6471685438344728,
+    "r": 0.49080843738915425,
+    "ccc": 0.4255286065893279,
+    "icc_a1": 0.4265758528482214
+   },
+   "model_ci": {
+    "mae": [
+     1.384143287478349,
+     1.8056032714935446
+    ],
+    "r": [
+     0.34175146940506684,
+     0.6122407906041595
+    ],
+    "ccc": [
+     0.27950375608715267,
+     0.5481223262122126
+    ],
+    "icc_a1": [
+     0.28036701840973294,
+     0.5491828536419111
+    ]
+   },
+   "constant_train_mean": {
+    "value": 9.510356498522578,
+    "mae": 1.872078179229442
+   },
+   "all_axial": {
+    "mae": 1.6103650270364223,
+    "bias": -0.43839859045468843,
+    "loa_lo": -4.5102665726993285,
+    "loa_hi": 3.633469391789952,
+    "r": 0.49037301736462363,
+    "ccc": 0.43496968184441637,
+    "icc_a1": 0.43549546847498843
+   },
+   "n_all_axial": 468
+  },
+  "disorders": {
+   "table": [
+    {
+     "disorder": "Herniation",
+     "img_support": 112,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.08,
+     "img_F1_thr": 0.3744,
+     "delta_thr": 0.3744,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.17,
+     "pat_P": 0.303,
+     "pat_R": 0.7143,
+     "pat_F1": 0.4255,
+     "pat_AUC": 0.692,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "Protrusion",
+     "img_support": 200,
+     "img_P": 0.75,
+     "img_R": 0.12,
+     "img_F1": 0.2069,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.4854,
+     "delta_thr": 0.2785,
+     "pat_support": 25,
+     "pat_n": 78,
+     "thr_pat_val": 0.31,
+     "pat_P": 0.3966,
+     "pat_R": 0.92,
+     "pat_F1": 0.5542,
+     "pat_AUC": 0.7936,
+     "always_pos_F1": 0.4854
+    },
+    {
+     "disorder": "Bulge",
+     "img_support": 392,
+     "img_P": 0.6519,
+     "img_R": 0.9362,
+     "img_F1": 0.7686,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.7717,
+     "delta_thr": 0.0031,
+     "pat_support": 49,
+     "pat_n": 78,
+     "thr_pat_val": 0.58,
+     "pat_P": 0.64,
+     "pat_R": 0.9796,
+     "pat_F1": 0.7742,
+     "pat_AUC": 0.6907,
+     "always_pos_F1": 0.7717
+    },
+    {
+     "disorder": "ThecalComp",
+     "img_support": 400,
+     "img_P": 0.7041,
+     "img_R": 0.8625,
+     "img_F1": 0.7753,
+     "thr_img_val": 0.42,
+     "img_F1_thr": 0.7909,
+     "delta_thr": 0.0156,
+     "pat_support": 50,
+     "pat_n": 78,
+     "thr_pat_val": 0.64,
+     "pat_P": 0.8113,
+     "pat_R": 0.86,
+     "pat_F1": 0.835,
+     "pat_AUC": 0.8139,
+     "always_pos_F1": 0.7813
+    },
+    {
+     "disorder": "NerveComp",
+     "img_support": 352,
+     "img_P": 0.6207,
+     "img_R": 0.7159,
+     "img_F1": 0.6649,
+     "thr_img_val": 0.4,
+     "img_F1_thr": 0.6979,
+     "delta_thr": 0.033,
+     "pat_support": 44,
+     "pat_n": 78,
+     "thr_pat_val": 0.53,
+     "pat_P": 0.6129,
+     "pat_R": 0.8636,
+     "pat_F1": 0.717,
+     "pat_AUC": 0.6434,
+     "always_pos_F1": 0.7213
+    },
+    {
+     "disorder": "Stenosis",
+     "img_support": 32,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.15,
+     "img_F1_thr": 0.2388,
+     "delta_thr": 0.2388,
+     "pat_support": 4,
+     "pat_n": 78,
+     "thr_pat_val": 0.2,
+     "pat_P": 0.0,
+     "pat_R": 0.0,
+     "pat_F1": 0.0,
+     "pat_AUC": 0.9493,
+     "always_pos_F1": 0.0976
+    },
+    {
+     "disorder": "Spondylolisthesis",
+     "img_support": 16,
+     "img_P": 1.0,
+     "img_R": 0.125,
+     "img_F1": 0.2222,
+     "thr_img_val": 0.19,
+     "img_F1_thr": 0.3415,
+     "delta_thr": 0.1192,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.2,
+     "pat_P": 0.2,
+     "pat_R": 0.5,
+     "pat_F1": 0.2857,
+     "pat_AUC": 0.9671,
+     "always_pos_F1": 0.05
+    },
+    {
+     "disorder": "Desiccated",
+     "img_support": 112,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.11,
+     "img_F1_thr": 0.3669,
+     "delta_thr": 0.3669,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.13,
+     "pat_P": 0.2642,
+     "pat_R": 1.0,
+     "pat_F1": 0.4179,
+     "pat_AUC": 0.7924,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "LigFlavum",
+     "img_support": 16,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.24,
+     "img_F1_thr": 0.1379,
+     "delta_thr": 0.1379,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.17,
+     "pat_P": 0.0,
+     "pat_R": 0.0,
+     "pat_F1": 0.0,
+     "pat_AUC": 0.9211,
+     "always_pos_F1": 0.05
+    }
+   ],
+   "macro_img_F1": 0.29309930133026213,
+   "macro_img_F1_thr": 0.46726178692384607,
+   "macro_delta": 0.1741624855935839,
+   "macro_pat_F1": 0.4454999614013583,
+   "macro_always_pos_F1": 0.3962120599671639,
+   "macro_pat_AUC": 0.8070515351285265
+  }
+ },
+ "A2orig": {
+  "grading": {
+   "n_images": 468,
+   "n_patients": 78,
+   "image_level": {
+    "exact": 0.6175213675213675,
+    "within1": 0.9230769230769231,
+    "mae": 0.46153846153846156,
+    "kappa": 0.34168421714393493,
+    "kappa_lin": 0.4203403825863572,
+    "kappa_quad": 0.5061007344012027
+   },
+   "image_level_ci": {
+    "exact": [
+     0.5490918803418804,
+     0.6858974358974359
+    ],
+    "within1": [
+     0.8910256410256411,
+     0.9508547008547008
+    ],
+    "mae": [
+     0.37393162393162394,
+     0.5491452991452992
+    ],
+    "kappa_lin": [
+     0.3158777672090499,
+     0.5175861859167439
+    ],
+    "kappa_quad": [
+     0.3830418398676026,
+     0.6101418451495215
+    ]
+   },
+   "disc_level_T2": {
+    "exact": 0.6581196581196581,
+    "within1": 0.9316239316239316,
+    "mae": 0.41452991452991456,
+    "kappa": 0.41636788776305544,
+    "kappa_lin": 0.47601458977792144,
+    "kappa_quad": 0.5374119325782574
+   },
+   "disc_level_T2_ci": {
+    "exact": [
+     0.5854700854700855,
+     0.7264957264957265
+    ],
+    "within1": [
+     0.8974358974358975,
+     0.9615384615384616
+    ],
+    "mae": [
+     0.32905982905982906,
+     0.5085470085470085
+    ],
+    "kappa_lin": [
+     0.37052376719397884,
+     0.5747188607918926
+    ],
+    "kappa_quad": [
+     0.4174518195492997,
+     0.64553205252149
+    ]
+   },
+   "constant": {
+    "always_2": {
+     "exact": 0.5085470085470085,
+     "within1": 0.7905982905982906,
+     "mae": 0.717948717948718,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    },
+    "always_3": {
+     "exact": 0.2777777777777778,
+     "within1": 0.9786324786324786,
+     "mae": 0.7435897435897436,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    }
+   },
+   "t1_t2_same_grade": 0.7478632478632479,
+   "confusion": [
+    [
+     0,
+     2,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     207,
+     27,
+     4,
+     0
+    ],
+    [
+     0,
+     69,
+     54,
+     7,
+     0
+    ],
+    [
+     0,
+     29,
+     31,
+     26,
+     4
+    ],
+    [
+     0,
+     1,
+     2,
+     3,
+     2
+    ]
+   ]
+  },
+  "height": {
+   "n": 234,
+   "model": {
+    "mae": 1.5080072808469462,
+    "bias": 0.04851380270770472,
+    "loa_lo": -3.86717640111103,
+    "loa_hi": 3.964204006526439,
+    "r": 0.5417234865632883,
+    "ccc": 0.49969290900096713,
+    "icc_a1": 0.5007635738167556
+   },
+   "model_ci": {
+    "mae": [
+     1.3280890959959764,
+     1.7120687493401714
+    ],
+    "r": [
+     0.40637475607483126,
+     0.6579363406337245
+    ],
+    "ccc": [
+     0.36182448495974057,
+     0.6206180047993652
+    ],
+    "icc_a1": [
+     0.3628139677682023,
+     0.6216258409122899
+    ]
+   },
+   "constant_train_mean": {
+    "value": 9.510356498522578,
+    "mae": 1.872078179229442
+   },
+   "all_axial": {
+    "mae": 1.5630807418089647,
+    "bias": 0.07672560826326028,
+    "loa_lo": -3.9286719797422003,
+    "loa_hi": 4.0821231962687206,
+    "r": 0.5215896857533239,
+    "ccc": 0.48782266549337383,
+    "icc_a1": 0.4883571215805926
+   },
+   "n_all_axial": 468
+  },
+  "disorders": {
+   "table": [
+    {
+     "disorder": "Herniation",
+     "img_support": 112,
+     "img_P": 0.4364,
+     "img_R": 0.2143,
+     "img_F1": 0.2874,
+     "thr_img_val": 0.24,
+     "img_F1_thr": 0.3621,
+     "delta_thr": 0.0746,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.14,
+     "pat_P": 0.3226,
+     "pat_R": 0.7143,
+     "pat_F1": 0.4444,
+     "pat_AUC": 0.7355,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "Protrusion",
+     "img_support": 200,
+     "img_P": 0.6809,
+     "img_R": 0.32,
+     "img_F1": 0.4354,
+     "thr_img_val": 0.23,
+     "img_F1_thr": 0.5562,
+     "delta_thr": 0.1208,
+     "pat_support": 25,
+     "pat_n": 78,
+     "thr_pat_val": 0.38,
+     "pat_P": 0.5946,
+     "pat_R": 0.88,
+     "pat_F1": 0.7097,
+     "pat_AUC": 0.8438,
+     "always_pos_F1": 0.4854
+    },
+    {
+     "disorder": "Bulge",
+     "img_support": 392,
+     "img_P": 0.6559,
+     "img_R": 0.8265,
+     "img_F1": 0.7314,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.7704,
+     "delta_thr": 0.0391,
+     "pat_support": 49,
+     "pat_n": 78,
+     "thr_pat_val": 0.28,
+     "pat_P": 0.6282,
+     "pat_R": 1.0,
+     "pat_F1": 0.7717,
+     "pat_AUC": 0.6703,
+     "always_pos_F1": 0.7717
+    },
+    {
+     "disorder": "ThecalComp",
+     "img_support": 400,
+     "img_P": 0.7292,
+     "img_R": 0.7875,
+     "img_F1": 0.7572,
+     "thr_img_val": 0.13,
+     "img_F1_thr": 0.7887,
+     "delta_thr": 0.0315,
+     "pat_support": 50,
+     "pat_n": 78,
+     "thr_pat_val": 0.37,
+     "pat_P": 0.6447,
+     "pat_R": 0.98,
+     "pat_F1": 0.7778,
+     "pat_AUC": 0.7575,
+     "always_pos_F1": 0.7813
+    },
+    {
+     "disorder": "NerveComp",
+     "img_support": 352,
+     "img_P": 0.6385,
+     "img_R": 0.5369,
+     "img_F1": 0.5833,
+     "thr_img_val": 0.08,
+     "img_F1_thr": 0.7215,
+     "delta_thr": 0.1381,
+     "pat_support": 44,
+     "pat_n": 78,
+     "thr_pat_val": 0.51,
+     "pat_P": 0.6078,
+     "pat_R": 0.7045,
+     "pat_F1": 0.6526,
+     "pat_AUC": 0.6123,
+     "always_pos_F1": 0.7213
+    },
+    {
+     "disorder": "Stenosis",
+     "img_support": 32,
+     "img_P": 0.3333,
+     "img_R": 0.0312,
+     "img_F1": 0.0571,
+     "thr_img_val": 0.1,
+     "img_F1_thr": 0.4746,
+     "delta_thr": 0.4174,
+     "pat_support": 4,
+     "pat_n": 78,
+     "thr_pat_val": 0.06,
+     "pat_P": 0.5,
+     "pat_R": 1.0,
+     "pat_F1": 0.6667,
+     "pat_AUC": 0.9764,
+     "always_pos_F1": 0.0976
+    },
+    {
+     "disorder": "Spondylolisthesis",
+     "img_support": 16,
+     "img_P": 1.0,
+     "img_R": 0.0625,
+     "img_F1": 0.1176,
+     "thr_img_val": 0.24,
+     "img_F1_thr": 0.375,
+     "delta_thr": 0.2574,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.39,
+     "pat_P": 0.0,
+     "pat_R": 0.0,
+     "pat_F1": 0.0,
+     "pat_AUC": 0.9737,
+     "always_pos_F1": 0.05
+    },
+    {
+     "disorder": "Desiccated",
+     "img_support": 112,
+     "img_P": 0.5,
+     "img_R": 0.0089,
+     "img_F1": 0.0175,
+     "thr_img_val": 0.11,
+     "img_F1_thr": 0.3573,
+     "delta_thr": 0.3397,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.27,
+     "pat_P": 0.1333,
+     "pat_R": 0.1429,
+     "pat_F1": 0.1379,
+     "pat_AUC": 0.6473,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "LigFlavum",
+     "img_support": 16,
+     "img_P": 0.1667,
+     "img_R": 0.0625,
+     "img_F1": 0.0909,
+     "thr_img_val": 0.16,
+     "img_F1_thr": 0.1081,
+     "delta_thr": 0.0172,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.46,
+     "pat_P": 0.0,
+     "pat_R": 0.0,
+     "pat_F1": 0.0,
+     "pat_AUC": 0.9145,
+     "always_pos_F1": 0.05
+    }
+   ],
+   "macro_img_F1": 0.3419960014276928,
+   "macro_img_F1_thr": 0.5015408894044507,
+   "macro_delta": 0.15954488797675806,
+   "macro_pat_F1": 0.46230916277566014,
+   "macro_always_pos_F1": 0.3962120599671639,
+   "macro_pat_AUC": 0.7923552666705151
+  }
+ },
+ "A3orig": {
+  "grading": {
+   "n_images": 468,
+   "n_patients": 78,
+   "image_level": {
+    "exact": 0.5833333333333334,
+    "within1": 0.9337606837606838,
+    "mae": 0.4829059829059829,
+    "kappa": 0.33918408133119005,
+    "kappa_lin": 0.4311713455953533,
+    "kappa_quad": 0.5334385644263521
+   },
+   "image_level_ci": {
+    "exact": [
+     0.5192307692307693,
+     0.6452991452991453
+    ],
+    "within1": [
+     0.8974358974358975,
+     0.9636752136752137
+    ],
+    "mae": [
+     0.40384615384615385,
+     0.5662393162393162
+    ],
+    "kappa_lin": [
+     0.32748923157257925,
+     0.5243622842334225
+    ],
+    "kappa_quad": [
+     0.4082918211017743,
+     0.6361945471263264
+    ]
+   },
+   "disc_level_T2": {
+    "exact": 0.6239316239316239,
+    "within1": 0.9487179487179487,
+    "mae": 0.42735042735042733,
+    "kappa": 0.40338983050847455,
+    "kappa_lin": 0.49612403100775193,
+    "kappa_quad": 0.5969328221370228
+   },
+   "disc_level_T2_ci": {
+    "exact": [
+     0.5641025641025641,
+     0.6838675213675208
+    ],
+    "within1": [
+     0.9102564102564102,
+     0.9786324786324786
+    ],
+    "mae": [
+     0.34615384615384615,
+     0.5085470085470085
+    ],
+    "kappa_lin": [
+     0.3971724983059408,
+     0.58467421517817
+    ],
+    "kappa_quad": [
+     0.47778536396231164,
+     0.6960899214635294
+    ]
+   },
+   "constant": {
+    "always_2": {
+     "exact": 0.5085470085470085,
+     "within1": 0.7905982905982906,
+     "mae": 0.717948717948718,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    },
+    "always_3": {
+     "exact": 0.2777777777777778,
+     "within1": 0.9786324786324786,
+     "mae": 0.7435897435897436,
+     "kappa": 0.0,
+     "kappa_lin": 0.0,
+     "kappa_quad": 0.0
+    }
+   },
+   "t1_t2_same_grade": 0.7435897435897436,
+   "confusion": [
+    [
+     0,
+     2,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     166,
+     56,
+     16,
+     0
+    ],
+    [
+     0,
+     40,
+     70,
+     20,
+     0
+    ],
+    [
+     0,
+     14,
+     36,
+     35,
+     5
+    ],
+    [
+     0,
+     0,
+     1,
+     5,
+     2
+    ]
+   ]
+  },
+  "height": {
+   "n": 234,
+   "model": {
+    "mae": 1.5880822024793706,
+    "bias": 0.3558054693743714,
+    "loa_lo": -3.6905461937927555,
+    "loa_hi": 4.4021571325414985,
+    "r": 0.5061892719837636,
+    "ccc": 0.4611089504000415,
+    "icc_a1": 0.4621733139138539
+   },
+   "model_ci": {
+    "mae": [
+     1.3971790532271067,
+     1.800244087082708
+    ],
+    "r": [
+     0.3668784299885484,
+     0.6194715713775086
+    ],
+    "ccc": [
+     0.3281681008063354,
+     0.5729955925110052
+    ],
+    "icc_a1": [
+     0.32911300943068345,
+     0.5740431093375594
+    ]
+   },
+   "constant_train_mean": {
+    "value": 9.510356498522578,
+    "mae": 1.872078179229442
+   },
+   "all_axial": {
+    "mae": 1.605195570195842,
+    "bias": 0.33450472151112354,
+    "loa_lo": -3.7775195429754413,
+    "loa_hi": 4.446528985997689,
+    "r": 0.4942001074558975,
+    "ccc": 0.4579690340360555,
+    "icc_a1": 0.45850006230884977
+   },
+   "n_all_axial": 468
+  },
+  "disorders": {
+   "table": [
+    {
+     "disorder": "Herniation",
+     "img_support": 112,
+     "img_P": 0.4773,
+     "img_R": 0.1875,
+     "img_F1": 0.2692,
+     "thr_img_val": 0.08,
+     "img_F1_thr": 0.4269,
+     "delta_thr": 0.1577,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.21,
+     "pat_P": 0.3462,
+     "pat_R": 0.6429,
+     "pat_F1": 0.45,
+     "pat_AUC": 0.7634,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "Protrusion",
+     "img_support": 200,
+     "img_P": 0.566,
+     "img_R": 0.15,
+     "img_F1": 0.2372,
+     "thr_img_val": 0.23,
+     "img_F1_thr": 0.4733,
+     "delta_thr": 0.2362,
+     "pat_support": 25,
+     "pat_n": 78,
+     "thr_pat_val": 0.29,
+     "pat_P": 0.4857,
+     "pat_R": 0.68,
+     "pat_F1": 0.5667,
+     "pat_AUC": 0.7521,
+     "always_pos_F1": 0.4854
+    },
+    {
+     "disorder": "Bulge",
+     "img_support": 392,
+     "img_P": 0.6667,
+     "img_R": 0.8367,
+     "img_F1": 0.7421,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.7712,
+     "delta_thr": 0.0291,
+     "pat_support": 49,
+     "pat_n": 78,
+     "thr_pat_val": 0.64,
+     "pat_P": 0.6567,
+     "pat_R": 0.898,
+     "pat_F1": 0.7586,
+     "pat_AUC": 0.7111,
+     "always_pos_F1": 0.7717
+    },
+    {
+     "disorder": "ThecalComp",
+     "img_support": 400,
+     "img_P": 0.7627,
+     "img_R": 0.7875,
+     "img_F1": 0.7749,
+     "thr_img_val": 0.05,
+     "img_F1_thr": 0.7816,
+     "delta_thr": 0.0067,
+     "pat_support": 50,
+     "pat_n": 78,
+     "thr_pat_val": 0.62,
+     "pat_P": 0.7636,
+     "pat_R": 0.84,
+     "pat_F1": 0.8,
+     "pat_AUC": 0.8104,
+     "always_pos_F1": 0.7813
+    },
+    {
+     "disorder": "NerveComp",
+     "img_support": 352,
+     "img_P": 0.6147,
+     "img_R": 0.571,
+     "img_F1": 0.592,
+     "thr_img_val": 0.41,
+     "img_F1_thr": 0.6366,
+     "delta_thr": 0.0446,
+     "pat_support": 44,
+     "pat_n": 78,
+     "thr_pat_val": 0.52,
+     "pat_P": 0.5769,
+     "pat_R": 0.6818,
+     "pat_F1": 0.625,
+     "pat_AUC": 0.6019,
+     "always_pos_F1": 0.7213
+    },
+    {
+     "disorder": "Stenosis",
+     "img_support": 32,
+     "img_P": 0.2,
+     "img_R": 0.0625,
+     "img_F1": 0.0952,
+     "thr_img_val": 0.16,
+     "img_F1_thr": 0.3871,
+     "delta_thr": 0.2919,
+     "pat_support": 4,
+     "pat_n": 78,
+     "thr_pat_val": 0.2,
+     "pat_P": 0.5,
+     "pat_R": 0.75,
+     "pat_F1": 0.6,
+     "pat_AUC": 0.9527,
+     "always_pos_F1": 0.0976
+    },
+    {
+     "disorder": "Spondylolisthesis",
+     "img_support": 16,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.13,
+     "img_F1_thr": 0.3582,
+     "delta_thr": 0.3582,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.17,
+     "pat_P": 0.25,
+     "pat_R": 1.0,
+     "pat_F1": 0.4,
+     "pat_AUC": 1.0,
+     "always_pos_F1": 0.05
+    },
+    {
+     "disorder": "Desiccated",
+     "img_support": 112,
+     "img_P": 0.0,
+     "img_R": 0.0,
+     "img_F1": 0.0,
+     "thr_img_val": 0.1,
+     "img_F1_thr": 0.3898,
+     "delta_thr": 0.3898,
+     "pat_support": 14,
+     "pat_n": 78,
+     "thr_pat_val": 0.11,
+     "pat_P": 0.2407,
+     "pat_R": 0.9286,
+     "pat_F1": 0.3824,
+     "pat_AUC": 0.7963,
+     "always_pos_F1": 0.3043
+    },
+    {
+     "disorder": "LigFlavum",
+     "img_support": 16,
+     "img_P": 0.0833,
+     "img_R": 0.0625,
+     "img_F1": 0.0714,
+     "thr_img_val": 0.09,
+     "img_F1_thr": 0.1739,
+     "delta_thr": 0.1025,
+     "pat_support": 2,
+     "pat_n": 78,
+     "thr_pat_val": 0.14,
+     "pat_P": 0.1667,
+     "pat_R": 0.5,
+     "pat_F1": 0.25,
+     "pat_AUC": 0.9145,
+     "always_pos_F1": 0.05
+    }
+   ],
+   "macro_img_F1": 0.309120879029551,
+   "macro_img_F1_thr": 0.48874026018610345,
+   "macro_delta": 0.17961938115655246,
+   "macro_pat_F1": 0.5369600330553678,
+   "macro_always_pos_F1": 0.3962120599671639,
+   "macro_pat_AUC": 0.8113751395446229
+  }
+ }
+}

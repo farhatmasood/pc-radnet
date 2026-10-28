@@ -1,0 +1,11 @@
+{
+  "model": "Med-PaLM",
+  "model_id": "kyegomez/Med-Palm (open-source reimplementation)",
+  "architecture": "ViT encoder + PaLM decoder (x-transformers)",
+  "n": 20,
+  "precision_mean": 0.6908333333333334,
+  "recall_mean": 0.8316666666666667,
+  "f1_mean": 0.7109920634920635,
+  "words_mean": 60.4,
+  "mean_time_s": 22.42082325220108
+}

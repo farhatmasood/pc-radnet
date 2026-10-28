@@ -1,0 +1,51 @@
+{
+ "vendor": [
+  {
+   "vendor": "Philips",
+   "n": 109,
+   "mean_fg": 0.619,
+   "VB": 0.672,
+   "IVD": 0.492,
+   "SC": 0.695
+  },
+  {
+   "vendor": "Siemens",
+   "n": 101,
+   "mean_fg": 0.571,
+   "VB": 0.585,
+   "IVD": 0.488,
+   "SC": 0.747
+  }
+ ],
+ "MagneticFieldStrength": [
+  {
+   "MagneticFieldStrength": 1.5,
+   "n": 113,
+   "mean_fg": 0.574,
+   "VB": 0.595,
+   "IVD": 0.487,
+   "SC": 0.734
+  },
+  {
+   "MagneticFieldStrength": 3.0,
+   "n": 97,
+   "mean_fg": 0.622,
+   "VB": 0.671,
+   "IVD": 0.493,
+   "SC": 0.701
+  }
+ ],
+ "thickness": [
+  {
+   "thick": "<3.5 mm",
+   "n": 128,
+   "mean_fg": 0.557
+  },
+  {
+   "thick": ">=3.5 mm",
+   "n": 82,
+   "mean_fg": 0.657
+  }
+ ],
+ "spacing_corr": 0.2500271873190268
+}

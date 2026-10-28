@@ -1,0 +1,11 @@
+{
+  "model": "LLaVA-Rad",
+  "model_id": "microsoft/llava-rad",
+  "base_model": "lmsys/vicuna-7b-v1.5",
+  "n": 20,
+  "precision_mean": 0.6666666666666667,
+  "recall_mean": 0.6516666666666666,
+  "f1_mean": 0.6016666666666667,
+  "words_mean": 96.1,
+  "mean_time_s": 15.759806084632874
+}

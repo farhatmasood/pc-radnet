@@ -1,0 +1,69 @@
+{
+ "info": {
+  "spider_train_slices": 730,
+  "spider_train_patients": 146,
+  "spider_val_patients": 26,
+  "spider_test_patients": 38,
+  "lsma_sag_train": 720
+ },
+ "direct": {
+  "spider_test": {
+   "IVD_sag": 0.4773,
+   "SC_sag": 0.7378,
+   "VB": 0.5758,
+   "mean": 0.5887756148409845
+  },
+  "lsma_sag_test": {
+   "IVD_sag": 0.8524,
+   "SC_sag": 0.8848,
+   "Sacrum": 0.9057,
+   "VB": 0.9144,
+   "mean": 0.8893093520250076
+  }
+ },
+ "spider": {
+  "spider_test": {
+   "IVD_sag": 0.6794,
+   "SC_sag": 0.8639,
+   "VB": 0.823,
+   "mean": 0.7848231103622688
+  },
+  "lsma_sag_test": {
+   "IVD_sag": 0.7382,
+   "SC_sag": 0.8376,
+   "Sacrum": 0.0168,
+   "VB": 0.6825,
+   "mean": 0.568765342015794
+  }
+ },
+ "finetune": {
+  "spider_test": {
+   "IVD_sag": 0.7557,
+   "SC_sag": 0.8974,
+   "VB": 0.8265,
+   "mean": 0.8225211231213696
+  },
+  "lsma_sag_test": {
+   "IVD_sag": 0.7042,
+   "SC_sag": 0.8546,
+   "Sacrum": 0.0913,
+   "VB": 0.7888,
+   "mean": 0.6097063079781003
+  }
+ },
+ "joint": {
+  "spider_test": {
+   "IVD_sag": 0.7627,
+   "SC_sag": 0.9019,
+   "VB": 0.8294,
+   "mean": 0.8273230190828161
+  },
+  "lsma_sag_test": {
+   "IVD_sag": 0.9141,
+   "SC_sag": 0.9183,
+   "Sacrum": 0.94,
+   "VB": 0.9464,
+   "mean": 0.9296850961370345
+  }
+ }
+}

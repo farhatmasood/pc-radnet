@@ -1,0 +1,46 @@
+LUMBAR SPINE MRI REPORT
+Patient ID: 0125
+
+TECHNIQUE:
+  MRI of the lumbar spine was performed in axial and sagittal planes
+  using T1 and T2 weighted sequences.
+
+FINDINGS:
+
+  L3-L4 Level:
+    Pfirrmann Grade: 2/5 — Near-normal
+    Clinical: Minimal degeneration; conservative management
+    Disc Height: 8.4 px (moderately reduced)
+    Findings: disc herniation, disc protrusion, disc bulge, thecal sac compression, nerve root compression
+    Segmentation confidence: limited (Dice = 0.231)
+
+  L4-L5 Level:
+    Pfirrmann Grade: 2/5 — Near-normal
+    Clinical: Minimal degeneration; conservative management
+    Disc Height: 10.0 px (mildly reduced)
+    Findings: disc herniation, disc protrusion, disc bulge, thecal sac compression, nerve root compression
+    Segmentation confidence: limited (Dice = 0.504)
+
+  L5-S1 Level:
+    Pfirrmann Grade: 2/5 — Near-normal
+    Clinical: Minimal degeneration; conservative management
+    Disc Height: 9.9 px (mildly reduced)
+    Findings: disc herniation, disc protrusion, disc bulge, thecal sac compression, nerve root compression
+    Segmentation confidence: limited (Dice = 0.632)
+
+IMPRESSION:
+  1. Disc herniation at L3-L4
+  2. Disc protrusion at L3-L4
+  3. Disc bulge at L3-L4
+  4. Thecal sac compression at L3-L4
+  5. Nerve root compression at L3-L4
+  6. Disc herniation at L4-L5
+  7. Disc protrusion at L4-L5
+  8. Disc bulge at L4-L5
+  9. Thecal sac compression at L4-L5
+  10. Nerve root compression at L4-L5
+  11. Disc herniation at L5-S1
+  12. Disc protrusion at L5-S1
+  13. Disc bulge at L5-S1
+  14. Thecal sac compression at L5-S1
+  15. Nerve root compression at L5-S1

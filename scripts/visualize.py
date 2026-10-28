@@ -1,5 +1,5 @@
-﻿"""
-visualize.py — Generate all figures for the manuscript.
+"""
+visualize.py - Generate all figures for the manuscript.
 Sections 10-11: qualitative results, training curves, ablation plots.
 
 Usage:
@@ -15,6 +15,7 @@ from collections import defaultdict
 
 import torch
 import matplotlib
+from repo_config import load_config
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
@@ -25,8 +26,7 @@ import yaml
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
-with open(SCRIPT_DIR / "config.yaml") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 FIG_DIR = Path(CFG["paths"]["figures"])
@@ -56,7 +56,7 @@ def set_style():
 
 
 # ═══════════════════════════════════════════════════════════════════
-# FIGURE 1: Architecture Diagram (placeholder — real diagram in LaTeX/TikZ)
+# FIGURE 1: Architecture Diagram (placeholder - real diagram in LaTeX/TikZ)
 # ═══════════════════════════════════════════════════════════════════
 
 def fig_architecture():
@@ -106,7 +106,7 @@ def fig_architecture():
     ax.set_ylim(0, 1)
     ax.set_aspect("equal")
     ax.axis("off")
-    ax.set_title("PC-RadNet Architecture", fontsize=14, fontweight="bold", pad=10)
+    ax.set_title("PCRadNet Architecture", fontsize=14, fontweight="bold", pad=10)
 
     plt.savefig(FIG_DIR / "fig1_architecture.pdf")
     plt.savefig(FIG_DIR / "fig1_architecture.png")
@@ -213,7 +213,7 @@ def fig_qualitative(checkpoint_path=None, n_samples=6):
         print(f"Checkpoint not found: {checkpoint_path}. Skipping qualitative figure.")
         return
 
-    from train import PC-RadNet, SpineDataset, get_val_transforms, collate_fn, compute_dice, compute_iou
+    from train import PCRadNet, SpineDataset, get_val_transforms, collate_fn, compute_dice, compute_iou
 
     model = PCRadNet(CFG, use_calibrator=True, lora_rank=CFG["model"]["lora_rank"])
     ckpt = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
@@ -221,7 +221,7 @@ def fig_qualitative(checkpoint_path=None, n_samples=6):
     model = model.to(DEVICE)
     model.eval()
 
-    split_file = Path(CFG["paths"]["scripts"]) / "data" / "test.txt"
+    split_file = Path(CFG["paths"]["splits_dir"]) / "test.txt"
     ds = SpineDataset(str(split_file), CFG, transforms=get_val_transforms())
 
     # Select diverse samples (mix axial/sagittal, different levels)
@@ -282,7 +282,7 @@ def fig_qualitative(checkpoint_path=None, n_samples=6):
         axes[row_idx, 3].set_title("GT Prompted Mask", fontsize=9)
         axes[row_idx, 3].axis("off")
 
-    plt.suptitle("PC-RadNet Qualitative Results", fontsize=14, fontweight="bold")
+    plt.suptitle("PCRadNet Qualitative Results", fontsize=14, fontweight="bold")
     plt.tight_layout()
     plt.savefig(FIG_DIR / "fig3_qualitative.pdf")
     plt.savefig(FIG_DIR / "fig3_qualitative.png")

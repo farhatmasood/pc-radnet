@@ -1,0 +1,10 @@
+{
+ "dataset": "Spine_DataSet_NEW",
+ "n_volumes": 50,
+ "n_slices": 633,
+ "dice_VB": 0.39534830078792516,
+ "dice_VB_std": 0.17979226294901623,
+ "iou_VB": 0.2610253935190959,
+ "prompted_dice_VB": 0.3980294452075505,
+ "setting": "gt_free"
+}

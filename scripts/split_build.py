@@ -1,9 +1,9 @@
 """
-split_build.py — Section 2: Patient-level stratified splits.
+split_build.py - Section 2: Patient-level stratified splits.
 Produces:
-  scripts/data/train.txt, val.txt, test.txt  — image paths per line
-  results/split_report.csv                    — patient → split mapping
-  results/class_weights.json                  — inverse frequency weights
+  scripts/data/train.txt, val.txt, test.txt  - image paths per line
+  results/split_report.csv                    - patient → split mapping
+  results/class_weights.json                  - inverse frequency weights
 """
 import os, json, random, collections
 import numpy as np
@@ -13,9 +13,9 @@ from PIL import Image
 from sklearn.model_selection import StratifiedShuffleSplit
 
 import yaml
+from repo_config import load_config
 SCRIPT_DIR = Path(__file__).resolve().parent
-with open(SCRIPT_DIR / "config.yaml") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 SEED = CFG["project"]["seed"]
 random.seed(SEED); np.random.seed(SEED)
@@ -23,7 +23,7 @@ random.seed(SEED); np.random.seed(SEED)
 IMG_DIR   = Path(CFG["paths"]["images"])
 MASK_DIR  = Path(CFG["paths"]["masks"])
 LBL_DIR   = Path(CFG["paths"]["labels"])
-DATA_DIR  = SCRIPT_DIR / "data"
+DATA_DIR  = Path(CFG["paths"]["splits_dir"])
 RESULTS   = Path(CFG["paths"]["results"])
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS.mkdir(parents=True, exist_ok=True)

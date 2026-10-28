@@ -25,6 +25,11 @@ checkpoints/
 # ── Data (raw/processed) ──
 data/raw/
 data/processed/
+data/LSMA-PQR/
+*.npz
+
+# ── Third-party code (e.g. MedSAM2 clone) ──
+third_party/
 
 # ── IDE ──
 .vscode/

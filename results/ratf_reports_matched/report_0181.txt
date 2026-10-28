@@ -1,0 +1,52 @@
+LUMBAR SPINE MRI REPORT
+Patient ID: 0181
+
+TECHNIQUE:
+  MRI of the lumbar spine was performed in axial and sagittal planes
+  using T1 and T2 weighted sequences.
+
+FINDINGS:
+
+  L3-L4 Level:
+    Pfirrmann Grade: 3/5 — Moderate degeneration
+    Clinical: Moderate degeneration; consider follow-up
+    Disc Height: 10.1 px (mildly reduced)
+    Findings: disc protrusion, disc bulge, thecal sac compression, spinal canal stenosis, desiccated disc, ligamentum flavum hypertrophy
+    Segmentation confidence: limited (Dice = 0.317)
+
+  L4-L5 Level:
+    Pfirrmann Grade: 3/5 — Moderate degeneration
+    Clinical: Moderate degeneration; consider follow-up
+    Disc Height: 7.0 px (moderately reduced)
+    Findings: disc protrusion, disc bulge, thecal sac compression, spinal canal stenosis, desiccated disc, ligamentum flavum hypertrophy
+    Segmentation confidence: limited (Dice = 0.345)
+
+  L5-S1 Level:
+    Pfirrmann Grade: 5/5 — Severe collapse
+    Clinical: Severe collapse; specialist referral advised
+    Disc Height: 3.6 px (severely reduced)
+    Findings: disc protrusion, disc bulge, thecal sac compression, spinal canal stenosis, desiccated disc, ligamentum flavum hypertrophy
+    Segmentation confidence: limited (Dice = 0.543)
+
+IMPRESSION:
+  1. Moderate disc degeneration at L3-L4
+  2. Disc protrusion at L3-L4
+  3. Disc bulge at L3-L4
+  4. Thecal sac compression at L3-L4
+  5. Spinal canal stenosis at L3-L4
+  6. Desiccated disc at L3-L4
+  7. Ligamentum flavum hypertrophy at L3-L4
+  8. Moderate disc degeneration at L4-L5
+  9. Disc protrusion at L4-L5
+  10. Disc bulge at L4-L5
+  11. Thecal sac compression at L4-L5
+  12. Spinal canal stenosis at L4-L5
+  13. Desiccated disc at L4-L5
+  14. Ligamentum flavum hypertrophy at L4-L5
+  15. Advanced disc degeneration at L5-S1
+  16. Disc protrusion at L5-S1
+  17. Disc bulge at L5-S1
+  18. Thecal sac compression at L5-S1
+  19. Spinal canal stenosis at L5-S1
+  20. Desiccated disc at L5-S1
+  21. Ligamentum flavum hypertrophy at L5-S1

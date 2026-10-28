@@ -1,0 +1,77 @@
+{
+  "run_timestamp": "2026-03-24 13:13:07",
+  "target_patients": [
+    4,
+    21,
+    44,
+    62,
+    83,
+    92,
+    99,
+    100,
+    112,
+    113,
+    118,
+    124,
+    125,
+    140,
+    150,
+    152,
+    165,
+    167,
+    177,
+    181
+  ],
+  "models": {
+    "biomistral_7b": {
+      "model_key": "biomistral_7b",
+      "display_name": "BioMistral-7B",
+      "model_id": "BioMistral/BioMistral-7B",
+      "status": "cached",
+      "error": null,
+      "loaded": false,
+      "n_reports": 20,
+      "mean_time_s": null
+    },
+    "biogpt_large": {
+      "model_key": "biogpt_large",
+      "display_name": "BioGPT-Large",
+      "model_id": "microsoft/BioGPT-Large",
+      "status": "cached",
+      "error": null,
+      "loaded": false,
+      "n_reports": 20,
+      "mean_time_s": null
+    },
+    "phi35_mini": {
+      "model_key": "phi35_mini",
+      "display_name": "Phi-3.5-mini",
+      "model_id": "microsoft/Phi-3.5-mini-instruct",
+      "status": "cached",
+      "error": null,
+      "loaded": false,
+      "n_reports": 20,
+      "mean_time_s": null
+    },
+    "smollm2_1p7": {
+      "model_key": "smollm2_1p7",
+      "display_name": "SmolLM2-1.7B-Instruct",
+      "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "status": "cached",
+      "error": null,
+      "loaded": false,
+      "n_reports": 20,
+      "mean_time_s": null
+    },
+    "qwen25_1p5": {
+      "model_key": "qwen25_1p5",
+      "display_name": "Qwen2.5-1.5-Instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "status": "cached",
+      "error": null,
+      "loaded": false,
+      "n_reports": 20,
+      "mean_time_s": null
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "model": "Meditron3-8B",
+  "model_id": "OpenMeditron/Meditron3-8B",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B",
+  "n": 20,
+  "precision_mean": 0.6833333333333333,
+  "recall_mean": 0.8066666666666666,
+  "f1_mean": 0.6990873015873016,
+  "words_mean": 171.1,
+  "mean_time_s": 23.354956221580505
+}

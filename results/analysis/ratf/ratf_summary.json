@@ -1,0 +1,194 @@
+{
+ "index_sentences": 436,
+ "index_patients": 360,
+ "tau": 0.75,
+ "bench20": {
+  "T": {
+   "P": 0.6908333333333334,
+   "R": 0.8316666666666667,
+   "F1": 0.7109920634920635,
+   "tp": 2.25,
+   "fp": 1.15,
+   "fn": 0.6,
+   "words": 105.7,
+   "unsupported_technique": 0.0,
+   "levels_outside_L3S1": 0.0,
+   "input_findings_kept": 1.0,
+   "extra_findings_vs_input": 0.0
+  },
+  "R": {
+   "P": 0.6908333333333334,
+   "R": 0.8316666666666667,
+   "F1": 0.7109920634920635,
+   "tp": 2.25,
+   "fp": 1.15,
+   "fn": 0.6,
+   "words": 89.5,
+   "unsupported_technique": 0.0,
+   "levels_outside_L3S1": 0.0,
+   "input_findings_kept": 0.85,
+   "extra_findings_vs_input": 0.0
+  },
+  "RC": {
+   "P": 0.6908333333333334,
+   "R": 0.8316666666666667,
+   "F1": 0.7109920634920635,
+   "tp": 2.25,
+   "fp": 1.15,
+   "fn": 0.6,
+   "words": 102.2,
+   "unsupported_technique": 0.0,
+   "levels_outside_L3S1": 0.0,
+   "input_findings_kept": 1.0,
+   "extra_findings_vs_input": 0.0
+  },
+  "retrieval_audit": {
+   "n_level_sentences": 60,
+   "replaced_R": 0.95,
+   "replaced_level_mismatch": 0.14035087719298245,
+   "replaced_finding_mismatch": 0.45614035087719296,
+   "accepted_RC": 0.4666666666666667,
+   "median_sim": 0.840212881565094
+  },
+  "tau_sweep": [
+   {
+    "tau": 0.6,
+    "replaced": 1.0,
+    "faithful_among_replaced": 0.4666666666666667
+   },
+   {
+    "tau": 0.65,
+    "replaced": 1.0,
+    "faithful_among_replaced": 0.4666666666666667
+   },
+   {
+    "tau": 0.7,
+    "replaced": 1.0,
+    "faithful_among_replaced": 0.4666666666666667
+   },
+   {
+    "tau": 0.75,
+    "replaced": 0.95,
+    "faithful_among_replaced": 0.49122807017543857
+   },
+   {
+    "tau": 0.8,
+    "replaced": 0.8833333333333333,
+    "faithful_among_replaced": 0.5094339622641509
+   },
+   {
+    "tau": 0.85,
+    "replaced": 0.36666666666666664,
+    "faithful_among_replaced": 0.7272727272727273
+   },
+   {
+    "tau": 0.9,
+    "replaced": 0.0,
+    "faithful_among_replaced": 0.0
+   }
+  ],
+  "lexical": {
+   "T": {
+    "BLEU1": 0.07908942725760366,
+    "ROUGEL": 0.14247496516348954,
+    "METEOR": 0.22282450622954456
+   },
+   "R": {
+    "BLEU1": 0.12432489409522088,
+    "ROUGEL": 0.18661897821764267,
+    "METEOR": 0.27945575050909655
+   },
+   "RC": {
+    "BLEU1": 0.09994477104931332,
+    "ROUGEL": 0.16017416451958735,
+    "METEOR": 0.24958362722611324
+   }
+  }
+ },
+ "test78": {
+  "T": {
+   "P": 0.6299145299145299,
+   "R": 0.8425213675213675,
+   "F1": 0.6760582010582009,
+   "tp": 2.08974358974359,
+   "fp": 1.3461538461538463,
+   "fn": 0.5256410256410257,
+   "words": 104.5,
+   "unsupported_technique": 0.0,
+   "levels_outside_L3S1": 0.0,
+   "input_findings_kept": 1.0,
+   "extra_findings_vs_input": 0.0
+  },
+  "R": {
+   "P": 0.6269841269841269,
+   "R": 0.8585470085470086,
+   "F1": 0.6790940540940539,
+   "tp": 2.141025641025641,
+   "fp": 1.3974358974358974,
+   "fn": 0.47435897435897434,
+   "words": 90.67948717948718,
+   "unsupported_technique": 0.0,
+   "levels_outside_L3S1": 0.0,
+   "input_findings_kept": 0.7307692307692307,
+   "extra_findings_vs_input": 0.10256410256410256
+  },
+  "RC": {
+   "P": 0.6299145299145299,
+   "R": 0.8425213675213675,
+   "F1": 0.6760582010582009,
+   "tp": 2.08974358974359,
+   "fp": 1.3461538461538463,
+   "fn": 0.5256410256410257,
+   "words": 100.53846153846153,
+   "unsupported_technique": 0.0,
+   "levels_outside_L3S1": 0.0,
+   "input_findings_kept": 1.0,
+   "extra_findings_vs_input": 0.0
+  },
+  "retrieval_audit": {
+   "n_level_sentences": 234,
+   "replaced_R": 0.9188034188034188,
+   "replaced_level_mismatch": 0.12093023255813953,
+   "replaced_finding_mismatch": 0.3581395348837209,
+   "accepted_RC": 0.5299145299145299,
+   "median_sim": 0.8426121473312378
+  },
+  "tau_sweep": [
+   {
+    "tau": 0.6,
+    "replaced": 1.0,
+    "faithful_among_replaced": 0.5299145299145299
+   },
+   {
+    "tau": 0.65,
+    "replaced": 1.0,
+    "faithful_among_replaced": 0.5299145299145299
+   },
+   {
+    "tau": 0.7,
+    "replaced": 1.0,
+    "faithful_among_replaced": 0.5299145299145299
+   },
+   {
+    "tau": 0.75,
+    "replaced": 0.9188034188034188,
+    "faithful_among_replaced": 0.5767441860465117
+   },
+   {
+    "tau": 0.8,
+    "replaced": 0.8333333333333334,
+    "faithful_among_replaced": 0.6307692307692307
+   },
+   {
+    "tau": 0.85,
+    "replaced": 0.42735042735042733,
+    "faithful_among_replaced": 0.82
+   },
+   {
+    "tau": 0.9,
+    "replaced": 0.0,
+    "faithful_among_replaced": 0.0
+   }
+  ]
+ }
+}

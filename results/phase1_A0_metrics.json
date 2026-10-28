@@ -1,0 +1,8 @@
+{
+  "phase": 1,
+  "ablation": "A0",
+  "best_dice": 0.371878716072624,
+  "best_iou": 0.25391766895515866,
+  "trainable_params": 1000425,
+  "total_params": 87631337
+}

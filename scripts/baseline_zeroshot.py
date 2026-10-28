@@ -1,5 +1,5 @@
-﻿"""
-baseline_zeroshot.py — SAM ViT-B zero-shot baseline evaluation
+"""
+baseline_zeroshot.py - SAM ViT-B zero-shot baseline evaluation
 Evaluates SAM ViT-B with GT bounding-box prompts on the val/test set.
 
 Usage:
@@ -16,12 +16,12 @@ import torch
 import torch.nn.functional as F
 import yaml
 from PIL import Image
+from repo_config import load_config, resolve_image
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
-with open(SCRIPT_DIR / "config.yaml") as f:
-    CFG = yaml.safe_load(f)
+CFG = load_config()
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -71,7 +71,7 @@ def evaluate_sam_vitb(split_file, max_samples=None):
     """Evaluate SAM ViT-B with GT bounding box prompts."""
     from segment_anything import sam_model_registry, SamPredictor
 
-    sam_ckpt = Path(CFG["paths"]["dataset_root"]) / "RL" / "checkpoints" / "sam_vit_b_01ec64.pth"
+    sam_ckpt = Path(CFG["paths"]["pretrained"]["sam_vit_b"])
     if not sam_ckpt.exists():
         print(f"SAM checkpoint not found: {sam_ckpt}")
         return pd.DataFrame()
@@ -82,7 +82,7 @@ def evaluate_sam_vitb(split_file, max_samples=None):
     print("SAM ViT-B loaded.")
 
     with open(split_file) as f:
-        image_paths = [l.strip() for l in f if l.strip()]
+        image_paths = [resolve_image(l) for l in f if l.strip()]
     if max_samples:
         image_paths = image_paths[:max_samples]
 
@@ -190,7 +190,7 @@ def generate_comparison_table(all_metrics, save_dir):
     lines = [
         r"\begin{table}[htbp]",
         r"\centering",
-        r"\caption{Comparison of PC-RadNet against zero-shot baselines on the validation set.}",
+        r"\caption{Comparison of PCRadNet against zero-shot baselines on the validation set.}",
         r"\label{tab:baselines}",
         r"\begin{tabular}{lccccc}",
         r"\toprule",
@@ -225,7 +225,7 @@ def main():
     parser.add_argument("--max-samples", type=int, default=None)
     args = parser.parse_args()
 
-    split_file = Path(CFG["paths"]["scripts"]) / "data" / f"{args.split}.txt"
+    split_file = Path(CFG["paths"]["splits_dir"]) / f"{args.split}.txt"
     results_dir = Path(CFG["paths"]["results"])
     results_dir.mkdir(parents=True, exist_ok=True)
 

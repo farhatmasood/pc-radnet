@@ -1,0 +1,643 @@
+{
+  "0004": {
+    "D3": {
+      "grade": 2,
+      "height": 9.3125,
+      "seg_dice": 0.7302301526069641,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 10.71875,
+      "seg_dice": 0.21505719795823094,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 2,
+      "height": 8.0,
+      "seg_dice": 0.05231622420251365,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0021": {
+    "D3": {
+      "grade": 3,
+      "height": 8.46875,
+      "seg_dice": 0.3901629708707332,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 8.84375,
+      "seg_dice": 0.23844036832451815,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 4,
+      "height": 5.546875,
+      "seg_dice": 0.2301437929272651,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    }
+  },
+  "0044": {
+    "D3": {
+      "grade": 2,
+      "height": 9.09375,
+      "seg_dice": 0.08107702806591985,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 9.15625,
+      "seg_dice": 0.07930225506424896,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 7.375,
+      "seg_dice": 0.09908150508999825,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0062": {
+    "D3": {
+      "grade": 2,
+      "height": 10.5,
+      "seg_dice": 0.39885555580258364,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 10.375,
+      "seg_dice": 0.4019281007349491,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 9.1875,
+      "seg_dice": 0.0940682031214237,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0083": {
+    "D3": {
+      "grade": 2,
+      "height": 9.34375,
+      "seg_dice": 0.1202242076396942,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 9.6875,
+      "seg_dice": 0.7427836060523987,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 8.78125,
+      "seg_dice": 0.3727396270260214,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    }
+  },
+  "0092": {
+    "D3": {
+      "grade": 2,
+      "height": 9.59375,
+      "seg_dice": 0.24786477535963056,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 9.09375,
+      "seg_dice": 0.5219414383172989,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 4,
+      "height": 5.40625,
+      "seg_dice": 0.5425558984279633,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    }
+  },
+  "0099": {
+    "D3": {
+      "grade": 3,
+      "height": 8.59375,
+      "seg_dice": 0.5242162346839905,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 11.25,
+      "seg_dice": 0.10285593569278714,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 2,
+      "height": 11.21875,
+      "seg_dice": 0.5344135463237762,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0100": {
+    "D3": {
+      "grade": 2,
+      "height": 10.625,
+      "seg_dice": 0.2070308420807123,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 10.28125,
+      "seg_dice": 0.6811776161193848,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 2,
+      "height": 8.0,
+      "seg_dice": 0.5123046338558197,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    }
+  },
+  "0112": {
+    "D3": {
+      "grade": 3,
+      "height": 7.6875,
+      "seg_dice": 0.5572954714298248,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 8.84375,
+      "seg_dice": 0.41252221167087555,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 8.09375,
+      "seg_dice": 0.5657980889081955,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0113": {
+    "D3": {
+      "grade": 2,
+      "height": 8.71875,
+      "seg_dice": 0.386591225862503,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 8.9375,
+      "seg_dice": 0.6568531692028046,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 7.921875,
+      "seg_dice": 0.24905031546950335,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0118": {
+    "D3": {
+      "grade": 3,
+      "height": 8.5,
+      "seg_dice": 0.7216512560844421,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 7.71875,
+      "seg_dice": 0.404480766505003,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 7.96875,
+      "seg_dice": 0.06568929180502886,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    }
+  },
+  "0124": {
+    "D3": {
+      "grade": 2,
+      "height": 9.53125,
+      "seg_dice": 0.5302481800317764,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 10.5,
+      "seg_dice": 0.24565255641937248,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 10.25,
+      "seg_dice": 0.3649620655924081,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    }
+  },
+  "0125": {
+    "D3": {
+      "grade": 2,
+      "height": 8.375,
+      "seg_dice": 0.23124405741691587,
+      "disorders_present": [
+        "disc herniation",
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 10.0,
+      "seg_dice": 0.5043786466121674,
+      "disorders_present": [
+        "disc herniation",
+        "disc bulge",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 2,
+      "height": 9.90625,
+      "seg_dice": 0.6323144435882568,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0140": {
+    "D3": {
+      "grade": 2,
+      "height": 8.21875,
+      "seg_dice": 0.5003397315740585,
+      "disorders_present": [
+        "disc protrusion",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 7.59375,
+      "seg_dice": 0.5151986628770828,
+      "disorders_present": [
+        "disc protrusion",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 4,
+      "height": 5.0,
+      "seg_dice": 0.39376902580261225,
+      "disorders_present": [
+        "disc protrusion",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0150": {
+    "D3": {
+      "grade": 2,
+      "height": 10.0,
+      "seg_dice": 0.53013576567173,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 9.90625,
+      "seg_dice": 0.38153847120702267,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 3,
+      "height": 6.625,
+      "seg_dice": 0.4568282663822174,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    }
+  },
+  "0152": {
+    "D3": {
+      "grade": 3,
+      "height": 8.84375,
+      "seg_dice": 0.1819808520376682,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 8.78125,
+      "seg_dice": 0.5243876278400421,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 4,
+      "height": 5.84375,
+      "seg_dice": 0.040818985551595646,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "spinal canal stenosis",
+        "spondylolisthesis",
+        "desiccated disc"
+      ]
+    }
+  },
+  "0165": {
+    "D3": {
+      "grade": 2,
+      "height": 8.5,
+      "seg_dice": 0.7081083059310913,
+      "disorders_present": [
+        "disc herniation",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 9.09375,
+      "seg_dice": 0.32099647819995875,
+      "disorders_present": [
+        "disc herniation",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 2,
+      "height": 10.0,
+      "seg_dice": 0.24470547214150426,
+      "disorders_present": [
+        "disc herniation",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0167": {
+    "D3": {
+      "grade": 2,
+      "height": 7.9375,
+      "seg_dice": 0.6642131209373474,
+      "disorders_present": [
+        "disc protrusion",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 9.625,
+      "seg_dice": 0.5538504719734192,
+      "disorders_present": [
+        "disc herniation",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 2,
+      "height": 10.6875,
+      "seg_dice": 0.3727915957570076,
+      "disorders_present": [
+        "nerve root compression"
+      ]
+    }
+  },
+  "0177": {
+    "D3": {
+      "grade": 2,
+      "height": 11.21875,
+      "seg_dice": 0.13981325924396515,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D4": {
+      "grade": 2,
+      "height": 12.4375,
+      "seg_dice": 0.5609888583421707,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    },
+    "D5": {
+      "grade": 2,
+      "height": 10.3125,
+      "seg_dice": 0.5223080515861511,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression",
+        "nerve root compression"
+      ]
+    }
+  },
+  "0181": {
+    "D3": {
+      "grade": 3,
+      "height": 10.0625,
+      "seg_dice": 0.31710731983184814,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D4": {
+      "grade": 3,
+      "height": 7.0,
+      "seg_dice": 0.3451314717531204,
+      "disorders_present": [
+        "disc bulge",
+        "thecal sac compression"
+      ]
+    },
+    "D5": {
+      "grade": 5,
+      "height": 3.640625,
+      "seg_dice": 0.5429854094982147,
+      "disorders_present": [
+        "disc protrusion",
+        "disc bulge",
+        "thecal sac compression",
+        "desiccated disc"
+      ]
+    }
+  }
+}

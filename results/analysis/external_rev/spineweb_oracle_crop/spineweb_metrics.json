@@ -1,0 +1,11 @@
+{
+  "dataset": "SpineWeb",
+  "modality": "MRI_sagittal",
+  "n_volumes": 16,
+  "dice_VB": 0.6680700505234782,
+  "dice_VB_std": 0.15707469192059076,
+  "iou_VB": 0.5185601186228952,
+  "n_slices_VB": 209,
+  "prompted_dice_VB": 0.6841113667190966,
+  "mean_fg_dice": 0.6680700505234782
+}

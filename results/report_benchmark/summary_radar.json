@@ -1,0 +1,13 @@
+{
+  "model": "RADAR",
+  "model_id": "houwenjun060/Radar",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "architecture": "xGen-MM (BLIP-3) + Phi-3-mini + LoRA",
+  "paper": "Hou et al., ACL 2025",
+  "n": 20,
+  "precision_mean": 0.15,
+  "recall_mean": 0.09166666666666666,
+  "f1_mean": 0.11333333333333333,
+  "words_mean": 210.55,
+  "mean_time_s": 103.46599041223526
+}

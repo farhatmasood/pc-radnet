@@ -2,463 +2,505 @@
 
 # PC-RadNet
 
-### Prompt-Calibrated, Parameter-Efficient Foundation Model for Comprehensive Multi-Task Segmentation, Clinical Assessment and Structured Report Generation in Lumbar Spine MRI
+### A Prompt-Calibrated, Parameter-Efficient Framework for Multi-Task Segmentation, Clinical Assessment and Report Generation in Lumbar Spine MRI
 
-[![Dataset](https://img.shields.io/badge/Dataset-LSMA--PQR%20%7C%20Mendeley-blue)](https://data.mendeley.com/datasets/p3r4xd2488/1)
+[![Dataset](https://img.shields.io/badge/Dataset-LSMA--PQR%20(Mendeley%20Data)-blue)](https://data.mendeley.com/datasets/p3r4xd2488/2)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-orange)](https://pytorch.org)
-[![VRAM](https://img.shields.io/badge/Inference%20VRAM-0.63%20GB-brightgreen)]()
-
+[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-orange)](https://pytorch.org)
 
 </div>
 
----
+This repository contains the code, configuration, data splits, stored predictions and analysis outputs for PC-RadNet. All tables and figures of the accompanying manuscript can be regenerated from it.
 
-Lumbar spine MRI interpretation requires concurrent anatomical segmentation, Pfirrmann disc degeneration grading, intervertebral disc height quantification, multi-label pathology detection and structured radiology report generation. These tasks have traditionally been addressed by separate resource-intensive architectures that require spatial annotations — bounding boxes or seed points — at inference time. **PC-RadNet** unifies all five tasks within a single parameter-efficient architecture, conditioned solely on free-text clinical prompts, and executes the full multi-task pipeline in **39 ms per image** at **0.63 GB peak VRAM** on a consumer GPU.
+PC-RadNet adds 2.73 M trainable parameters to a frozen DINOv2 ViT-B/14 backbone. One forward pass returns a segmentation mask for a named anatomical structure, an ordinal Pfirrmann grade, a disc height estimate and probabilities for nine spinal disorders. A retrieval-augmented template filling (RATF) module then writes an RSNA-structured draft report from these predictions. Segmentation needs no bounding box or point: the target is selected by a term from a closed vocabulary of 13 anatomical terms, together with the imaging plane.
+
+On the held-out LSMA-PQR test set (78 patients, 624 images), the model reaches:
+
+| Output | Result |
+|---|---|
+| Prompted segmentation | mean Dice 0.861, mean IoU 0.769 |
+| Pfirrmann grading | 61.8% exact accuracy, quadratic-weighted κ 0.51 |
+| Disc height | MAE 1.51 mm |
+| Disorders | patient-level macro-AUC 0.79 |
+| RATF report | factual F1 0.711, every supplied finding kept, no unsupported content |
+| Cost | 0.63 GB peak GPU memory; 39 ms per single-structure pass on an RTX 4070 Laptop GPU |
+
+For segmentation alone, single-task networks trained on the same split are more accurate (2D U-Net 0.944, 2D SwinUNETR 0.937). PC-RadNet's advantage is that one model covers all five tasks.
 
 ---
 
 ## Contents
 
 1. [Method](#method)
-2. [Results](#results)
-3. [Qualitative Results](#qualitative-results)
+2. [Dataset](#dataset)
+3. [Results](#results)
 4. [Installation](#installation)
-5. [Dataset](#dataset)
-6. [Quickstart — Inference](#quickstart--inference)
-7. [Training](#training)
-8. [Evaluation](#evaluation)
-9. [Report Generation](#report-generation)
-10. [Model Weights](#model-weights)
-11. [Repository Structure](#repository-structure)
-12. [Citation](#citation)
+5. [Data and model files](#data-and-model-files)
+6. [Reproducing the results](#reproducing-the-results)
+7. [Where each reported number comes from](#where-each-reported-number-comes-from)
+8. [Repository structure](#repository-structure)
+9. [Citation](#citation)
 
 ---
 
 ## Method
 
-PC-RadNet is built on a frozen **DINOv2 ViT-B/14** (`vit_base_patch14_dinov2.lvd142m`) visual encoder — producing a sequence of 729 patch tokens ($d = 768$) from $384 \times 384$ RGB input — coupled with a four-stage ConvTranspose decoder that reconstructs dense segmentation predictions at full spatial resolution. Three lightweight trainable modules adapt the frozen representation to the radiological domain at a total parameter overhead of **3.07%** of backbone capacity:
+![Architecture of PC-RadNet](assets/figures/fig02_architecture.png)
 
-![PC-RadNet Architecture](assets/Architecture.png)
+*Architecture. A frozen DINOv2 ViT-B/14 backbone with LoRA, the Spine Domain Adapter, the Prompt Calibrator that gates the decoder features, the segmentation decoder, the clinical heads on mean-pooled features, and the RATF report generator.*
+
+### Backbone with LoRA
+
+- **Input and tokens:** a 384 × 384 image gives 27 × 27 = 729 tokens of dimension 768 (`vit_base_patch14_dinov2.lvd142m` from `timm`).
+- **Adapted layers:** LoRA (r = 8, α = 16, dropout 0.05) is applied to the fused QKV projection, the output projection and both feed-forward layers of all 12 blocks.
+- **LoRA size:** 1.18 M trainable parameters.
 
 ### Spine Domain Adapter
 
-A bottleneck residual adapter with rank $r = 32$ is applied to the post-encoder token sequence $\mathbf{F} \in \mathbb{R}^{B \times N \times d}$. A learnable scalar gate $s$ (initialised at $0.1$) controls the contribution magnitude at the onset of training, preventing large deviations from the pretrained representation:
+A residual bottleneck applied to the encoder tokens:
 
-$$\mathbf{F}^{\text{adapt}} = \mathbf{F} + s \cdot \mathbf{W}_{\text{up}} \cdot \phi\!\left(\mathbf{W}_{\text{down}} \cdot \mathrm{LN}(\mathbf{F})\right)$$
+f_spine = f + α_s · W_up · GELU(W_down · LN(f))
 
-where $\mathbf{W}_{\text{down}} \in \mathbb{R}^{d \times r}$, $\mathbf{W}_{\text{up}} \in \mathbb{R}^{r \times d}$, and $\phi$ is GELU. Parameters: 51,489 (0.06% of backbone).
+- **Rank and scaling:** rank 32; α_s is learnable and starts at 0.1.
+- **Initialization:** W_up starts at zero, so the adapter begins as an identity mapping.
+- **Size:** 51,489 parameters.
 
 ### Prompt Calibrator
 
-A multi-conditional gate that maps free-text anatomy terms to a calibration feature $\mathbf{c} \in \mathbb{R}^{256}$, which multiplicatively modulates adapted ViT tokens prior to decoding. Given prompt $t$, imaging plane $p \in \{0, 1\}$ and disc level $\ell$:
+**Inputs:**
+- The anatomy term selects an entry of a learnable embedding table (20 entries, of which 13 are indexed by the prompt bank).
+- A two-layer MLP projects that entry to 256 dimensions.
+- It is concatenated with a plane embedding and a level embedding. In the reported model, the level embedding receives a constant index and acts as a learned bias.
 
-$$\mathbf{c} = \mathrm{Calibrator}\!\left([\,\mathrm{TextProj}(\mathbf{E}_{\text{anat}}[t]);\; \mathbf{e}_p;\; \mathbf{e}_\ell\,]\right)$$
+**Gate:** a fusion MLP (768 → 256 → 256) produces the calibration vector c. Projected tokens are then scaled channel-wise:
 
-$$\mathbf{F}^* = \mathbf{F}^{\text{adapt}} \odot \bigl(1 + \sigma(\mathbf{W}_g\,\mathbf{c})\bigr)$$
+û_i = u_i ⊙ (1 + σ(W_g c))
 
-where $\mathbf{E}_{\text{anat}} \in \mathbb{R}^{20 \times 768}$ is a trainable anatomy vocabulary embedding over a 20-term clinical lexicon projected to $\mathbb{R}^{256}$ via a two-layer MLP; $\mathbf{e}_p$ and $\mathbf{e}_\ell$ are learnable plane and level embeddings; and the additive formulation $(1 + \sigma(\cdot))$ preserves unadapted feature magnitudes throughout training. Parameters: 542,720.
+Every scaling factor lies in (1, 2). Appendix B of the manuscript states the capacity result for this joint gate.
 
-The calibrator enables anatomy-specific segmentation from free-text prompts (e.g., *"intervertebral disc"*, *"spinal canal"*) without bounding boxes or seed points at inference.
+### Heads and loss
 
-### LoRA Encoder Adaptation
-
-All linear projections within each of the 12 frozen DINOv2 ViT-B/14 transformer blocks are adapted via Low-Rank Adaptation with rank $r = 8$ and scaling coefficient $\alpha = 16$: the fused QKV projection ($\mathbf{W}_{\text{qkv}} \in \mathbb{R}^{768 \times 2304}$), output projection ($\mathbf{W}_{\text{proj}}$), and both MLP feed-forward layers ($\mathbf{W}_{\text{fc1}}$, $\mathbf{W}_{\text{fc2}}$).
-
-$$\mathbf{W}' = \mathbf{W}_0 + \frac{\alpha}{r}\,\mathbf{B}\mathbf{A}, \quad \mathbf{A} \in \mathbb{R}^{r \times d_{\text{in}}},\; \mathbf{B} \in \mathbb{R}^{d_{\text{out}} \times r}$$
-
-Total trainable LoRA parameters: 1,190,496 distributed across 49 adapted weight matrices — 48 within transformer blocks (4 per block × 12 blocks) plus the patch-embedding projection.
-
-### Multi-Task Heads
-
-All auxiliary prediction heads operate on the global average-pooled token sequence $\bar{\mathbf{f}} \in \mathbb{R}^{768}$ produced after domain adaptation.
-
-| Head | Architecture | Output | Loss |
-|---|---|---|---|
-| Segmentation | 4-stage ConvTranspose decoder + plane-adaptive 1×1 conv | Prompted binary mask; axial 4-class / sagittal 5-class logits, 384×384 | Dice + class-weighted BCE |
-| Grading | 3-layer MLP (768→256→64→4) + CORN | Pfirrmann grade $g \in \{1,\ldots,5\}$ via 4 cumulative thresholds | Ordinal cross-entropy + monotonicity penalty |
-| Height | 2-layer MLP (768→128→1) | IVD height (px) | Smooth-L1 |
-| Disorder | 2-layer MLP (768→256→9) | 9-label binary vector | BCE |
-
-The segmentation decoder exposes three plane-specific output heads sharing a common four-stage ConvTranspose backbone: `axial_head` (4 classes: background, IVD, posterior element, spinal canal), `sag_head` (5 classes: background, vertebral body, IVD, sacrum, spinal canal) and `prompted_head` (binary mask of the queried anatomy term).
-
-### Training Objective
-
-$$\mathcal{L} = \mathcal{L}_{\text{seg}} + 0.5\,\mathcal{L}_{\text{grade}} + 0.3\,\mathcal{L}_{\text{height}} + 0.5\,\mathcal{L}_{\text{dis}} + 0.2\,\mathcal{L}_{\text{bnd}}$$
-
-The boundary term $\mathcal{L}_{\text{bnd}}$ penalises contour deviation via MSE between Sobel-filtered predicted and ground-truth edge maps. Pfirrmann grading employs a CORN-style ordinal cross-entropy loss augmented with a monotonicity consistency penalty ($\lambda = 0.1$), enforcing the ordering constraint $P(g > k) \geq P(g > k+1)$ for $k \in \{1,\ldots,4\}$. Segmentation BCE is applied with per-class positive-weight terms derived from inverse class frequency.
-
-### Parameter Efficiency
-
-| Component | Parameters | Trainable |
+| Head | Architecture | Output |
 |---|---|---|
-| DINOv2 ViT-B/14 backbone (lvd142m) | 86.09 M | frozen |
-| LoRA adapters (qkv, proj, fc1, fc2 × 12 blocks + patch embed, $r = 8$) | 1.19 M | ✓ |
-| Spine Domain Adapter ($r = 32$) | 0.05 M | ✓ |
-| Prompt Calibrator | 0.54 M | ✓ |
-| Multi-task heads (seg + grade + height + disorder) | 0.95 M | ✓ |
-| **Total trainable** | **2.73 M** | **3.08%** |
+| Segmentation decoder | 4 ConvTranspose stages (256 → 16 channels), then 1×1 heads | axial 4-class and sagittal 5-class logits, prompted binary mask |
+| Grade | MLP 768 → 256 → 64, 4 cumulative logits P(Y > k) | Pfirrmann grade 1 to 5 |
+| Height | MLP 768 → 128 → 1 | disc height (mm) |
+| Disorders | MLP 768 → 256 → 9, sigmoid | 9 binary findings |
 
-### RATF — Retrieval-Augmented Template Filling
+**Loss:** L = λs·L_seg + λp·L_prompt + λb·L_bound + λg·L_grade + λh·L_ht + λd·L_dis.
 
-Structured radiology reports are generated deterministically from PC-RadNet predictions via a two-stage pipeline:
+- **Weights:** (λs, λp, λb, λg, λh, λd) = (1.0, 1.0, 0.2, 0.5, 0.3, 0.5).
+- **Segmentation losses:** class-balanced BCE plus soft Dice. Inverse-frequency `pos_weight` per class; the axial spinal canal gets w_SC = 90.0.
+- **Boundary loss:** MSE between Sobel gradient magnitudes of the predicted and reference masks.
+- **Grading loss:** cumulative ordinal BCE with a monotonicity penalty (weight 0.1).
 
-1. **Template filling** — Per-level findings (grade, height, disorders, segmentation confidence) are mapped to RSNA-compliant report sentences via `GRADE_DESC` and `GRADE_CLINICAL` look-up tables.
-2. **RAG retrieval (optional)** — A FAISS flat-IP index over 1,050 report embeddings (BiomedCLIP encoder) retrieves the three nearest patient reports; retrieved sentences augment the impression section.
+### RATF report generator
+
+![RATF](assets/figures/fig03_ratf.png)
+
+1. **Template:** a deterministic template writes one RSNA-structured finding sentence per disc level (L3-L4, L4-L5, L5-S1). It uses the predicted grade, the disorders with probability > 0.5, and the height in mm.
+2. **Retrieval index:** a FAISS index holds 436 unique sentences from the radiologist reports of the 360 training patients. Sentences are embedded with `all-MiniLM-L6-v2`.
+3. **Slot check:** a retrieved sentence replaces the template sentence only if three conditions hold:
+   - its cosine similarity exceeds τ = 0.75;
+   - it names the same disc level and the same finding set;
+   - it negates none of these findings.
+4. **Impression:** this section is compiled directly from the predictions and is never replaced.
+
+---
+
+## Dataset
+
+The model is trained and evaluated on **LSMA-PQR**: 515 consecutive symptomatic patients with 4,120 multi-planar lumbar MRI images (384 × 384).
+
+**Images per patient (eight):**
+- axial T1w and T2w slices at L3-L4, L4-L5 and L5-S1 (six images);
+- one mid-sagittal T1w and one mid-sagittal T2w slice.
+
+**Annotations:**
+- masks for seven structures: axial IVD, posterior elements and spinal canal; sagittal vertebral body, IVD, sacrum and spinal canal;
+- Pfirrmann grades and disc heights (mm) for 1,545 discs;
+- 515 structured reports with nine binary disorder labels.
+
+| | Train | Val | Test |
+|---|---|---|---|
+| Patients | 360 | 77 | 78 |
+| Images | 2,880 | 616 | 624 |
+| Axial / Sagittal | 2,160 / 720 | 462 / 154 | 468 / 156 |
+| Grade I / II / III / IV / V (axial images) | 36 / 1,164 / 514 / 386 / 60 | 8 / 264 / 108 / 72 / 10 | 2 / 238 / 130 / 90 / 8 |
+
+- **Splits:** patient-level and stratified by each patient's maximum Pfirrmann grade. They are listed in [`data/`](data/).
+- **Test split:** never used for model selection, early stopping or threshold tuning.
+- **Download:** [Mendeley Data](https://data.mendeley.com/datasets/p3r4xd2488/2). See [`data/README.md`](data/README.md).
 
 ---
 
 ## Results
 
-### Ablation Study — Test Set, $n = 624$ images (78 patients)
+Unless stated otherwise, the values below are on the LSMA-PQR test set (624 images, 78 patients). Brackets give 95% confidence intervals from patient-level cluster bootstrap.
 
-| Variant | Description | Params | $\bar{D}$ | $\bar{J}$ | Grade Acc. (±1) | Height MAE | VRAM |
+### Ablation
+
+![Training curves](assets/figures/fig04_training_curves.png)
+
+**Variants:**
+- **A0:** frozen backbone, untrained calibrator.
+- **A1:** adds LoRA.
+- **A2:** the full model.
+- **A3:** A2 with boundary-loss weight 1.0.
+- **A2-SDA:** A2 without the Spine Domain Adapter.
+
+The lower block of the table uses 15-epoch runs (5 + 10 epochs); compare rows only within that block.
+
+| Variant | Params | Dice | IoU | MC-sel. | Grade acc. | κw | Height MAE (mm) | AUC |
+|---|---|---|---|---|---|---|---|---|
+| A0 | 1.00M | 0.389 [0.372, 0.406] | 0.270 | 0.611 | 0.528 | 0.31 | 1.70 | 0.73 |
+| A1 | 2.19M | 0.383 [0.365, 0.400] | 0.266 | 0.673 | 0.652 | 0.61 | 1.58 | 0.81 |
+| **A2** | 2.73M | **0.861 [0.853, 0.869]** | 0.769 | 0.849 | 0.618 | 0.51 | 1.51 | 0.79 |
+| A3 | 2.73M | 0.872 [0.865, 0.879] | 0.785 | 0.857 | 0.583 | 0.53 | 1.59 | 0.81 |
+| A2-SDA | 2.68M | 0.870 [0.862, 0.878] | 0.783 | 0.847 | 0.585 | 0.54 | 1.53 | 0.80 |
+| *15-epoch runs* | | | | | | | | |
+| A2 (seed 42) | 2.73M | 0.563 [0.545, 0.580] | 0.427 | 0.686 | 0.615 | 0.58 | 1.57 | 0.77 |
+| A2 (seed 7) | 2.73M | 0.790 [0.781, 0.799] | 0.668 | 0.597 | 0.628 | 0.59 | 1.53 | 0.79 |
+| A2-anat | 2.73M | 0.588 [0.571, 0.605] | 0.451 | 0.697 | 0.596 | 0.54 | 1.50 | 0.77 |
+| A2-simple | 2.20M | 0.490 [0.473, 0.507] | 0.356 | 0.664 | 0.630 | 0.63 | 1.51 | 0.79 |
+| A2-seg | 2.73M | 0.745 [0.732, 0.758] | 0.632 | 0.763 | - | - | - | - |
+
+**Columns:**
+- **MC-sel.:** Dice of the queried class read from the multi-class head.
+- **AUC:** patient-level disorder macro-AUC.
+
+**Findings:**
+- **Calibrator vs. multi-class baseline:** on the same 2,026 image-class pairs, the trained calibrator adds 0.189 Dice [0.185, 0.193] over multi-class output selection.
+- **Seed dependence:** in the 15-epoch runs, the epoch at which prompted Dice rises depends on the seed (figure below). This seed-to-seed spread is larger than the differences between the short-run variants.
+
+<p align="center"><img src="assets/figures/fig05_ablation.png" width="80%"></p>
+<p align="center"><img src="assets/figures/fig06_short_runs.png" width="60%"></p>
+
+### Segmentation
+
+| Method | Dice | IoU | Trainable | GT box at inference | Multi-task | Time |
+|---|---|---|---|---|---|---|
+| 2D U-Net (PlainConvUNet), same split | 0.944 [0.939, 0.949] | 0.899 | 32.5M | No | No | 0.007 s |
+| 2D SwinUNETR, same split | 0.937 [0.931, 0.941] | 0.886 | 6.3M | No | No | 0.025 s |
+| SAM ViT-B, frozen encoder + trained decoder | 0.914 [0.907, 0.921] | 0.850 | 0.66M | No | No | 0.175 s |
+| SAM ViT-B automatic masks, no fine-tuning | 0.456 [0.443, 0.469] | 0.391 | 0 | No | No | 3.19 s |
+| MedSAM-2 (box prompt), no fine-tuning | 0.736 [0.729, 0.743] | 0.639 | 0 | Yes | No | 0.011 s |
+| SAM ViT-B (box prompt), no fine-tuning | 0.810 [0.804, 0.816] | 0.711 | 0 | Yes | No | 0.15 s |
+| **PC-RadNet (A2), prompted head** | 0.862 [0.856, 0.867] | 0.770 | 2.73M | No | Yes | 0.039 s |
+| PC-RadNet (A2), multi-class head | 0.849 [0.843, 0.854] | 0.751 | 2.73M | No | Yes | 0.039 s |
+
+- **Scope:** all rows use all 2,028 test image-class pairs. PC-RadNet skips two canal annotations of at most 100 pixels, leaving 2,026 pairs.
+- **Timing hardware:** an RTX 4070 Laptop GPU.
+
+**Per-class Dice (multi-class head):**
+
+| Variant | IVD | PE | SC | VB | IVD (sag) | Sacrum | SC (sag) |
 |---|---|---|---|---|---|---|---|
-| A0 | Frozen backbone, no LoRA, no Calibrator | 1.00 M | 0.378 | 0.261 | 52.8% | — | 0.54 GB |
-| A1 | SDA + LoRA encoder adaptation, no Calibrator | 2.19 M | 0.375 | 0.260 | 65.2% | — | 0.62 GB |
-| **A2** | **Full PC-RadNet (SDA + LoRA + Prompt Calibrator)** | **2.73 M** | **0.861** | **0.770** | **92.3%** | **0.57 mm** | **0.63 GB** |
-| A3 | PC-RadNet + SC-focused fine-tuning | 2.73 M | 0.871 | 0.785 | 91.6% | 0.55 mm | 0.63 GB |
+| A2 | 0.948 | 0.839 | 0.491 | 0.899 | 0.824 | 0.892 | 0.886 |
+| A3 | 0.948 | 0.853 | 0.527 | 0.848 | 0.850 | 0.901 | 0.884 |
+| A3 + axial canal fine-tune | 0.955 | 0.871 | 0.787 | - | - | - | - |
 
-$\bar{D}$: mean prompted Dice. $\bar{J}$: mean prompted IoU. Grade Acc. (±1): within-one-grade accuracy.
+**Axial spinal canal (SC):**
+- **Prompted head:** queried with the canal term, it reaches 0.734 on the 466 axial slices whose canal annotation exceeds 100 pixels.
+- **Fine-tuned A3:** a separate canal-focused fine-tune of A3 raises canal Dice from 0.527 to 0.787.
 
-### Per-Class Segmentation — A2, Test Set
+<p align="center"><img src="assets/figures/fig07_per_level_dice.png" width="45%"> <img src="assets/figures/fig08_canal_finetune.png" width="45%"></p>
+<p align="center"><img src="assets/figures/fig09_forest_baselines.png" width="70%"></p>
 
-| Plane | Class | Dice | IoU | $n$ |
+### Clinical outputs
+
+**Pfirrmann grading.** 468 axial images (234 discs).
+
+| Statistic | A2 | Always Grade II | Always Grade III |
+|---|---|---|---|
+| Exact accuracy | 0.618 [0.549, 0.686] | 0.509 | 0.278 |
+| MAE (grades) | 0.462 [0.374, 0.549] | 0.718 | 0.744 |
+| Quadratic-weighted κ | 0.506 [0.383, 0.610] | 0 | 0 |
+| Within ±1 accuracy | 0.923 [0.891, 0.951] | 0.791 | 0.979 |
+
+- **Within ±1 accuracy:** not used for ranking, because always predicting Grade III scores higher on it than the model.
+- **Radiologist agreement:** published inter-observer agreement is κ 0.69 to 0.81 and κw 0.83.
+
+<p align="center"><img src="assets/figures/fig10_grade_confusion.png" width="42%"> <img src="assets/figures/fig11_grade_f1.png" width="48%"></p>
+
+**Disc height.** 234 T2w axial slices.
+
+| Statistic | Value |
+|---|---|
+| MAE | 1.51 mm [1.33, 1.71] |
+| Bias | +0.05 mm |
+| 95% limits of agreement | [−3.87, +3.97] mm |
+| Pearson r / Lin's CCC / ICC(A,1) | 0.54 / 0.50 / 0.50 |
+| Constant predictor (training mean) | MAE 1.87 mm |
+
+<p align="center"><img src="assets/figures/fig12_disc_height.png" width="85%"></p>
+
+**Disorders.** Thresholds are tuned on validation data.
+
+| Level | Macro F1 | Always-positive F1 | Macro ROC-AUC |
+|---|---|---|---|
+| Per image | 0.34 (0.50 with tuned thresholds) | - | - |
+| Per patient (78) | 0.46 | 0.40 | 0.79 |
+
+### Report generation
+
+The benchmark uses 20 matched test patients. Every system receives the same A2 predictions, and all reports are scored by one negation-aware finding extractor.
+
+| Method | ROUGE-L | BERTScore | Factual F1 | All findings kept | Unsupported findings | Unsupported technique |
+|---|---|---|---|---|---|---|
+| **RATF, slot-checked retrieval (ours)** | 0.160 | 0.836 | 0.711 | 1.00 | 0.00 | 0.00 |
+| RATF, template stage only | 0.142 | 0.827 | 0.711 | 1.00 | 0.00 | 0.00 |
+| RATF, unrestricted retrieval (τ = 0.75) | 0.187 | 0.845 | 0.711 | 0.85 | 0.00 | 0.00 |
+| Phi-3.5-mini | 0.112 | 0.819 | 0.714 | 0.50 | 0.05 | 1.00 |
+| Med-PaLM (randomly initialized re-implementation) | 0.150 | 0.828 | 0.711 | 1.00 | 0.00 | 0.00 |
+| Meditron3-8B | 0.106 | 0.813 | 0.699 | 0.95 | 0.00 | 0.85 |
+| BioMistral-7B | 0.134 | 0.827 | 0.684 | 1.00 | 0.00 | 0.00 |
+| Llama-3.2-3B-Instruct | 0.099 | 0.813 | 0.680 | 0.95 | 0.05 | 1.00 |
+| MedGemma-4B-IT | 0.086 | 0.794 | 0.652 | 0.85 | 0.45 | 0.45 |
+| BioGPT-Large | 0.094 | 0.810 | 0.628 | 1.00 | 0.00 | 0.00 |
+| Qwen2.5-1.5B-Instruct | 0.138 | 0.829 | 0.616 | 0.80 | 0.25 | 0.05 |
+| SmolLM2-1.7B-Instruct | 0.076 | 0.814 | 0.596 | 0.35 | 0.25 | 1.00 |
+| LLaVA-Rad-7B | 0.143 | 0.830 | 0.551 | 0.30 | 0.00 | 0.05 |
+| MAIRA-2 | 0.112 | 0.831 | 0.220 | 0.00 | 0.05 | 0.00 |
+| RADAR | 0.039 | 0.778 | 0.080 | 0.00 | 0.00 | 0.00 |
+
+- **Fixed prose template:** a template written to mirror local dictation reaches ROUGE-L 0.298 and BERTScore 0.870 without retrieval.
+- **Audit on all 78 test patients:**
+  - Unrestricted retrieval replaces 92% of sentences, but only 58% of the replacements keep the level and finding set.
+  - Slot-checked retrieval replaces 53% of sentences, and every replacement is faithful.
+
+![Report comparison](assets/figures/fig13_report_comparison.png)
+
+### Cross-dataset transfer
+
+| Dataset | n | Dice, no GT at inference | Dice, GT crop | Clinical output (model / reference) |
 |---|---|---|---|---|
-| Axial | IVD | 0.921 | 0.854 | 468 |
-| Axial | Posterior Element | 0.849 | 0.737 | 468 |
-| Axial | Spinal Canal | 0.883 | 0.791 | 468 |
-| Sagittal | Vertebral Body | 0.901 | 0.820 | 156 |
-| Sagittal | IVD (sagittal) | 0.878 | 0.782 | 156 |
-| Sagittal | Sacrum | 0.815 | 0.689 | 156 |
-| Sagittal | Spinal Canal (sag.) | 0.847 | 0.736 | 156 |
+| LSMA-PQR | 624 | 0.861 | - | grade exact 61.8% / 50.9% |
+| SPIDER | 210 | 0.596 | 0.629 | bulging F1 0.82 / 0.96 (AUC 0.71) |
+| RSNA 2024 | 300 levels | - | - | stenosis proxy exact 40.7% / 84.3% |
+| SpineWeb | 209 | 0.633 | 0.684 | - |
+| SpineParseNet | 633 | 0.398 | 0.375 | - |
 
-**Axial segmentation classes and prompt synonyms:**
+- **SPIDER adaptation:** a controlled 30-epoch experiment on the official split (146 / 26 / 38 patients).
+- **Joint fine-tuning:** on SPIDER and LSMA-PQR together, it reaches 0.827 Dice on the SPIDER test patients and raises LSMA-PQR sagittal Dice to 0.930.
+- **SPIDER-only fine-tuning:** fine-tuning the LSMA-PQR checkpoint on SPIDER alone collapses the unannotated sacrum class (0.906 to 0.091).
 
-![Axial Segmentation Classes](assets/fig_axial_classes.png)
+![External qualitative results](assets/figures/fig14_external_qualitative.png)
 
-**Sagittal segmentation classes and prompt synonyms:**
+### Qualitative results and gate analysis
 
-![Sagittal Segmentation Classes](assets/fig_sagittal_classes.png)
+![Qualitative results](assets/figures/fig15_qualitative.png)
 
-### Report Generation — 13-Method Benchmark, $n = 20$ matched patients
+![Feature space](assets/figures/fig16_feature_space.png)
 
-| Method | BLEU-1 | ROUGE-L | BERTScore $F_1$ | Factual $F_1$ |
-|---|---|---|---|---|
-| **PC-RadNet RATF (ours)** | **0.221** | **0.298** | **0.870** | **0.798** |
-| Med-PaLM | 0.103 | 0.150 | 0.828 | 0.711 |
-| Meditron3-8B | 0.060 | 0.106 | 0.813 | 0.699 |
-| Llama-3.2-3B | 0.052 | 0.099 | 0.813 | 0.680 |
-| BioMistral-7B | 0.097 | 0.134 | 0.827 | 0.655 |
-| MedGemma | 0.044 | 0.088 | 0.824 | 0.621 |
-| BioGPT-Large | 0.038 | 0.071 | 0.806 | 0.598 |
-| RADAR | 0.031 | 0.059 | 0.791 | 0.542 |
-| MAIRA-2 | 0.029 | 0.061 | 0.795 | 0.531 |
-
-Full results including bootstrap confidence intervals, cross-dataset validation on SPIDER, RSNA 2024 and SpineWeb, and disorder-level F1 per pathology are in `results/quantitative/`.
-
----
-
-## Qualitative Results
-
-### Structured Report Generation — PC-RadNet RATF vs. LLM Baselines
-
-The RATF module produces differentiated, patient-specific clinical findings at each disc level, whereas general-purpose LLMs exhibit replicated assessments across levels and factual inconsistencies.
-
-![Report Comparison](assets/Report_comparison.png)
-
-### Zero-Shot External Validation — SPIDER and SpineWeb
-
-Segmentation predictions on SPIDER (T1/T2 sagittal, 5-class) and SpineWeb (vertebral body, 1-class) demonstrate cross-institutional transfer of structural representations despite no domain-specific fine-tuning on external datasets.
-
-![External Validation](assets/ext.png)
+![Gate analysis](assets/figures/fig17_gate_analysis.png)
 
 ---
 
 ## Installation
 
 ```bash
-git clone https://github.com/raofarhatmasood/PC-RadNet.git
-cd PC-RadNet
-
+git clone https://github.com/farhatmasood/pc-radnet.git
+cd pc-radnet
 conda env create -f environment.yml
 conda activate pc_radnet
 ```
 
-**Requirements:** CUDA 12.1, Python 3.10, PyTorch ≥ 2.1. Tested on NVIDIA RTX 3060 (8 GB VRAM). CPU inference is supported but substantially slower.
+- **Tested setup:** Python 3.10 and PyTorch 2.5.1 (CUDA 12.1) on a single NVIDIA RTX 4070 Laptop GPU (8 GB).
+- **Scope of the environment:** it covers training, evaluation and all analysis scripts.
+- **Separate installs:** the report-generation baselines need their model weights from Hugging Face, plus the packages named in the header of each `scripts/benchmark_*.py`. LLaVA-Rad, for example, requires its own repository.
 
 ---
 
-## Dataset
+## Data and model files
 
-PC-RadNet is trained and evaluated on **LSMA-PQR** — a multi-planar lumbar spine MRI dataset of 515 consecutive symptomatic patients.
+All paths are set in [`configs/config.yaml`](configs/config.yaml). Relative paths resolve against the repository root.
 
-| Property | Value |
-|---|---|
-| Patients | 515 |
-| Images | 4,120 (384 × 384 px) |
-| Acquisitions per patient | 8 (axial T1/T2 × 3 levels + sagittal T1/T2) |
-| Segmentation classes | 7 (axial: IVD, PE, SC; sagittal: VB, IVD, Sacrum, SC) |
-| Pfirrmann labels | 1,545 disc assessments (grades I–V) |
-| IVD height labels | 1,545 measurements |
-| Disorder labels | 9 categories, 515 patient-level reports |
-| Train / Val / Test split | 360 / 77 / 78 patients (70/15/15%, grade-stratified) |
-
-**Download:** [https://data.mendeley.com/datasets/p3r4xd2488/1](https://data.mendeley.com/datasets/p3r4xd2488/1)
-
-After downloading, set `paths.dataset_root` in `configs/config.yaml` to the local dataset root. All derived paths (`images`, `labels`, `masks`, `metadata`) resolve relative to this root.
-
-The `data/` directory in this repository contains only the patient-level split files (`train.txt`, `val.txt`, `test.txt`). Raw imaging data is not included.
-
----
-
-## Quickstart — Inference
-
-The fastest path to running PC-RadNet on a single image requires only the checkpoint and a clinical text prompt.
-
-```python
-import torch
-import yaml
-from pathlib import Path
-from PIL import Image
-import numpy as np
-import sys
-
-sys.path.insert(0, "scripts")
-from train import PCRadNet, get_val_transforms
-
-# ── Load config and model ────────────────────────────────────────────
-with open("configs/config.yaml") as f:
-    cfg = yaml.safe_load(f)
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-model = PCRadNet(cfg, use_calibrator=True, lora_rank=cfg["model"]["lora_rank"])
-ckpt  = torch.load("checkpoints/best_by_mdice_A2.pt", map_location="cpu", weights_only=False)
-model.load_state_dict(ckpt["model_state_dict"])
-model = model.to(device).eval()
-
-# ── Prepare input ────────────────────────────────────────────────────
-transforms = get_val_transforms()
-img  = np.array(Image.open("path/to/image.png").convert("RGB"))
-data = transforms(image=img)
-img_tensor  = data["image"].unsqueeze(0).to(device)        # (1, 3, 384, 384)
-plane_id    = torch.tensor([0], device=device)             # 0 = axial, 1 = sagittal
-prompt_text = ["intervertebral disc"]                      # any PROMPT_BANK entry
-
-# ── Forward pass ─────────────────────────────────────────────────────
-with torch.no_grad():
-    outputs = model(img_tensor, prompt_text, plane_id)
-
-pred_mask  = (torch.sigmoid(outputs["prompted_logits"][0, 0]) > 0.5).cpu().numpy()
-pred_grade = outputs["grade_logits"].argmax(dim=-1).item() + 1   # 1-indexed
-pred_height = outputs["height_pred"][0].item()
-pred_disorders = (torch.sigmoid(outputs["disorder_logits"][0]) > 0.5).cpu().numpy()
-```
-
-**Available prompts per plane:**
-
-```python
-# Axial plane (plane_id = 0)
-prompts_axial = ["intervertebral disc", "IVD", "disc",
-                 "posterior element", "posterior arch", "facet joint",
-                 "spinal canal", "neural canal", "canal"]
-
-# Sagittal plane (plane_id = 1)
-prompts_sagittal = ["vertebral body", "vertebra",
-                    "intervertebral disc", "disc",
-                    "sacrum", "sacral bone",
-                    "spinal canal", "canal"]
-```
-
----
-
-## Training
-
-Training follows a two-phase protocol. Phase 1 warms up the task heads with a high learning rate while the backbone remains frozen. Phase 2 fine-tunes all trainable modules with cosine-annealed learning rate and early stopping.
-
-```bash
-# Phase 1 — Head warm-up (5 epochs, lr = 1×10⁻⁴, batch size 2 × 8 grad-accum)
-python scripts/train.py --phase=1
-
-# Phase 2 — Full fine-tune, A2 variant (SDA + LoRA + Prompt Calibrator)
-python scripts/train.py --phase=2 --ablation=A2
-
-# Phase 2 — Full fine-tune, A3 variant (SDA + LoRA + Prompt Calibrator + SC fine-tuning)
-python scripts/train.py --phase=2 --ablation=A3
-```
-
-**Hyperparameters (from `configs/config.yaml`):**
-
-| Parameter | Phase 1 | Phase 2 |
+| Item | Default location | Needed for |
 |---|---|---|
-| Epochs | 5 | ≤ 50 |
-| Learning rate | $1 \times 10^{-4}$ | $5 \times 10^{-5}$ |
-| Optimiser | AdamW ($\lambda = 0.01$) | AdamW ($\lambda = 0.01$) |
-| Batch size | 2 | 2 |
-| Gradient accumulation | 8 | 8 |
-| LR schedule | constant | cosine annealing ($T_0 = 10$, $T_{\text{mult}} = 2$) |
-| Early stopping | — | patience = 10 (monitor: $\bar{D}_\text{val}$) |
-| Gradient clipping | 1.0 | 1.0 |
-| Mixed precision | bfloat16 | bfloat16 |
+| LSMA-PQR release | `data/LSMA-PQR/` (`paths.dataset_root`) | everything that reads images |
+| Model checkpoints | `checkpoints/best_by_mdice_{A0..A3}.pt` | evaluation of A0 to A3 |
+| Variant checkpoints | `checkpoints/variants/{name}_best.pt` | variants in `analysis/` |
+| Retrieval index | `checkpoints/faiss_rag_index.bin`, `checkpoints/faiss_metadata.json` | `scripts/generate_report.py --mode rag` (built with `--build-index`); `analysis/ratf_analysis.py` builds its sentence index in memory from the training reports |
+| SAM ViT-B weights | `checkpoints/pretrained/sam_vit_b_01ec64.pth` | SAM baselines |
+| MedSAM2 repository | `third_party/MedSAM2/` | MedSAM-2 baseline |
+| SPIDER, RSNA 2024, SpineWeb, SpineParseNet | `paths.external_datasets` | cross-dataset evaluation |
 
-Checkpoints are saved to `checkpoints/` as `best_by_mdice_{variant}.pt` (best validation Dice) and `best_by_miou_{variant}.pt` (best validation IoU). WandB logging is optional; set `wandb.entity` in `config.yaml` to enable.
+- **Not in git:** model weights (`*.pt`, about 360 MB each) are not tracked.
+- **Data splits:** the split files in `data/` list image file names. `scripts/repo_config.py` maps each name to `paths.images`.
 
 ---
 
-## Evaluation
+## Reproducing the results
+
+Run all commands from the repository root. Each step writes to `results/` (or `results/analysis/`), and those folders already hold the outputs used in the manuscript. Steps marked GPU need the dataset and a CUDA device.
+
+### 1. Main models A0 to A3 (GPU)
 
 ```bash
-# Single checkpoint, test split
-python scripts/evaluate.py --checkpoint best_by_mdice_A2.pt --split test
-
-# All ablation variants with bootstrap confidence intervals and LaTeX tables
-python scripts/evaluate.py --all-ablations --split test
-
-# External zero-shot evaluation (SPIDER / SpineWeb)
-python scripts/evaluate_external_v2.py --dataset spider --split test
-python scripts/evaluate_external_v2.py --dataset spineweb --split test
+python scripts/train.py --phase 1 --ablation A2     # 5 epochs, lr 1e-4
+python scripts/train.py --phase 2 --ablation A2     # up to 50 epochs, lr 5e-5, early stopping (patience 10)
 ```
 
-Per-image results are written to `results/quantitative/test_{variant}_per_image.csv`. Summary metrics (JSON) and LaTeX tables are written to `results/quantitative/`.
+- **Other variants:** repeat with `--ablation A0`, `A1` and `A3`.
+- **A0:** trains without LoRA.
+- **A0 and A1:** keep the calibrator at its random initialization.
+- **A3:** sets the boundary-loss weight to 1.0.
+- **Seed:** 42 (`configs/config.yaml`).
+
+### 2. Evaluation of A0 to A3 (GPU)
 
 ```bash
-# Compute 95% bootstrap confidence intervals (n=1000 resamples)
-python scripts/compute_bootstrap_cis.py --results results/quantitative/test_A2_per_image.csv
-
-# Statistical significance tests vs. baselines
-python scripts/evaluate.py --statistical-tests --split test
+python scripts/evaluate.py --all-ablations --split test        # results/test_A*_per_image.csv
+python scripts/evaluate.py --all-ablations --split val
+python analysis/evaluate_unified.py --name A2 --ckpt checkpoints/best_by_mdice_A2.pt --kind orig --save-sag
 ```
 
----
+- **Other models:** repeat `evaluate_unified.py` for A0, A1 and A3.
+- **What it records:** prompted Dice for every present class, multi-class output selection, and the clinical outputs. Results go to `results/analysis/unified/`.
 
-## Report Generation
-
-PC-RadNet supports two report generation modes. Template mode requires no additional VRAM beyond the segmentation model. RAG mode uses a FAISS flat-IP index over 1,050 training reports encoded with BiomedCLIP.
+### 3. Controlled variants (GPU)
 
 ```bash
-# Mode A — deterministic template filling
-python scripts/generate_report.py --mode template \
-    --predictions results/quantitative/test_A2_per_image.csv \
-    --output-dir results/reports/
-
-# Mode B — retrieval-augmented (build index first)
-python scripts/generate_report.py --mode rag --build-index
-python scripts/generate_report.py --mode rag \
-    --predictions results/quantitative/test_A2_per_image.csv \
-    --output-dir results/reports/
-
-# Evaluate report quality against reference reports (NLG metrics + factual F1)
-python scripts/evaluate_nlg.py \
-    --predictions results/reports/ \
-    --references data/LSMA-PQR/Report/ \
-    --output results/quantitative/nlg_evaluation_results.csv
-
-# Benchmark against 12 external LLMs
-python scripts/benchmark_report_llms.py \
-    --references data/LSMA-PQR/Report/ \
-    --output results/quantitative/nlg_evaluation_comprehensive_summary.csv
+python analysis/train_variant.py --variant noSDA --seed 42 --no-grad-ckpt            # A2-SDA, full schedule
+python analysis/train_variant.py --variant A2 --seed 42 --short --no-grad-ckpt       # 15-epoch runs
+python analysis/train_variant.py --variant A2 --seed 7 --short --no-grad-ckpt
+python analysis/train_variant.py --variant anatOnly --seed 42 --short --no-grad-ckpt
+python analysis/train_variant.py --variant simpleEmb --seed 42 --short --no-grad-ckpt
+python analysis/train_variant.py --variant segOnly --seed 42 --short --no-grad-ckpt
+python analysis/evaluate_unified.py --name noSDA_s42 --ckpt checkpoints/variants/noSDA_s42_best.pt --kind rev --variant noSDA
+python analysis/short_runs_table.py                                                  # evaluates the 15-epoch runs, prints table rows
 ```
+
+`analysis/run_full_variants.sh` and `analysis/run_short_variants.sh` run these jobs in sequence.
+
+### 4. Statistics from stored predictions (CPU)
+
+These scripts read only the CSV files in `results/`. `patient_statistics.py` also reads `IVDHeights.csv` from the dataset for the constant height predictor.
+
+```bash
+python analysis/patient_statistics.py A0 A1 A2 A3 noSDA_s42 A2_s42_short A2_s7_short anatOnly_s42_short segOnly_s42_short simpleEmb_s42_short
+python analysis/original_clinical_outputs.py     # grading, height, disorders of A0 to A3
+python analysis/segmentation_paired_tests.py     # CIs and paired tests for prompted segmentation
+python analysis/ablation_table.py
+```
+
+### 5. Baselines
+
+```bash
+python scripts/evaluate_direct_baselines.py --model all --epochs 30   # GPU: U-Net, SwinUNETR, SAM decoder on the same split
+python scripts/baseline_zeroshot.py --split test                     # GPU: SAM ViT-B with ground-truth boxes
+python analysis/zero_shot_full_test.py                               # GPU: SAM automatic masks and MedSAM-2 on the full test split
+python analysis/zero_shot_summary.py                                 # CPU
+python analysis/same_split_summary.py                                # CPU: comparison table with patient-level CIs
+```
+
+### 6. Axial canal fine-tune and disorder model (GPU)
+
+```bash
+python scripts/sc_finetune_a3.py           # A3 axial canal fine-tune
+python scripts/improve_sc_segmentation.py  # axial U-Net reference with the same canal protocol
+python scripts/improve_rare_disorders.py   # ResNet-50 with focal loss and oversampling (Enh. F1)
+```
+
+### 7. Disc height in the sagittal plane (CPU)
+
+```bash
+python analysis/sagittal_height.py A2 test T2   # needs the sagittal masks saved by evaluate_unified.py --save-sag
+```
+
+### 8. Report generation
+
+```bash
+python analysis/ratf_analysis.py                                      # RATF stages T, R and RC; 20 and 78 patients; unified scoring
+python analysis/ratf_benchmark_table.py
+python analysis/ratf_bertscore.py                                     # BERTScore with RoBERTa-large
+python scripts/evaluate_medcpt_retrieval.py                           # MiniLM vs MedCPT retrieval
+python scripts/benchmark_report_llms_v2.py                            # GPU: language-model baselines
+```
+
+- **Model-specific baselines:** run the `scripts/benchmark_*.py` scripts (LLaVA-Rad, MAIRA-2, RADAR, Meditron3, Llama-3.2, Med-PaLM) and `scripts/compare_medgemma_reports.py` (MedGemma).
+- **Stored outputs:** `results/report_benchmark/reports/` and `results/medgemma_reports/`.
+
+### 9. Cross-dataset evaluation (GPU)
+
+```bash
+python scripts/evaluate_external_v2.py --dataset rsna
+python analysis/rsna_summary.py
+python analysis/external_gt_free.py --dataset spider
+python analysis/external_gt_free.py --dataset spider --oracle-crop
+python analysis/external_gt_free.py --dataset spineweb
+python analysis/external_gt_free.py --dataset spineparsenet
+python analysis/spider_adaptation.py --epochs 30
+```
+
+### 10. Workflow timing, gate analysis and figures
+
+```bash
+python analysis/workflow_analysis.py all         # GPU: review flags and examination-level timing
+python analysis/gate_feature_analysis.py         # GPU: gate vectors, t-SNE/UMAP, encoder silhouette
+python analysis/fig_training_curves.py           # needs the local W&B run folders; the extracted curves are in results/analysis/training_curves.json
+python analysis/fig_short_curves.py
+python analysis/fig_height_agreement.py
+python analysis/fig_report_comparison.py
+```
+
+- **Notebook figures:** the remaining result figures were produced from the files in `results/` with `notebooks/manuscript_figures.ipynb`.
+- **Schematics:** Figures 1 to 3 are schematic drawings.
 
 ---
 
-## Model Weights
+## Where each reported number comes from
 
-The best-performing checkpoint is **A2** (full PC-RadNet: Spine Domain Adapter + LoRA encoder adaptation + Prompt Calibrator), which achieves $\bar{D} = 0.861$, $\bar{J} = 0.770$ and 92.3% within-one-grade Pfirrmann accuracy on the held-out test set of 624 images.
+| Manuscript item | File |
+|---|---|
+| Ablation table, upper block (segmentation) | `results/analysis/seg_paired_tests.json`, `results/analysis/ablation_rows.json` |
+| Ablation table, A0 to A3 clinical columns | `results/analysis/stats_clinical_orig.json` |
+| Ablation table, A2-SDA and 15-epoch rows | `results/analysis/stats_core.json`, `results/analysis/ablation_rows.json` |
+| Training curves | `results/analysis/training_curves.json`, `results/analysis/train_logs/` |
+| Per-class Dice | `results/test_A*_per_image.csv` (columns `dice_<class>`) |
+| Axial canal fine-tune, axial U-Net | `results/sc_enhanced_test_metrics.json`, `scripts/sc_finetune_a3.py` output |
+| Segmentation comparison | `results/analysis/baselines_same_split.json`, `results/analysis/baselines_full/summary.json`, `results/analysis/workflow_timing.json` |
+| Pfirrmann grading | `results/analysis/stats_clinical_orig.json` (A2orig) |
+| Disc height (axial and sagittal) | `results/analysis/stats_clinical_orig.json`, `results/analysis/sag_height_A2_test_T2.csv` |
+| Disorder table | `results/analysis/disorders_A2orig.csv`, `results/disorder_enhanced_test_metrics.json` |
+| Report benchmark | `results/analysis/ratf/bench20_table.csv`, `results/analysis/ratf/bench20_unified_scores.csv`, `results/analysis/ratf/bertscore_bench20.json`, `results/nlg_evaluation_comprehensive_summary.csv` |
+| RATF audit on 78 patients | `results/analysis/ratf/ratf_summary.json`, `results/analysis/ratf/audit_test78.csv` |
+| Retrieval encoder comparison | `results/retrieval_comparison.json` |
+| Examination-level workflow | `results/analysis/workflow_flags.json`, `results/analysis/workflow_timing.json` |
+| Cross-dataset table | `results/analysis/external_rev/`, `results/analysis/rsna_recomputed.json` |
+| SPIDER adaptation | `results/analysis/spider_adapt/spider_adapt_results.json` |
+| Gate and feature-space analysis | `results/analysis/interpretability/gate_feature_A2.json` |
 
-Place downloaded checkpoints in the `checkpoints/` directory:
-
-```
-checkpoints/
-├── best_by_mdice_A2.pt          ← recommended; best segmentation + grading balance
-├── best_by_miou_A2.pt
-├── best_by_mdice_A3.pt          ← highest Dice (0.871); full PC-RadNet + SC fine-tuning
-├── best_by_miou_A3.pt
-├── best_by_mdice_A1.pt          ← LoRA-only ablation variant
-├── best_by_miou_A1.pt
-├── best_by_mdice_A0.pt          ← frozen backbone baseline
-├── best_by_miou_A0.pt
-├── sc_enhanced_a3.pt            ← SC-focused fine-tuned A3 (axial spinal canal specialisation)
-├── faiss_metadata.json          ← BiomedCLIP report embeddings index (RAG mode)
-└── faiss_medcpt_metadata.json   ← MedCPT report embeddings index (RAG mode)
-```
-
-**Checkpoint contents:**
-
-```python
-ckpt = torch.load("checkpoints/best_by_mdice_A2.pt", map_location="cpu", weights_only=False)
-# ckpt["model_state_dict"]   — PCRadNet state dict
-# ckpt["epoch"]              — epoch at which checkpoint was saved
-# ckpt["val_dice"]           — validation mean Dice at that epoch
-# ckpt["val_iou"]            — validation mean IoU at that epoch
-# ckpt["grade_acc"]          — within-one-grade Pfirrmann accuracy
-# ckpt["height_mae"]         — IVD height mean absolute error (px)
-# ckpt["trainable_params"]   — number of trainable parameters at training time
-# ckpt["phase"]              — training phase (1 or 2)
-# ckpt["ablation"]           — ablation variant identifier (A0–A3)
-# ckpt["seed"]               — random seed used for training
-```
-
-**Loading for inference:**
-
-```python
-model = PCRadNet(cfg, use_calibrator=True, lora_rank=cfg["model"]["lora_rank"])
-ckpt  = torch.load("checkpoints/best_by_mdice_A2.pt", map_location="cpu", weights_only=False)
-model.load_state_dict(ckpt["model_state_dict"])
-model.eval()
-```
+The CPU-only scripts in step 4 and the summary scripts in steps 5 and 9 reproduce the stored JSON files exactly from the CSV files in `results/`.
 
 ---
 
-## Repository Structure
+## Repository structure
 
 ```
-PC-RadNet/
-├── assets/
-│   ├── Architecture.png         # overall model architecture diagram
-│   ├── ext.png                  # external validation figure
-│   ├── fig_axial_classes.png    # axial segmentation classes
-│   ├── fig_sagittal_classes.png # sagittal segmentation classes
-│   └── Report_comparison.png   # RATF vs. LLM report comparison
-├── configs/
-│   └── config.yaml              # all hyperparameters, paths and dataset settings
-├── data/
-│   ├── README.md                # dataset description and access instructions
-│   ├── train.txt                # 360 patient IDs
-│   ├── val.txt                  # 77 patient IDs
-│   └── test.txt                 # 78 patient IDs
-├── notebooks/                   # exploratory / demo notebooks
-├── scripts/
-│   ├── train.py                 # PCRadNet model + SpineDataset + training loop
-│   ├── evaluate.py              # per-class metrics, confusion matrices, LaTeX tables
-│   ├── generate_report.py       # RATF template and RAG report generation
-│   ├── visualize.py             # segmentation overlays and figure export
-│   ├── generate_figures.py      # all manuscript figures
-│   ├── baseline_zeroshot.py     # SAM / SAM2 zero-shot baselines
-│   ├── evaluate_external.py     # cross-dataset evaluation v1
-│   ├── evaluate_external_v2.py  # cross-dataset evaluation v2 (corrected preprocessing)
-│   ├── benchmark_report_llms.py # 13-method NLG benchmark
-│   ├── evaluate_nlg.py          # BLEU / ROUGE / BERTScore / factual F1
-│   ├── improve_sc_segmentation.py
-│   ├── disorder_analysis.py
-│   ├── optimize_thresholds.py
-│   ├── compute_bootstrap_cis.py
-│   └── split_build.py
-├── src/
-│   └── pc_radnet/               # installable package (pip install -e .)
-│       ├── __init__.py
-│       ├── datasets/
-│       ├── losses/
-│       ├── models/
-│       │   ├── pc_radnet_a2.pt  # A2 full model weights
-│       │   └── pc_radnet_a3.pt  # A3 SC-fine-tuned weights
-│       ├── report/
-│       └── utils/
+pc-radnet/
+├── analysis/                 extended experiments: variants, unified evaluation, statistics,
+│                             external and SPIDER experiments, RATF analysis, figures
+├── assets/figures/           figures shown in this README (rendered from the manuscript figures)
+├── configs/config.yaml       paths, model, training and loss settings
+├── data/                     patient-level split files and dataset notes
+├── notebooks/                figure notebook
 ├── results/
-│   ├── generated_reports/       # RATF output reports
-│   ├── qualitative/             # saved segmentation overlays
-│   └── quantitative/            # JSON / CSV metrics, LaTeX tables
+│   ├── *.csv, *.json         per-image predictions and summaries written by scripts/
+│   ├── analysis/             outputs of analysis/ (unified evaluation, statistics, RATF, external)
+│   ├── report_benchmark/     reports and per-patient scores of the language-model baselines
+│   ├── medgemma_reports/     MedGemma-4B-IT reports
+│   ├── ratf_reports_*/       earlier RATF outputs used as reference rows
+│   ├── external_v2/          external evaluation outputs (RSNA, SPIDER, SpineWeb, SpineParseNet)
+│   ├── expanded_baselines/   SAM automatic-mask and MedSAM-2 runs
+│   └── qualitative/          segmentation overlays
+├── scripts/                  model, training, evaluation, baselines, report generation
+│   ├── repo_config.py        configuration loading and split-file resolution
+│   ├── train.py              PC-RadNet model, dataset and training loop
+│   └── ...
+├── src/pc_radnet/            package stub; local model weights are kept here and not tracked
 ├── environment.yml
 └── LICENSE
 ```
@@ -469,18 +511,16 @@ PC-RadNet/
 
 ```bibtex
 @article{masood2026pcradnet,
-  title   = {{PC-RadNet}: A Prompt-Calibrated, Parameter-Efficient Foundation Model
-             for Comprehensive Multi-Task Segmentation, Clinical Assessment and
-             Report Generation in Spine {MRI}},
-  author  = {Masood, Rao Farhat and Taj, Imtiaz Ahmad},
-  journal = {TBD},
+  title   = {A Prompt-Calibrated, Parameter-Efficient Framework for Multi-Task Segmentation,
+             Clinical Assessment and Report Generation in Lumbar Spine {MRI}},
+  author  = {Masood, Rao Farhat and Taj, Imtiaz Ahmad, Muhammad Babar Khan, Muhammad Asad Qureshi},
   year    = {2026},
-  note    = {Under review}
+  note    = {Manuscript under review}
 }
 ```
 
----
+<!-- Please also cite the LSMA-PQR dataset when using the data. -->
 
 ## License
 
-MIT License — see [LICENSE](LICENSE).
+MIT License. See [LICENSE](LICENSE).

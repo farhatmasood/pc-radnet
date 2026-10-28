@@ -1,20 +1,17 @@
 project:
   name: "PC-RadNet"
   seed: 42
-  version: "v3.0"
 
 hardware:
-  gpu_vram_gb: 8.59
-  usable_vram_gb: 6.87
-  gpu_fraction: 0.80
+  gpu_fraction: 0.80          # share of GPU memory the training process may allocate
   num_workers: 2
   pin_memory: true
   grad_checkpoint: true
   precision: "bf16"
 
+# Relative paths are resolved against the repository root (scripts/repo_config.py).
 paths:
-  # Update these paths to your local LSMA-PQR dataset location
-  dataset_root: "data/LSMA-PQR"
+  dataset_root: "data/LSMA-PQR"            # local copy of the LSMA-PQR release
   images: "data/LSMA-PQR/images_png"
   labels: "data/LSMA-PQR/labels_yolo"
   masks: "data/LSMA-PQR/masks_indexed"
@@ -25,105 +22,70 @@ paths:
     structured_reports_csv: "data/LSMA-PQR/structured_reports.csv"
     notes_csv: "data/LSMA-PQR/notes.csv"
   report_folder: "data/LSMA-PQR/Report"
+  splits_dir: "data"                       # train.txt, val.txt, test.txt
   scripts: "scripts"
   checkpoints: "checkpoints"
-  results: "results/quantitative"
+  results: "results"
   figures: "results/figures"
   faiss_index: "checkpoints/faiss_rag_index.bin"
   faiss_meta: "checkpoints/faiss_metadata.json"
-  splits:
-    train: "data/train.txt"
-    val: "data/val.txt"
-    test: "data/test.txt"
-  # Paths to external validation datasets — set to "" to skip that dataset
+  pretrained:
+    sam_vit_b: "checkpoints/pretrained/sam_vit_b_01ec64.pth"   # Segment Anything ViT-B release
+    medsam2_root: "third_party/MedSAM2"                       # clone of the MedSAM2 repository
+  # External cohorts (leave empty to skip a dataset)
   external_datasets:
-    spider: ""
-    rsna: ""
-    spine_new: ""
-    xray: ""
-    spineweb: ""
+    spider: ""        # SPIDER (Zenodo record 10159290)
+    rsna: ""          # RSNA 2024 Lumbar Spine Degenerative Classification
+    spine_new: ""     # SpineParseNet data
+    spineweb: ""      # SpineWeb Dataset 11
+    xray: ""          # optional radiograph cohort used by evaluate_external.py
 
 classes:
-  # Masks are per-plane indexed (not global 7-class):
-  # Axial masks: 0=BG, 1=IVD, 2=PE, 3=SC
-  # Sagittal masks: 0=BG, 1=VB, 2=IVD_sag, 3=Sacrum, 4=SC_sag
+  # Masks are indexed per plane:
+  # axial    0=BG, 1=IVD, 2=PE, 3=SC
+  # sagittal 0=BG, 1=VB, 2=IVD_sag, 3=Sacrum, 4=SC_sag
   axial: {0: "Background", 1: "IVD", 2: "PE", 3: "SC"}
   sagittal: {0: "Background", 1: "VB", 2: "IVD_sag", 3: "Sacrum", 4: "SC_sag"}
-  num_axial_classes: 4  # including background
-  num_sagittal_classes: 5  # including background
-  num_classes_no_bg: 7  # 3 axial + 4 sagittal (excluding BG)
+  num_axial_classes: 4
+  num_sagittal_classes: 5
+  num_classes_no_bg: 7
 
 dataset:
   total_images: 4120
   total_patients: 515
-  images_per_patient: 8  # 3 axial_T1 + 3 axial_T2 + 1 sag_T1 + 1 sag_T2
+  images_per_patient: 8       # 3 axial T1w + 3 axial T2w + 1 sagittal T1w + 1 sagittal T2w
   image_size: [384, 384]
-  non_standard_size_count: 18  # 384x372 images
-  label_format: "yolo_polygon"
-  label_classes_count: {0: 9856, 1: 10145, 2: 4120, 3: 1030}
-  mask_unique_values_axial: [0, 1, 2, 3]
-  mask_unique_values_sagittal: [0, 1, 2, 3, 4]
   views: ["axial_T1", "axial_T2", "sag_T1", "sag_T2"]
-  levels_axial: ["D3", "D4", "D5"]  # L3-L4, L4-L5, L5-S1
+  levels_axial: ["D3", "D4", "D5"]   # L3-L4, L4-L5, L5-S1
   split_ratio: {train: 0.70, val: 0.15, test: 0.15}
-  pfirrmann_labels_present: true
-  ivd_height_labels_present: true
-  disorder_labels_present: true
-  clinical_notes_present: true  # 370 of 515 patients parsed (notes.csv has bad lines)
-  structured_reports_present: true  # 1050 rows in structured_reports.csv
   filename_convention: "{view}_{sequence}_{patient_id:04d}_{level}.png"
-  pfirrmann_distribution:
-    grade_1: 23
-    grade_2: 833
-    grade_3: 376
-    grade_4: 274
-    grade_5: 39
-  clinical_category_distribution:
-    Mild: 319
-    Moderate: 190
-    Severe: 6
 
 model:
-  uie_base: "EfficientViT-SAM-L0"
-  text_encoder: "microsoft/BiomedCLIP-PubMedBERT_256-vit_b_16"
-  llm_base: "microsoft/Phi-3-mini-4k-instruct"
-  llm_quant: "4bit"
-  adapter_rank: 32
-  lora_rank: 8
-  lora_rank_fgrg: 4
-  lora_targets: ["q_proj", "v_proj"]
-  gdino_lora_targets: ["FFN", "cross_attn", "text_proj"]
+  backbone: "vit_base_patch14_dinov2.lvd142m"
+  adapter_rank: 32            # Spine Domain Adapter bottleneck
+  lora_rank: 8                # LoRA rank (alpha = 16, dropout 0.05)
   calibrator_dim: 256
 
 training:
   phase1_epochs: 5
   phase2_epochs: 50
   batch_size: 2
-  batch_size_fgrg: 1
-  grad_accum: 8
-  grad_accum_fgrg: 4
-  lr: 1.0e-4
+  grad_accum: 8               # effective batch size 16
+  lr: 1.0e-4                  # phase 1
   lr_phase2: 5.0e-5
   weight_decay: 0.01
   grad_clip: 1.0
   early_stop_patience: 10
   early_stop_monitor: "val_mDice"
-  uncertainty_weighting: false
 
 loss:
-  det_lambda_l1: 5.0
-  det_lambda_giou: 2.0
-  det_lambda_focal: 1.0
-  boundary_lambda: 0.2
-  ordinal_lambda: 0.1
-  fact_consistency_lambda: 0.3
+  boundary_lambda: 0.2        # 1.0 for variant A3
+  ordinal_lambda: 0.1         # monotonicity penalty of the grading loss
   task_weights:
-    det: 1.0
-    seg: 1.0
+    seg: 1.0                  # multi-class and prompted segmentation
     grade: 0.5
     height: 0.3
     disorder: 0.5
-    report: 0.4
 
 wandb:
   entity: null
